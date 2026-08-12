@@ -1,4 +1,4 @@
-import { PDFDocument, StandardFonts, rgb } from "./vendor/pdf-lib.esm.min.js";
+import { PDFDocument, StandardFonts, rgb } from "pdf-lib";
 import { CREST_LOGO_PNG_BASE64 } from "./crest-logo-data.ts";
 
 export type PdfMaterialItem = {
