@@ -958,7 +958,1975 @@
       {
         "quantity": "",
         "code": "CE0174",
-        "…10271 tokens truncated…    {
+        "line": "106",
+        "description": "CONCRETE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0060",
+        "line": "171",
+        "description": "DOUBLE FLOOD-BULB-PAR38-LED",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 41,
+    "legacyCode": "WRE-103-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "CONDUIT, CONNECTORS, AND ACESSORIES"
+      },
+      {
+        "quantity": "",
+        "code": "CE0193",
+        "line": "107",
+        "description": "CONTAX-NOALOX-WHITE BOTTLE-Oxide Inhibitor",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0058",
+        "line": "172",
+        "description": "DOUBLE FLOOD-ARM-PAR HOLDER WP",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 42,
+    "legacyCode": "WRE-082-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0227",
+        "line": "34",
+        "description": "(3/4)\"-SMURF-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0286",
+        "line": "108",
+        "description": "CRIMPS ( SPLICE)",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0259",
+        "line": "173",
+        "description": "DOUBLE FLOOD-BASE-3 HOLE",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 43,
+    "legacyCode": "WRE-083-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "35",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0013",
+        "line": "109",
+        "description": "DEEP BRICK BOX",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3185",
+        "line": "174",
+        "description": "DOUBLE FLOOD-WHOLE-NO SENSOR",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 44,
+    "legacyCode": "WRE-062-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "36",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0177",
+        "line": "110",
+        "description": "DUCT TAPE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3188",
+        "line": "175",
+        "description": "DOUBLE FLOOD-WHOLE-W/ SENSOR",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 45,
+    "legacyCode": "WRE-063-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "37",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "111",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3045",
+        "line": "176",
+        "description": "DOORBELL BUTTON-METAL-NICKEL-(DB-501-NK)-PW",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 46,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "38",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0063",
+        "line": "112",
+        "description": "GARDEN POST-OUTDOOR-GROUND LIGHT HOLDER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "177",
+        "description": "",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 47,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0392",
+        "line": "39",
+        "description": "(1)\"PVC-90 DEGREES",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0048",
+        "line": "113",
+        "description": "CLAMP-ACORN-GROUND",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "178",
+        "description": "",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 48,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "40",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0147",
+        "line": "114",
+        "description": "HANDY (UTILITY) BOX BLANK WITH 1/2\" KO",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "OTHER TRIM ACCESSORIES"
+      }
+    ]
+  },
+  {
+    "sourceRow": 49,
+    "legacyCode": "WRE-012-GN",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0107",
+        "line": "41",
+        "description": "(1)\"PVC-CONDUIT-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0187",
+        "line": "115",
+        "description": "HeadLOK Structural Wood Screws-LAG BOLTS 6\"",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0545",
+        "line": "179",
+        "description": "POP UP PLUG-BLACK-15A Kit C Rec Surface",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 50,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0169",
+        "line": "42",
+        "description": "(1/2)\"PVC-CONDUIT-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0017",
+        "line": "116",
+        "description": "ISLAND BOX CUTIN TAB-METAL",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0548",
+        "line": "180",
+        "description": "POP UP PLUG-BRASS-15A Kit C Rec Surface",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 51,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0226",
+        "line": "43",
+        "description": "1+(1/4)\"-SMURF TUBE-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0176",
+        "line": "117",
+        "description": "ISLAND SCREWS PAN HEAD",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0547",
+        "line": "181",
+        "description": "POP UP PLUG-BRONZE-15A Kit C Rec Surface",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 52,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0295",
+        "line": "44",
+        "description": "(2)\"PVC-45 DEGREE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0051",
+        "line": "118",
+        "description": "CLAMP-2\"-GAS-ALUMINUM-GROUND-LARGE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0418",
+        "line": "182",
+        "description": "POP UP PLUG-CHROME-15A Kit C Rec Surface",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 53,
+    "legacyCode": "MIS-920-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0191",
+        "line": "45",
+        "description": "(2)\"PVC-METER RISER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0047",
+        "line": "119",
+        "description": "LUGS -MECHANICAL",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0544",
+        "line": "183",
+        "description": "POP UP PLUG-NICKEL-15A Kit C Rec Surface",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 54,
+    "legacyCode": "HDW-020-15",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0263",
+        "line": "46",
+        "description": "(2)\"PVC-90 DEGREE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0138",
+        "line": "120",
+        "description": "MC-  STRAPS",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0546",
+        "line": "184",
+        "description": "POP UP PLUG-WHITE-15A Kit C Rec Surface",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 55,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0291",
+        "line": "47",
+        "description": "(2)\"PVC-COUPLING",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0549",
+        "line": "121",
+        "description": "NIPPLE(2X3)",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0192",
+        "line": "185",
+        "description": "24 V TRANSFORMER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 56,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0023",
+        "line": "48",
+        "description": "(2)\"PVC-MALE ADAPTER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0014",
+        "line": "122",
+        "description": "OCTOGAN METAL BOX",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0101",
+        "line": "186",
+        "description": "CHIME",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 57,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0170",
+        "line": "49",
+        "description": "(2)\"PVC-CONDUIT-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0015",
+        "line": "123",
+        "description": "PANCAKE-NOT FAN RATED-METAL",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0044",
+        "line": "187",
+        "description": "FLOOR PLUG-ROUND (TRIM)",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 58,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "50",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0148",
+        "line": "124",
+        "description": "PHONE  &  TV BOND",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0043",
+        "line": "188",
+        "description": "FLOOR PLUGS ROUND ROUGH",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 59,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "51",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0143",
+        "line": "125",
+        "description": "PIGTAIL-12AWG- 6'",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0045",
+        "line": "189",
+        "description": "FLOOR PLUG-SQUARE (TRIM)",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 60,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "52",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0142",
+        "line": "126",
+        "description": "PIGTAIL-12AWG- 3'",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0186",
+        "line": "190",
+        "description": "AIR SWITCH-Insinkerator Switch Kit-Chrome",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 61,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0350",
+        "line": "53",
+        "description": "(3)\"PVC-METER RISER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0021",
+        "line": "127",
+        "description": "QUICKFLASH 1/2\" FLASHING PANEL",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0099",
+        "line": "191",
+        "description": "SMOKE",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 62,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "54",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0244",
+        "line": "128",
+        "description": "RED-ELECTRICAL TAPE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0100",
+        "line": "192",
+        "description": "SMOKE COMBO CO",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 63,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "55",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0409",
+        "line": "129",
+        "description": "RED MULTICABLE STAPLE - CABLE STACKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "SMART SWITCHES, SENSORS, AND ACCESSORIES"
+      }
+    ]
+  },
+  {
+    "sourceRow": 64,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0310",
+        "line": "56",
+        "description": "(3/4)\"PVC-CONDUIT-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "130",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0298",
+        "line": "193",
+        "description": "DOOR SWITCH",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 65,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0463",
+        "line": "57",
+        "description": "GLUE PVC",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0412",
+        "line": "131",
+        "description": "SILICON-CLEAR",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0542",
+        "line": "194",
+        "description": "LENNAR RING DOORBELL",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 66,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0530",
+        "line": "58",
+        "description": "PETROFLEX 1\" ORANGE CONDUIT PULL STRING",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0098",
+        "line": "132",
+        "description": "SPARK GUARD",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0374",
+        "line": "195",
+        "description": "LEVITON DECORA WIFISMART LIGHT SWITCH WHITE",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 67,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0061",
+        "line": "59",
+        "description": "SEALTIGHT CONNECTORS-(1)\"",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0027",
+        "line": "133",
+        "description": "STAPLES",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0168",
+        "line": "196",
+        "description": "PHOTOCELL",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 68,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0141",
+        "line": "60",
+        "description": "SEALTIGHT CONNECTORS-(1/2)\"",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0456",
+        "line": "134",
+        "description": "TAPE (ZIP)-MERITAGE-BLACK",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0373",
+        "line": "197",
+        "description": "LEVITON 15A Type A/C Charger TR, White",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 69,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0232",
+        "line": "61",
+        "description": "SEALTIGHT-(1)\"",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0159",
+        "line": "135",
+        "description": "TOGGLE BOLTS",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "EATON BREAKERS, ARC FAULTS, AND ACCESSORIES (2)"
+      }
+    ]
+  },
+  {
+    "sourceRow": 70,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0231",
+        "line": "62",
+        "description": "SEALTIGHT-(1/2)\"",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0178",
+        "line": "136",
+        "description": "WHITE-ELECTRICAL TAPE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "198",
+        "description": "",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 71,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0025",
+        "line": "63",
+        "description": "(1/2)\"PVC-TA10-TERMINAL ADPT SCEPTER-MA",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0166",
+        "line": "137",
+        "description": "WIRE NUTS-RED-140 PER BAG",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "199",
+        "description": "",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 72,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "EATON BREAKERS, ARC FAULTS, AND ACCESSORIES (1)"
+      },
+      {
+        "quantity": "",
+        "code": "CE0304",
+        "line": "200",
+        "description": "EA CCV RUBBER BOOT KIT",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 73,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0596",
+        "line": "402",
+        "description": "SMART-CO-CARBON MONOXIDE/SMOKE COMBO",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0309",
+        "line": "64",
+        "description": "SUB PANEL-125A-SQD",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0614",
+        "line": "68",
+        "description": "LEVITON-SWITCH-15A RECEPTACLE BASE-DECORA EVOLVE",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 74,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "DISCONNECTS"
+      },
+      {
+        "quantity": "",
+        "code": "CE0611",
+        "line": "65",
+        "description": "LEVITON-SWITCH-15A COMPANION-DECORA EVOLVE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "69",
+        "description": "",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 75,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0587",
+        "line": "400",
+        "description": "FIRST ALERT DOORBELL",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0612",
+        "line": "66",
+        "description": "LEVITON-SWITCH-MULTIWAY BASE-DECORA EVOLVE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0287",
+        "line": "70",
+        "description": "EA 3 POLE CONTACTOR 30A",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 80,
+    "legacyCode": "WPL-020-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "SQUARE D BREAKERS, ARC FAULTS, PDF"
+      },
+      {
+        "quantity": "",
+        "code": "CE0439",
+        "line": "264",
+        "description": "DUPLEX-QUAD PLATE-2G PLUG COVER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "COPPER WIRE"
+      }
+    ]
+  },
+  {
+    "sourceRow": 81,
+    "legacyCode": "REC-020-WR",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0119",
+        "line": "201",
+        "description": "SQD 15A 1P BREAKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "265",
+        "description": "DUPLEX-GFCI-15A TR-WHITE-WHOLESALE-#235",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0205",
+        "line": "332",
+        "description": "(10/3)COPPER-PER FOOT-ORANGE",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 82,
+    "legacyCode": "HDW-832-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0120",
+        "line": "202",
+        "description": "SQD 20A 1P BREAKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "266",
+        "description": "SQD-DUPLEX-PLUG-WEATHER RESISTANT-#238",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0200",
+        "line": "333",
+        "description": "(12/2)COPPER-PER ROLL-YELLOW",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 83,
+    "legacyCode": "REC-888-LA",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0511",
+        "line": "203",
+        "description": "SQD 15A 2P BREAKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0073",
+        "line": "267",
+        "description": "DUPLEX-PLUG-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0202",
+        "line": "334",
+        "description": "(12/2)-UF-COPPER-PER FOOT-GREY",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 84,
+    "legacyCode": "GFI-888-LA",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0121",
+        "line": "204",
+        "description": "SQD 20A 2P BREAKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0074",
+        "line": "268",
+        "description": "DUPLEX-PLUG PLATE-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0203",
+        "line": "335",
+        "description": "(12/3)COPPER-PER ROLL-YELLOW",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 85,
+    "legacyCode": "GFI-015-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0131",
+        "line": "205",
+        "description": "SQD 25A 2P BREAKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "269",
+        "description": "SQD-DUPLEX-15A TR-W/ DUAL USB A-WHITE-#236",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0199",
+        "line": "336",
+        "description": "(14/2)COPPER-PER ROLL-WHITE",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 86,
+    "legacyCode": "GFI-015-WR",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0122",
+        "line": "206",
+        "description": "SQD 30A 2P BREAKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0072",
+        "line": "270",
+        "description": "DUPLEX-BROWN-PLATE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0201",
+        "line": "337",
+        "description": "(14/3)COPPER-PER ROLL-WHITE",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 87,
+    "legacyCode": "BKR-020-CB",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0123",
+        "line": "207",
+        "description": "SQD 35A 2P BREAKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0071",
+        "line": "271",
+        "description": "DUPLEX-BROWN-PLUG",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0207",
+        "line": "338",
+        "description": "(6/2)COPPER-PER FOOT-BLACK",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 88,
+    "legacyCode": "BKR-015-AF",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0124",
+        "line": "208",
+        "description": "SQD 40A 2P BREAKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0082",
+        "line": "272",
+        "description": "DECORA-SWITCH-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0209",
+        "line": "339",
+        "description": "(6/3)COPPER-PER FOOT-BLACK",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 89,
+    "legacyCode": "BKR-020-AF",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0132",
+        "line": "209",
+        "description": "SQD 45A 2P BREAKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0085",
+        "line": "273",
+        "description": "DECORA-1G PLATE-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0206",
+        "line": "340",
+        "description": "(8/2)COPPER-PER FOOT-BLACK",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 90,
+    "legacyCode": "BKR-015-10",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0125",
+        "line": "210",
+        "description": "SQD 50A 2P BREAKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0086",
+        "line": "274",
+        "description": "DECORA-2G PLATE-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0208",
+        "line": "341",
+        "description": "(8/3)COPPER-PER FOOT-BLACK",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 91,
+    "legacyCode": "BKR-025-20",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0126",
+        "line": "211",
+        "description": "SQD 60A 2P BREAKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0087",
+        "line": "275",
+        "description": "DECORA-3G PLATE-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "EATON BREAKERS, ARC FAULTS, AND ACCESSORIES (3)"
+      }
+    ]
+  },
+  {
+    "sourceRow": 92,
+    "legacyCode": "BKR-030-20",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0127",
+        "line": "212",
+        "description": "SQD 100A 2P BREAKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0088",
+        "line": "276",
+        "description": "DECORA-4G PLATE-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0479",
+        "line": "342",
+        "description": "EA 15A 1P TM BR  BREAKER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 93,
+    "legacyCode": "BKR-045-20",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0112",
+        "line": "213",
+        "description": "SQD 20A 2P GFI BREAKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0083",
+        "line": "277",
+        "description": "DECORA-3WAY SWITCH-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0480",
+        "line": "343",
+        "description": "EA 20A 1P TM BR BREAKER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 94,
+    "legacyCode": "BKR-100-20",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0114",
+        "line": "214",
+        "description": "SQD 30A 2P GFI BREAKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0084",
+        "line": "278",
+        "description": "DECORA-4WAY SWITCH-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "R00366",
+        "line": "344",
+        "description": "EA 15A 2P TM BR BREAKER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 95,
+    "legacyCode": "BKR-020-X2",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0116",
+        "line": "215",
+        "description": "SQD 40A 2P GFI BREAKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0075",
+        "line": "279",
+        "description": "TOGGLE-SWITCH-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0282",
+        "line": "345",
+        "description": "EA 20A 2P TM BR BREAKER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 96,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0118",
+        "line": "216",
+        "description": "SQD 50A 2P GFI BREAKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0078",
+        "line": "280",
+        "description": "TOGGLE-1G PLATE-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0285",
+        "line": "346",
+        "description": "EA 25A 2P TM BR BREAKER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 97,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0133",
+        "line": "217",
+        "description": "SQD BREAKER LOCKOFF",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0079",
+        "line": "281",
+        "description": "TOGGLE-2G PLATE-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0435",
+        "line": "347",
+        "description": "EA 30A 2P TM BR BREAKER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 98,
+    "legacyCode": "SWI-001-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0540",
+        "line": "218",
+        "description": "SQD GFI LOCKOFF",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0080",
+        "line": "282",
+        "description": "TOGGLE-3G PLATE-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0462",
+        "line": "348",
+        "description": "EA 35A 2P TM BR BREAKER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 99,
+    "legacyCode": "SWI-100-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0135",
+        "line": "219",
+        "description": "SQD 15A AFCI BREAKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0081",
+        "line": "283",
+        "description": "TOGGLE-4G PLATE-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0481",
+        "line": "349",
+        "description": "EA 40A 2P TM BR BREAKER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 100,
+    "legacyCode": "SWI-003-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0136",
+        "line": "220",
+        "description": "SQD 20A AFCI BREAKER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0076",
+        "line": "284",
+        "description": "TOGGLE-3WAY SWITCH-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0449",
+        "line": "350",
+        "description": "EA 45A 2P TM BR BREAKER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 101,
+    "legacyCode": "SWI-300-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0134",
+        "line": "221",
+        "description": "SQD 20A COMBO ARC/GROUND FAULT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0077",
+        "line": "285",
+        "description": "TOGGLE-4WAY-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0254",
+        "line": "351",
+        "description": "EA 50A 2P TM BR BREAKER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 102,
+    "legacyCode": "SWI-004-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0155",
+        "line": "222",
+        "description": "SQD SURGE PROTECTOR",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "TV/PHONE/ETHERNET PLATES AND ACCESSORIES"
+      },
+      {
+        "quantity": "",
+        "code": "CE0253",
+        "line": "352",
+        "description": "EA 60A 2P TM BR BREAKER (T-POLE)",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 103,
+    "legacyCode": "SWI-400-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0348",
+        "line": "223",
+        "description": "SQD PANEL MAIN BREAKER 200A",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0553",
+        "line": "286",
+        "description": "LEGRAND 2-PORT-PLATE-WHITE-1G WP DECORA",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0305",
+        "line": "353",
+        "description": "EA 100A 2P TM BR BREAKER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 104,
+    "legacyCode": "WPL-001-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0022",
+        "line": "224",
+        "description": "SQD GROUND BAR KIT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0552",
+        "line": "287",
+        "description": "LEGRAND 1-PORT-PLATE-WHITE-1G WP DECORA",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0452",
+        "line": "354",
+        "description": "EA 20A 2P GFCI BR BREAKER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 105,
+    "legacyCode": "WPL-101-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0408",
+        "line": "288",
+        "description": "CABLE MATTERS CAT 6 PASS THROUGH RJ45",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0445",
+        "line": "355",
+        "description": "EA 30A 2P GFCI BR BREAKER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 106,
+    "legacyCode": "WPL-002-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "SQUARE D PLUGS, FACEPLATES, GFCI, SWITCHES"
+      },
+      {
+        "quantity": "",
+        "code": "CE0407",
+        "line": "289",
+        "description": "CABLE MATTERS CAT 6 RJ-45 KEYSTONE JACK",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "356",
+        "description": "",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 107,
+    "legacyCode": "WPL-102-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0484",
+        "line": "225",
+        "description": "1-WAY-DECORA SWITCH-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0419",
+        "line": "290",
+        "description": "LEGRAND 2PT DECO TV/ETHERNET PORT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0446",
+        "line": "357",
+        "description": "EA 40A 2P GFCI BREAKER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 108,
+    "legacyCode": "WPL-003-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0485",
+        "line": "226",
+        "description": "3-WAY-DECORA SWITCH-W/OUT PLATE-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0554",
+        "line": "291",
+        "description": "Non-recessed Nckl F-coupler",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0457",
+        "line": "358",
+        "description": "EA BR LOCKOFF",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 109,
+    "legacyCode": "WPL-103-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0486",
+        "line": "227",
+        "description": "4-WAY-DECORA SWITCH-W/OUT PLATE-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0367",
+        "line": "292",
+        "description": "SQD DATA SOCKET, X SERIES, RJ45, CAT 6 WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0477",
+        "line": "359",
+        "description": "EA 15A 1P AFCI BREAKER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 110,
+    "legacyCode": "WPL-004-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0487",
+        "line": "228",
+        "description": "ROCKER PLATE(3-WAY)&(4-WAY)DECORA SWITCH",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0535",
+        "line": "293",
+        "description": "SQD SQR87C01WH TV SOCKET",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0478",
+        "line": "360",
+        "description": "EA 20A 1P AFCI BREAKER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 111,
+    "legacyCode": "WPL-104-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0498",
+        "line": "229",
+        "description": "1G DECORA WALL PLATE-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0536",
+        "line": "294",
+        "description": "SQD SQR87CT1WH TV/TELEPHONE SO",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0476",
+        "line": "361",
+        "description": "EA 20A 1P COMBO BREAKER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 112,
+    "legacyCode": "WPL-300-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0499",
+        "line": "230",
+        "description": "2G DECORA WALL PLATE-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0534",
+        "line": "295",
+        "description": "SQD SQR87T01WH TELEPHONE SOCKT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0483",
+        "line": "362",
+        "description": "EA SURGE PROTECTOR 2P BR",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 113,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0500",
+        "line": "231",
+        "description": "3G DECORA WALL PLATE-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0092",
+        "line": "296",
+        "description": "TV PLATES -WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0303",
+        "line": "363",
+        "description": "EA GROUND BAR 21 TERMINAL",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 114,
+    "legacyCode": "WPL-500-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0501",
+        "line": "232",
+        "description": "4G DECORA WALL PLATE-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0417",
+        "line": "297",
+        "description": "UNIVERSAL COMPRESSION COAX CONNECTOR",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0555",
+        "line": "364",
+        "description": "EA DUPLEX-20A GFCI TWR 125V WH-(T-POLE)",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 115,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0496",
+        "line": "233",
+        "description": "BLANK-1G-PLATE-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "OTHER WIRE"
+      },
+      {
+        "quantity": "",
+        "code": "CE0410",
+        "line": "365",
+        "description": "EA DUPLEX 15A GFCI TWR 125V WH",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 116,
+    "legacyCode": "WPL-111-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0497",
+        "line": "234",
+        "description": "BLANK-2G-WALL PLATE-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0241",
+        "line": "298",
+        "description": "#10 THHN-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "DEAKO SWITCHES AND FACEPLATE"
+      }
+    ]
+  },
+  {
+    "sourceRow": 117,
+    "legacyCode": "WPL-222-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0378",
+        "line": "235",
+        "description": "DUPLEX-GFCI-15A TR-WHITE-WHOLESALE",
+        "category": ""
+      },
+      {
         "quantity": "",
         "code": "",
         "line": "299",
