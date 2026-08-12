@@ -1,0 +1,1922 @@
+[
+  {
+    "sourceRow": 5,
+    "legacyCode": "PWR-125-12",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "BOXES AND BARS"
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "HARDWARE AND ACCESSORIES"
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "ELECTRICAL CONNECTORS AND ACCESSORIES"
+      }
+    ]
+  },
+  {
+    "sourceRow": 6,
+    "legacyCode": "BOX-100-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0033",
+        "line": "1",
+        "description": "1G-HORIZONTAL-PLASTIC",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0157",
+        "line": "72",
+        "description": "(6/32)-SCREWS",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0515",
+        "line": "138",
+        "description": "2 PORT CONNECTOR",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 7,
+    "legacyCode": "BOX-100-12",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0001",
+        "line": "2",
+        "description": "1G-NAIL ON-PLASTIC",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0158",
+        "line": "73",
+        "description": "(8/32)-SCREWS",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0516",
+        "line": "139",
+        "description": "4 PORT CONNECTOR",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 8,
+    "legacyCode": "BOX-006-20",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0034",
+        "line": "3",
+        "description": "2G-NAIL ON-PLASTIC",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0196",
+        "line": "74",
+        "description": "1\" 2 HOLE STRAP",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0430",
+        "line": "140",
+        "description": "DOLPHIN DC-100-P WIRE CONNECTOR",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 9,
+    "legacyCode": "BOX-122-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0035",
+        "line": "4",
+        "description": "3G-NAIL ON-PLASTIC",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0397",
+        "line": "75",
+        "description": "1\" ROMEX CONNECTOR",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "LIGHTING FIXTURE & ACCESSORIES"
+      }
+    ]
+  },
+  {
+    "sourceRow": 10,
+    "legacyCode": "BOX-001-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0036",
+        "line": "5",
+        "description": "4G-NAIL ON-PLASTIC",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0028",
+        "line": "76",
+        "description": "NAIL PLATE-(1\"X3\")-100 PER BOX",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0053",
+        "line": "141",
+        "description": "LIGHT-KEYLESS",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 11,
+    "legacyCode": "BOX-002-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0041",
+        "line": "6",
+        "description": "1G-CUTIN-SQUARE-PLASTIC",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0467",
+        "line": "77",
+        "description": "NAIL PLATE-(1.5\" X 9\")",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3079",
+        "line": "142",
+        "description": "LIGHT-DISC-BLACK-6\" LED-DL712MB-IMPRESSION",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 12,
+    "legacyCode": "BOX-003-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0198",
+        "line": "7",
+        "description": "2G-CUTIN-SQUARE-PLASTIC",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0029",
+        "line": "78",
+        "description": "NAIL PLATE-(5\"X18\")",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3038",
+        "line": "143",
+        "description": "LIGHT-DISC-WHITE-6\" LED-DL712WH-IMPRESSION",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 13,
+    "legacyCode": "BOX-004-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0042",
+        "line": "8",
+        "description": "POPIN(4/0)-ROUND-PLASTIC",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0163",
+        "line": "79",
+        "description": "1/2\" BLACK BUSHING",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0164",
+        "line": "144",
+        "description": "LIGHT-PUCK (3-pack)-WHITE",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 14,
+    "legacyCode": "BOX-005-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0037",
+        "line": "9",
+        "description": "NAIL ON LIGHT BOX",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0026",
+        "line": "80",
+        "description": "1/2\" LOCKNUT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3033",
+        "line": "145",
+        "description": "LIGHT-WRAP-2BULB-LED LAMP-(4'*2)",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 15,
+    "legacyCode": "BOX-006-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0039",
+        "line": "10",
+        "description": "BAR HANGER-LIGHT BOX",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0278",
+        "line": "81",
+        "description": "1/2\" PUSH PENNY",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3027",
+        "line": "146",
+        "description": "BULB-A19-LED-REGULAR",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 16,
+    "legacyCode": "BOX-500-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0040",
+        "line": "11",
+        "description": "CEILING BOX-FAN RATED-PLASTIC",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0395",
+        "line": "82",
+        "description": "1/2\" ROMEX CONNECTOR",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3059",
+        "line": "147",
+        "description": "BULB-CHANDELIER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 17,
+    "legacyCode": "BOX-001-12",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0020",
+        "line": "12",
+        "description": "ISLAND-TAB-PLASTIC",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0156",
+        "line": "83",
+        "description": "1/2\"-FLEX 90 -CONNECTOR-RANGE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3016",
+        "line": "148",
+        "description": "UCL-  6\"-LED-UNDER CABINET LIGHT",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 18,
+    "legacyCode": "BOX-005-11",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0038",
+        "line": "13",
+        "description": "METAL BAR HANGER-(16\"-24\")-ADJUSTABLE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0175",
+        "line": "84",
+        "description": "DRYWALL SCREWS-(1-1/4)\"X#6",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3047",
+        "line": "149",
+        "description": "UCL-12\"-LED-UNDER CABINET LIGHT",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 19,
+    "legacyCode": "BOX-001-12",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0260",
+        "line": "14",
+        "description": "REMODEL BAR HANGER (FAN BRACE)",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0190",
+        "line": "85",
+        "description": "2\" BONDING BUSHING",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3029",
+        "line": "150",
+        "description": "UCL-18\"-LED-UNDER CABINET LIGHT",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 20,
+    "legacyCode": "CAN-001-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0090",
+        "line": "15",
+        "description": "BUBBLE COVER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0024",
+        "line": "86",
+        "description": "2\" LOCKNUT FOR MALE ADAPT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3031",
+        "line": "151",
+        "description": "UCL-24\"-LED-UNDER CABINET LIGHT",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 21,
+    "legacyCode": "CAN-002-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0162",
+        "line": "87",
+        "description": "2\" OFFSET NIPPLE FOR METERBASE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3050",
+        "line": "152",
+        "description": "UCL-33\"-LED-UNDER CABINET LIGHT",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 22,
+    "legacyCode": "CTR-498-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "CANS AND TRIMS"
+      },
+      {
+        "quantity": "",
+        "code": "CE0189",
+        "line": "88",
+        "description": "2\" PLASTIC BUSHING",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3032",
+        "line": "153",
+        "description": "UCL-48\"-LED-UNDER CABINET LIGHT",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 23,
+    "legacyCode": "LED-460-CT",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "16",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0279",
+        "line": "89",
+        "description": "2\" PUSH PENNY",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3103",
+        "line": "154",
+        "description": "LIGHT-CEILING-FLUSH MOUNT-2 BULB-CH",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 24,
+    "legacyCode": "WRE-188-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0006",
+        "line": "17",
+        "description": "6\" STANDARD CAN",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0032",
+        "line": "90",
+        "description": "2\" ROMEX CONNECTOR",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3005",
+        "line": "155",
+        "description": "LIGHT-(CF-2WH-NK)-13\"-2 BULB-GLASS DOME WHITE",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 25,
+    "legacyCode": "CAN-601-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "18",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0016",
+        "line": "91",
+        "description": "2G MUD RING -METAL SQUARE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3080",
+        "line": "156",
+        "description": "LIGHT-(CFZ-212WH-NK) 3 BULB-GLASS DOME-NK-#20166",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 26,
+    "legacyCode": "CAN-603-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "19",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0172",
+        "line": "92",
+        "description": "3\" LOCKNUT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3019",
+        "line": "157",
+        "description": "LIGHT-1BULB-WHITE MUSHROOM GLASS-(LF6-2-NK)",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 27,
+    "legacyCode": "BOX-008-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0250",
+        "line": "20",
+        "description": "EXHAUST FAN-80CFM ROUGH HOUSING",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0139",
+        "line": "93",
+        "description": "3/4 ONE HOLE STRAPS",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3034",
+        "line": "158",
+        "description": "LIGHT-VANITY-(VSBB-3-NK&(G-423))-3BULB-TRACK W/ARMS",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 28,
+    "legacyCode": "BOX-800-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0251",
+        "line": "21",
+        "description": "EXHAUST FAN-80CFM TRIM",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0197",
+        "line": "94",
+        "description": "(1/2)\"-2HOLE-STRAP",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3002",
+        "line": "159",
+        "description": "LIGHT-PENDANT-FIXTURE-(MP-1-NK)-36\" 60W MINI-NK",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 29,
+    "legacyCode": "BRF-744-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "22",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0173",
+        "line": "95",
+        "description": "ANCHOR KIT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3042",
+        "line": "160",
+        "description": "GLASS-PENDANT-(MP-380ES)-WHITE CYLINDER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 30,
+    "legacyCode": "BRF-111-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "R00166",
+        "line": "23",
+        "description": "CAN TRIM-LED",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3030",
+        "line": "96",
+        "description": "BALANCING KIT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3021",
+        "line": "161",
+        "description": "GLASS-CHANDELIER-WHITE-(GC-725-WH)",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 31,
+    "legacyCode": "BRF-222-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "24",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0054",
+        "line": "97",
+        "description": "BELL BOX-1G",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3012",
+        "line": "162",
+        "description": "CEILING FAN-4 BULB-(U552 NK5SV/WL+4G431)-NK-#18920",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 32,
+    "legacyCode": "PWR-200-10",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "25",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0055",
+        "line": "98",
+        "description": "BELL BOX-1G COVER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3106",
+        "line": "163",
+        "description": "CEILING FAN-52\"-BASICS PRO-BLACK",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 33,
+    "legacyCode": "PWR-200-WP",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "26",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0056",
+        "line": "99",
+        "description": "BELL BOX-2G",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3028",
+        "line": "164",
+        "description": "DOWNROD-NK-(1FT)-CEILING FAN EXTENSION",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 34,
+    "legacyCode": "PWR-125-24",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "27",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0057",
+        "line": "100",
+        "description": "BELL BOX-2G COVER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3001",
+        "line": "165",
+        "description": "LIGHT-PORCH-CEILING MOUNT-(FP-1-BK)-WR-#13065",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 35,
+    "legacyCode": "WRE-142-RX",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "28",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0179",
+        "line": "101",
+        "description": "BLACK-ELECTRICAL TAPE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3022",
+        "line": "166",
+        "description": "LIGHT-PATIO-WALL MOUNT-(PL-1-BK)-WR-#13479",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 36,
+    "legacyCode": "WRE-143-RX",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "29",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0146",
+        "line": "102",
+        "description": "BLANK  4/0 -METAL -ROUND",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3007",
+        "line": "167",
+        "description": "LIGHT-COACH-(CL-21-BK)-SMALL-WR",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 37,
+    "legacyCode": "WRE-122-RX",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "30",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0012",
+        "line": "103",
+        "description": "BRICK BOX",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3023",
+        "line": "168",
+        "description": "LIGHT-COACH-(CL-451-BK)-LARGE-WR",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 38,
+    "legacyCode": "WRE-123-RX",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0007",
+        "line": "31",
+        "description": "SHALLOW CAN",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0277",
+        "line": "104",
+        "description": "BULB PROTECTOR ATTIC LIGHT CAGE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE3011",
+        "line": "169",
+        "description": "LIGHT-UPLIGHT(BULLET)-LED-WALL MOUNT-WR",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 39,
+    "legacyCode": "WRE-122-UF",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "32",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0049",
+        "line": "105",
+        "description": "CLAMP-COLD WATER GROUND",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0064",
+        "line": "170",
+        "description": "LIGHT-YARD LIGHT-LED 18W-WR",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 40,
+    "legacyCode": "WRE-102-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "33",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0174",
+        "…10271 tokens truncated…    {
+        "quantity": "",
+        "code": "",
+        "line": "299",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0524",
+        "line": "366",
+        "description": "DEAKO-1G PLATE",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 118,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0494",
+        "line": "236",
+        "description": "DUPLEX-15A TR-W/ DUAL USB A-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "300",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0520",
+        "line": "367",
+        "description": "DEAKO-1G SWITCH",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 119,
+    "legacyCode": "WPL-040-KO",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0489",
+        "line": "237",
+        "description": "DUPLEX-15A TR-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0233",
+        "line": "301",
+        "description": "#6 THHN-GREEN-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0525",
+        "line": "368",
+        "description": "DEAKO-2G PLATE",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 120,
+    "legacyCode": "MIS-900-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0490",
+        "line": "238",
+        "description": "DUPLEX-15A TR-WEATHER RESISTANT-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0240",
+        "line": "302",
+        "description": "#8 THHN-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0521",
+        "line": "369",
+        "description": "DEAKO-2G SWITCH",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 121,
+    "legacyCode": "REC-058-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0502",
+        "line": "239",
+        "description": "DUPLEX-PLUG PLATE-1G WALL-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0403",
+        "line": "303",
+        "description": "SECURITY-(22/2)-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0526",
+        "line": "370",
+        "description": "DEAKO-3G PLATE",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 122,
+    "legacyCode": "WPL-220-00",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0503",
+        "line": "240",
+        "description": "DRYER/RANGE PLATE-1G WALL-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0404",
+        "line": "304",
+        "description": "SECURITY-(22/4)-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0522",
+        "line": "371",
+        "description": "DEAKO-3G SWITCH",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 123,
+    "legacyCode": "MIS-101-DI",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0491",
+        "line": "241",
+        "description": "DRYER-OUTLET-30A-NEMA 14-30R",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0214",
+        "line": "305",
+        "description": "BELL-CHIME-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0537",
+        "line": "372",
+        "description": "DEAKO-3WAY",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 124,
+    "legacyCode": "SWI-500-10",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0492",
+        "line": "242",
+        "description": "RANGE-OUTLET-50A-NEMA 14-50R",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "306",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0527",
+        "line": "373",
+        "description": "DEAKO-4G PLATE",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 125,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0436",
+        "line": "243",
+        "description": "SQD-QUAD PLATE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0167",
+        "line": "307",
+        "description": "GROUND ROD-COPPER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0523",
+        "line": "374",
+        "description": "DEAKO-4G SWITCH",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 126,
+    "legacyCode": "MIS-420-BC",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0623",
+        "line": "403",
+        "description": "SQD- Z WAVE SMART SWITCH",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0228",
+        "line": "308",
+        "description": "LOAD-(3/0)COPPER-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0528",
+        "line": "375",
+        "description": "DEAKO-4WAY",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 127,
+    "legacyCode": "MIS-650-SM",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0229",
+        "line": "309",
+        "description": "LOAD-(4/0)ALUMINUM-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "PANELS, OTHER BOXES, AND ACCESSORIES"
+      }
+    ]
+  },
+  {
+    "sourceRow": 128,
+    "legacyCode": "MIS-600-CO",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "TAPE LIGHT KIT - AMERICAN LIGHTING"
+      },
+      {
+        "quantity": "",
+        "code": "CE0230",
+        "line": "310",
+        "description": "MC-CABLE-METAL COVERED-(12/2)COPPER-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0532",
+        "line": "376",
+        "description": "200A DISCONNECT W/MAIN BKR EN -SQD",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 129,
+    "legacyCode": "MIS-500-CH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0308",
+        "line": "244",
+        "description": "AL - TAPE LIGHT CONNECTOR",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0234",
+        "line": "311",
+        "description": "SECURITY-(20/2)-RED-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "377",
+        "description": "",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 130,
+    "legacyCode": "BRF-111-10",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0450",
+        "line": "245",
+        "description": "AL - TAPE LIGHT TRANSFORMER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "R00189",
+        "line": "312",
+        "description": "SER-(4/0)-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "378",
+        "description": "",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 131,
+    "legacyCode": "LED-560-CT",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0315",
+        "line": "246",
+        "description": "AL - TAPE LIGHT/FT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0215",
+        "line": "313",
+        "description": "SPEAKER-(16/2)-WHITE-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0458",
+        "line": "379",
+        "description": "SQD-PANEL-(40/80)-NO GROUND BAR",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 132,
+    "legacyCode": "CTR-400-BB",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "TAPE LIGHT KIT - KICHLER"
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "314",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0052",
+        "line": "380",
+        "description": "(12X12)JBOX-CONTRACTOR BOX",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 133,
+    "legacyCode": "CTR-498-WH",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0344",
+        "line": "247",
+        "description": "24V DIMMER/DRIVER LED KICHLER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "315",
+        "description": "",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0432",
+        "line": "381",
+        "description": "",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 134,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0346",
+        "line": "248",
+        "description": "LED TAPE LIGHT - KICHLER 100FT ROLL",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0211",
+        "line": "316",
+        "description": "CAT 5E-PHONE-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0284",
+        "line": "382",
+        "description": "PANEL BLANK- LARGE-EATON KNOCK FILLER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 135,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0345",
+        "line": "249",
+        "description": "LED TAPE LIGHT - KICHLER 8T CONNECTOR",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0212",
+        "line": "317",
+        "description": "RG6-TV CABLE-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0441",
+        "line": "383",
+        "description": "PANEL BLANK-SMALL-EATON",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 136,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "TAPE LIGHT KIT - LED CITY"
+      },
+      {
+        "quantity": "",
+        "code": "CE0265",
+        "line": "318",
+        "description": "CAT 6E-DATA-23GA 4PR-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0003",
+        "line": "384",
+        "description": "FIREMANS DISCONNECT",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 137,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0423",
+        "line": "250",
+        "description": "INDOOR SINGLE COLOR STRIP/ 4K TAPE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "COPPER CLAD WIRE"
+      },
+      {
+        "quantity": "",
+        "code": "CE0297.1",
+        "line": "385",
+        "description": "ON-Q 30\"-PANEL COVER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 138,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0424",
+        "line": "251",
+        "description": "SINGLE BARE CONNECTOR",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0218",
+        "line": "319",
+        "description": "(10/2)COPPERCLAD-PER ROLL-YELLOW",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0458.1",
+        "line": "386",
+        "description": "SQD-PANEL COVER-(40/80)",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 139,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0425",
+        "line": "252",
+        "description": "TRANSFORMER-DAVID WEEKLY",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0219",
+        "line": "320",
+        "description": "(10/3)COPPERCLAD-PER ROLL-YELLOW",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0005",
+        "line": "387",
+        "description": "METER BASE-DENTON U1980-O",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 140,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "WAC LIGHTING"
+      },
+      {
+        "quantity": "",
+        "code": "CE0216",
+        "line": "321",
+        "description": "(12/2)COPPERCLAD-PER ROLL-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0004",
+        "line": "388",
+        "description": "METER BASE-REGULAR U1917E",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 141,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0543",
+        "line": "253",
+        "description": "LED BUTTON LIGHT 24 LED 2 INCH WHITE PUCK LIGHT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0217",
+        "line": "322",
+        "description": "(12/3)COPPERCLAD-PER ROLL-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "389",
+        "description": "",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 142,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0328",
+        "line": "254",
+        "description": "WAC LIGHTING 120V.24V 100W TRANSFORMER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0224",
+        "line": "323",
+        "description": "(4/2)COPPERCLAD-PER FOOT-BLACK",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "390",
+        "description": "",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 143,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "EATON PLUGS, FACEPLATES, GFI, SWITCHES"
+      },
+      {
+        "quantity": "",
+        "code": "CE0225",
+        "line": "324",
+        "description": "(4/3)COPPERCLAD-PER FOOT-BLACK",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0297",
+        "line": "391",
+        "description": "ON-Q 30\" PANEL with COVER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 144,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0149",
+        "line": "255",
+        "description": "EATON-2G-1G TOGGLE/ 1G DECORA COMBO PLATE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0222",
+        "line": "325",
+        "description": "(6/2)COPPERCLAD-PER FOOT-BLACK",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0405",
+        "line": "392",
+        "description": "ON-Q PANEL LOCK",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 145,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0150",
+        "line": "256",
+        "description": "EATON-3G-2G TOGGLE/ 1G DECORA COMBO PLATE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0223",
+        "line": "326",
+        "description": "(6/3)COPPERCLAD-PER FOOT-BLACK",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "393",
+        "description": "",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 146,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "",
+        "line": "257",
+        "description": "EATON-4G-3G TOGGLE/ 1G DECORA COMBO PLATE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0220",
+        "line": "327",
+        "description": "(8/2)COPPERCLAD-PER FOOT-ORANGE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0475",
+        "line": "394",
+        "description": "EATON-PANEL-MLO with GROUND BAR",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 147,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0183",
+        "line": "258",
+        "description": "DIMMER-UNIVERSAL DECORA-W/PRESET",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0221",
+        "line": "328",
+        "description": "(8/3)COPPERCLAD-PER FOOT-ORANGE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "R00252",
+        "line": "395",
+        "description": "SQD-200A-WEATHER RESISTANT PANEL",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 148,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0152",
+        "line": "259",
+        "description": "BLANK-1G-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "PANELS, OTHER BOXES, AND ACCESSORIES"
+      },
+      {
+        "quantity": "",
+        "code": "CE0442",
+        "line": "396",
+        "description": "SQD-S106-SCREWS-PANEL COVER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 149,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0153",
+        "line": "260",
+        "description": "BLANK-2G-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0475.1",
+        "line": "329",
+        "description": "EA 200A LOADCENTER COVER",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0459",
+        "line": "397",
+        "description": "SQD-YELLOW SERVICE BARRIER/LUG COVER",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 150,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0144",
+        "line": "261",
+        "description": "FACELESS GFCI-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": "COPPER WIRE"
+      },
+      {
+        "quantity": "",
+        "code": "CE0239",
+        "line": "398",
+        "description": "WEATHERRESISTANT-PANEL-200A-(20/40 CIRCUIT)?",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 151,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0320",
+        "line": "262",
+        "description": "DUPLEX 15A-DECORA STYLE-WHITE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0213",
+        "line": "330",
+        "description": "#4 BARE COPPER-PER FOOT",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0140",
+        "line": "399",
+        "description": "AC DISCONNECT",
+        "category": ""
+      }
+    ]
+  },
+  {
+    "sourceRow": 152,
+    "legacyCode": "",
+    "groups": [
+      {
+        "quantity": "",
+        "code": "CE0377",
+        "line": "263",
+        "description": "DUPLEX-20A TR WR-(T-POLE)",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "CE0204",
+        "line": "331",
+        "description": "(10/2)COPPER-PER FOOT-ORANGE",
+        "category": ""
+      },
+      {
+        "quantity": "",
+        "code": "",
+        "line": "",
+        "description": "",
+        "category": ""
+      }
+    ]
+  }
+]
