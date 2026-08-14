@@ -18,6 +18,9 @@ button { cursor:pointer; }
 .button:disabled { cursor:wait; opacity:.6; transform:none; }
 .button.primary { color:#fff; background:var(--navy); box-shadow:0 4px 10px rgba(0,39,91,.2); }
 .button.admin-panel { display:inline-flex; align-items:center; justify-content:center; color:#fff; background:#6d28a8; box-shadow:0 4px 10px rgba(109,40,168,.22); text-decoration:none; }
+.start-modal { position:relative; }
+.button.admin-panel-modal { position:absolute; top:24px; right:28px; min-height:34px; padding:0 12px; font-size:11px; }
+@media (max-width:760px) { .button.admin-panel-modal { position:static; margin:0 0 18px auto; width:max-content; } }
 .button.secondary { color:var(--navy); background:#e9f0f8; }
 .button.ghost { color:#34465c; background:#fff; border-color:#cbd5df; }
 .button.danger { color:#fff; background:#a7353b; box-shadow:0 4px 10px rgba(167,53,59,.18); }
