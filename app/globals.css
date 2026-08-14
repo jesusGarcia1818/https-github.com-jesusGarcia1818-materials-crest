@@ -17,6 +17,7 @@ button { cursor:pointer; }
 .button:hover { filter:brightness(.96); transform:translateY(-1px); }
 .button:disabled { cursor:wait; opacity:.6; transform:none; }
 .button.primary { color:#fff; background:var(--navy); box-shadow:0 4px 10px rgba(0,39,91,.2); }
+.button.admin-panel { display:inline-flex; align-items:center; justify-content:center; color:#fff; background:#6d28a8; box-shadow:0 4px 10px rgba(109,40,168,.22); text-decoration:none; }
 .button.secondary { color:var(--navy); background:#e9f0f8; }
 .button.ghost { color:#34465c; background:#fff; border-color:#cbd5df; }
 .button.danger { color:#fff; background:#a7353b; box-shadow:0 4px 10px rgba(167,53,59,.18); }
