@@ -261,6 +261,7 @@ export function MaterialRequestForm() {
       <header className="app-header no-print">
         <button className="brand brand-button" type="button" onClick={() => window.location.reload()} aria-label="Reload material request page"><img src="/crest-electrical-solutions-logo.png" alt="Crest Electrical Solutions" /></button>
         <div className="header-actions">
+          <a className="button admin-panel" href="https://crest-material-reports.crest-5017.chatgpt.site/login">Panel Administrador</a>
           <button className="button cart-button" onClick={() => setCartOpen(true)}>Cart <span>{cart.length}</span></button>
           <button className="button ghost" onClick={() => { setLookupMode(true); setModalOpen(true); }}>Change Request</button>
           <button className="button secondary" disabled={saving} onClick={() => void save()}>{saving ? "Saving..." : "Save Draft"}</button>
