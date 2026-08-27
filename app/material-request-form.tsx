@@ -5,6 +5,7 @@ import materialRows from "./materials.json";
 import materialItemNumbers from "./material-item-numbers.json";
 
 type QuantityMap = Record<string, string>;
+type RequestType = "request" | "return";
 type Item = { key: string; sourceRow: number; groupIndex: number; legacyCode: string; code: string; itemNumber: string; line: string; description: string; category: string };
 type SavedRequest = { code: string; name: string; address: string; workOrder?: string; requestDate?: string; quantities: QuantityMap; version: number };
 type RequestItemPayload = {
@@ -81,23 +82,26 @@ export function MaterialRequestForm() {
   const [cart, setCart] = useState<CartRequest[]>([]);
   const [cartOpen, setCartOpen] = useState(false);
   const [checkoutOpen, setCheckoutOpen] = useState(false);
+  const [requestType, setRequestType] = useState<RequestType | null>(null);
 
   useEffect(() => {
+    if (!requestType) { setCart([]); return; }
+    const storageKey = `${cartStorageKey}-${requestType}`;
     try {
-      const stored = window.sessionStorage.getItem(cartStorageKey);
-      if (stored) {
-        const parsed = JSON.parse(stored) as unknown;
-        if (Array.isArray(parsed)) setCart(parsed as CartRequest[]);
-      }
+      const stored = window.sessionStorage.getItem(storageKey);
+      setCart(stored && Array.isArray(JSON.parse(stored)) ? JSON.parse(stored) as CartRequest[] : []);
     } catch {
-      window.sessionStorage.removeItem(cartStorageKey);
+      window.sessionStorage.removeItem(storageKey);
+      setCart([]);
     }
-  }, []);
+  }, [requestType]);
 
   useEffect(() => {
-    if (cart.length) window.sessionStorage.setItem(cartStorageKey, JSON.stringify(cart));
-    else window.sessionStorage.removeItem(cartStorageKey);
-  }, [cart]);
+    if (!requestType) return;
+    const storageKey = `${cartStorageKey}-${requestType}`;
+    if (cart.length) window.sessionStorage.setItem(storageKey, JSON.stringify(cart));
+    else window.sessionStorage.removeItem(storageKey);
+  }, [cart, requestType]);
 
   const selected = useMemo(() => items.filter((item) => Number(quantities[item.key]) > 0), [quantities]);
   const totalUnits = useMemo(() => selected.reduce((sum, item) => sum + Number(quantities[item.key]), 0), [selected, quantities]);
@@ -109,8 +113,8 @@ export function MaterialRequestForm() {
   const group = (list: Item[]) => categories.map((groupName) => ({ name: groupName, rows: list.filter((item) => item.category === groupName) })).filter((entry) => entry.rows.length);
 
   function valid() {
-    if (address.trim().length < 2 || !/^\d+$/.test(workOrder.trim()) || name.trim().length < 2) {
-      setNotice("Complete Address, a numeric Work Order, and Name before starting.");
+    if (address.trim().length < 2 || !/^\d+$/.test(workOrder.trim()) || name.trim().length < 2 || !/^\d{4}-\d{2}-\d{2}$/.test(requestDate)) {
+      setNotice("Complete Address, a numeric Work Order, Name, and Date before starting.");
       return false;
     }
     return true;
@@ -144,13 +148,13 @@ export function MaterialRequestForm() {
   }
 
   function currentRequest(requireItems = true): CartRequest | null {
-    if (!valid()) return null;
+    if (!requestType || !valid()) return null;
     if (!/^(?:\d{4}|MAT-[0-9]{8}-[A-Z0-9]{4,12})$/.test(code)) { setNotice("The request number is not ready. Start the request again."); return null; }
     if (requireItems && !selected.length) { setNotice("Select at least one material before printing."); return null; }
     const requestItems: RequestItemPayload[] = selected.map((item) => ({
       material_key: item.key, source_row: item.sourceRow, group_index: item.groupIndex,
       legacy_code: item.legacyCode, material_code: item.code, item_number: item.itemNumber, line_number: item.line,
-      description: item.description, category: item.category, quantity: Number(quantities[item.key]),
+      description: item.description, category: item.category, quantity: requestType === "return" ? -Number(quantities[item.key]) : Number(quantities[item.key]),
     }));
     return { code, name: name.trim(), address: address.trim(), workOrder: workOrder.trim(), requestDate, version, items: requestItems };
   }
@@ -159,7 +163,7 @@ export function MaterialRequestForm() {
     const normalizedRequest = { ...request, items: request.items.map((item) => ({ ...item, item_number: item.item_number || itemNumberFor(item.material_code) })) };
     const response = await fetch("/api/material-requests", {
       method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...normalizedRequest, type: "request", status }),
+      body: JSON.stringify({ ...normalizedRequest, type: requestType || "request", status }),
     });
     const payload = await response.json();
     if (!response.ok) throw new Error(payload.error || "The request could not be saved.");
@@ -171,7 +175,7 @@ export function MaterialRequestForm() {
     setSaving(true); setNotice(status === "printed" ? "Creating PDF and sending request by email..." : "Saving request...");
     try {
       await submitRequest(request, status);
-      setNotice(status === "printed" ? "Request sent successfully to materials@dfwcrest.com." : "Draft saved successfully.");
+      setNotice(status === "printed" ? `${requestType === "return" ? "Return" : "Request"} sent successfully to materials@dfwcrest.com.` : "Draft saved successfully.");
       return true;
     } catch (error) {
       setNotice(error instanceof Error ? error.message : "The request could not be saved.");
@@ -237,7 +241,7 @@ export function MaterialRequestForm() {
       }
       setCart([]);
       reset();
-      setNotice(`${requests.length} request${requests.length === 1 ? "" : "s"} sent successfully to materials@dfwcrest.com. Cart is empty.`);
+      setNotice(`${requests.length} ${requestType === "return" ? "return" : "request"}${requests.length === 1 ? "" : "s"} sent successfully to materials@dfwcrest.com. Cart is empty.`);
     } catch (error) {
       setNotice(error instanceof Error ? `${error.message} The cart was kept so you can try again.` : "The requests could not be sent. The cart was kept.");
     } finally {
@@ -278,7 +282,7 @@ export function MaterialRequestForm() {
 
       <section className="materials-workspace no-print">
         <div className="workspace-title">
-          <div><p className="eyebrow">MATERIAL REQUEST</p><h1>Select Materials</h1><p>Search the list, filter by category, and enter quantities only for the materials needed.</p></div>
+          <div><p className="eyebrow">{requestType === "return" ? "MATERIAL RETURN" : "MATERIAL REQUEST"}</p><h1>{requestType === "return" ? "Return Materials" : "Select Materials"}</h1><p>Search the list, filter by category, and enter quantities only for the materials needed.</p></div>
           <div className="selection-stats"><span><b>{selected.length}</b> selected</span><span><b>{totalUnits}</b> total units</span></div>
         </div>
         <div className="material-filters">
@@ -304,7 +308,7 @@ export function MaterialRequestForm() {
       <div className="notice no-print" role="status"><span>â—</span>{notice}</div>
 
       <section className="print-sheet" aria-hidden="true">
-        <div className="print-brand-row"><img src="/crest-electrical-solutions-logo.png" alt="" /><div><h1>MATERIAL REQUEST</h1><p>{code} - V{version}</p></div></div>
+        <div className="print-brand-row"><img src="/crest-electrical-solutions-logo.png" alt="" /><div><h1>{requestType === "return" ? "MATERIAL RETURN" : "MATERIAL REQUEST"}</h1><p>{code} - V{version}</p></div></div>
         <div className="print-meta">
           <div><span>NAME</span><strong>{name}</strong></div><div><span>ADDRESS</span><strong>{address}</strong></div>
           <div><span>WORK ORDER</span><strong>{workOrder}</strong></div><div><span>DATE</span><strong>{showDate(requestDate)}</strong></div>
@@ -318,7 +322,7 @@ export function MaterialRequestForm() {
       <footer className="mobile-actions no-print"><button className="button cart-button" onClick={() => setCartOpen(true)}>Cart ({cart.length})</button><button className="button primary" onClick={reviewPrint}>Print</button></footer>
 
       {checkoutOpen && <div className="modal-backdrop no-print"><section className="start-modal checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
-        <p className="eyebrow">REQUEST READY</p><h2 id="checkout-title">Would you like to add another request?</h2>
+        <p className="eyebrow">{requestType === "return" ? "RETURN READY" : "REQUEST READY"}</p><h2 id="checkout-title">Would you like to add another {requestType === "return" ? "return" : "request"}?</h2>
         <p className="modal-copy">This request has {selected.length} selected material{selected.length === 1 ? "" : "s"}. There {cart.length === 1 ? "is" : "are"} already {cart.length} request{cart.length === 1 ? "" : "s"} in the cart.</p>
         <div className="checkout-summary"><strong>{code}</strong><span>{address}</span><span>WO {workOrder}</span></div>
         <div className="modal-actions checkout-actions">
@@ -341,8 +345,15 @@ export function MaterialRequestForm() {
       {modalOpen && <div className="modal-backdrop no-print"><section className="start-modal" role="dialog" aria-modal="true" aria-labelledby="start-title">
         <a className="button admin-panel admin-panel-modal" href="https://crest-material-reports.crest-5017.chatgpt.site/login">Panel Administrador</a>
         <div className="modal-brand"><img src="/crest-electrical-solutions-logo.png" alt="Crest Electrical Solutions" /></div>
-        {!lookupMode && !deleteMode ? <>
-          <p className="eyebrow">NEW MATERIAL REQUEST</p><h2 id="start-title">Request Information</h2><p className="modal-copy">Enter the job information before selecting materials.</p>
+        {!requestType ? <>
+          <p className="eyebrow">MATERIALS PORTAL</p><h2 id="start-title">Choose an option</h2><p className="modal-copy">Select the type of material transaction you need to process.</p>
+          <div className="modal-actions start-actions">
+            <button className="button primary" onClick={() => { setRequestType("request"); setLookupMode(false); setDeleteMode(false); }}>Start Request</button>
+            <button className="button secondary" onClick={() => { setRequestType("return"); setLookupMode(false); setDeleteMode(false); }}>Return</button>
+            <button className="button ghost" disabled title="Coming soon">Breaker Swap</button>
+          </div>
+        </> : !lookupMode && !deleteMode ? <>
+          <p className="eyebrow">{requestType === "return" ? "MATERIAL RETURN" : "NEW MATERIAL REQUEST"}</p><h2 id="start-title">{requestType === "return" ? "Return Information" : "Request Information"}</h2><p className="modal-copy">Enter the job information before selecting materials.</p>
           <div className="modal-fields">
             <label><span>Address</span><input autoFocus value={address} onChange={(event) => setAddress(event.target.value)} placeholder="Jobsite address" /></label>
             <label><span>Work Order</span><input inputMode="numeric" pattern="[0-9]*" value={workOrder} onChange={(event) => setWorkOrder(event.target.value.replace(/\D/g, ""))} placeholder="Numbers only" /></label>
@@ -359,7 +370,7 @@ export function MaterialRequestForm() {
               <button className="button primary start-cart-send" disabled={saving} onClick={() => void sendRequests(cart)}>Send All Requests ({cart.length})</button>
             </>}
           </div>
-          <div className="modal-actions start-actions"><button className="button danger" onClick={() => { setDeleteMode(true); setLookupMode(false); }}>Delete Request</button><button className="button ghost" onClick={() => { setLookupMode(true); setDeleteMode(false); }}>Change Request</button><button className="button primary" disabled={saving} onClick={() => void start()}>{saving ? "Generating..." : "Start Request"}</button></div>
+          <div className="modal-actions start-actions"><button className="button danger" onClick={() => { setDeleteMode(true); setLookupMode(false); }}>Delete Request</button><button className="button ghost" onClick={() => { setLookupMode(true); setDeleteMode(false); }}>Change Request</button><button className="button primary" disabled={saving} onClick={() => void start()}>{saving ? "Generating..." : requestType === "return" ? "Start Return" : "Start Request"}</button></div>
         </> : lookupMode ? <>
           <p className="eyebrow">EXISTING REQUEST</p><h2 id="start-title">Change Request</h2><p className="modal-copy">Enter the unique code printed on the previous request.</p>
           <label className="lookup-field"><span>Request Code</span><input autoFocus inputMode="numeric" value={lookupCode} onChange={(event) => setLookupCode(event.target.value.toUpperCase())} placeholder="4-digit code" /></label>
