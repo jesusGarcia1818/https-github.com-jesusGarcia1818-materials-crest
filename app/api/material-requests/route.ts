@@ -51,6 +51,7 @@ function bytesToBase64(bytes: Uint8Array) {
 }
 
 async function sendRequestEmail(input: {
+  type: "request" | "return";
   code: string;
   name: string;
   address: string;
@@ -61,7 +62,8 @@ async function sendRequestEmail(input: {
 }) {
   const { apiKey, from, to } = emailConfiguration();
   const pdf = await createMaterialRequestPdf(input);
-  const subject = `Material Request ${input.code} - WO ${input.workOrder}`;
+  const documentLabel = input.type === "return" ? "Material Return" : "Material Request";
+  const subject = `${documentLabel} ${input.code} - WO ${input.workOrder}`;
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {
@@ -73,8 +75,8 @@ async function sendRequestEmail(input: {
       from,
       to: [to],
       subject,
-      html: `<h2>Material Request</h2><p><strong>Request:</strong> ${escapeHtml(input.code)}</p><p><strong>Name:</strong> ${escapeHtml(input.name)}<br><strong>Address:</strong> ${escapeHtml(input.address)}<br><strong>Work Order:</strong> ${escapeHtml(input.workOrder)}<br><strong>Date:</strong> ${escapeHtml(input.requestDate)}</p><p>The complete material request is attached as a PDF.</p>`,
-      text: `Material Request\nRequest: ${input.code}\nName: ${input.name}\nAddress: ${input.address}\nWork Order: ${input.workOrder}\nDate: ${input.requestDate}\n\nThe complete material request is attached as a PDF.`,
+      html: `<h2>${documentLabel}</h2><p><strong>${input.type === "return" ? "Return" : "Request"}:</strong> ${escapeHtml(input.code)}</p><p><strong>Name:</strong> ${escapeHtml(input.name)}<br><strong>Address:</strong> ${escapeHtml(input.address)}<br><strong>Work Order:</strong> ${escapeHtml(input.workOrder)}<br><strong>Date:</strong> ${escapeHtml(input.requestDate)}</p><p>The complete material document is attached as a PDF.</p>`,
+      text: `${documentLabel}\n${input.type === "return" ? "Return" : "Request"}: ${input.code}\nName: ${input.name}\nAddress: ${input.address}\nWork Order: ${input.workOrder}\nDate: ${input.requestDate}\n\nThe complete material document is attached as a PDF.`,
       attachments: [{
         content: bytesToBase64(pdf),
         filename: `${input.code}-V${input.version}.pdf`,
@@ -155,7 +157,11 @@ export async function POST(request: NextRequest) {
     const type = input.type === "return" ? "return" : "request";
     const status = String(input.status || "draft");
     const version = Number(input.version);
-    const items = Array.isArray(input.items) ? input.items.slice(0, 500) : [];
+    const rawItems = Array.isArray(input.items) ? input.items.slice(0, 500) : [];
+    const items = rawItems.map((item: Record<string, unknown>) => ({
+      ...item,
+      quantity: type === "return" ? -Math.abs(Number(item.quantity)) : Math.abs(Number(item.quantity)),
+    }));
     const eventType = status === "printed" ? "printed" : version > 1 ? "modified" : "saved";
 
     if (!requestCodePattern.test(code) || name.length < 2 || address.length < 2 || !/^\d+$/.test(workOrder) || !/^\d{4}-\d{2}-\d{2}$/.test(requestDate) || !allowedStatuses.has(status) || !Number.isInteger(version) || version < 1) {
@@ -170,13 +176,13 @@ export async function POST(request: NextRequest) {
       description: String(item.description || "").slice(0, 300),
       quantity: Number(item.quantity),
     }));
-    if (status === "printed" && (!emailItems.length || emailItems.some((item) => !Number.isFinite(item.quantity) || item.quantity <= 0 || item.quantity > 999999))) {
+    if (status === "printed" && (!emailItems.length || emailItems.some((item) => !Number.isFinite(item.quantity) || Math.abs(item.quantity) <= 0 || Math.abs(item.quantity) > 999999))) {
       return NextResponse.json({ error: "Selecciona al menos un material con una cantidad vÃ¡lida" }, { status: 400 });
     }
 
     let emailId: string | undefined;
     if (status === "printed") {
-      emailId = await sendRequestEmail({ code, name, address, workOrder, requestDate, version, items: emailItems });
+      emailId = await sendRequestEmail({ type, code, name, address, workOrder, requestDate, version, items: emailItems });
     }
 
     const saved = await callRpc("save_material_request", {
