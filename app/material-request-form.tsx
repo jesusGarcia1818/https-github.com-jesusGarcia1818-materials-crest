@@ -266,18 +266,18 @@ export function MaterialRequestForm() {
         <button className="brand brand-button" type="button" onClick={() => window.location.reload()} aria-label="Reload material request page"><img src="/crest-electrical-solutions-logo.png" alt="Crest Electrical Solutions" /></button>
         <div className="header-actions">
           <button className="button cart-button" onClick={() => setCartOpen(true)}>Cart <span>{cart.length}</span></button>
-          <button className="button ghost" onClick={() => { setLookupMode(true); setModalOpen(true); }}>Change Request</button>
-          <button className="button secondary" disabled={saving} onClick={() => void save()}>{saving ? "Saving..." : "Save Draft"}</button>
+          <button className="button ghost" onClick={() => { setLookupMode(true); setModalOpen(true); }}>{requestType === "return" ? "Change Return" : "Change Request"}</button>
+          <button className="button secondary" disabled={saving} onClick={() => void save()}>{saving ? "Saving..." : requestType === "return" ? "Save Return Draft" : "Save Draft"}</button>
           <button className="button primary" disabled={saving} onClick={reviewPrint}>{requestType === "return" ? "Print Return" : "Print Request"}</button>
         </div>
       </header>
 
       <section className="request-summary no-print">
-        <div><span>REQUEST</span><strong>{code || "Generating..."}</strong></div>
+        <div><span>{requestType === "return" ? "RETURN" : "REQUEST"}</span><strong>{code || "Generating..."}</strong></div>
         <div><span>NAME</span><strong>{name || "-"}</strong></div>
         <div><span>WORK ORDER</span><strong>{workOrder || "-"}</strong></div>
         <div><span>DATE</span><strong>{showDate(requestDate)}</strong></div>
-        <button className="new-link" onClick={() => reset()}>+ New Request</button>
+        <button className="new-link" onClick={() => reset()}>+ New {requestType === "return" ? "Return" : "Request"}</button>
       </section>
 
       <section className="materials-workspace no-print">
@@ -333,8 +333,8 @@ export function MaterialRequestForm() {
       </section></div>}
 
       {cartOpen && <div className="modal-backdrop no-print"><section className="start-modal cart-modal" role="dialog" aria-modal="true" aria-labelledby="cart-title">
-        <p className="eyebrow">REQUEST CART</p><h2 id="cart-title">Saved Requests</h2>
-        <p className="modal-copy">These requests are waiting to be sent.</p>
+        <p className="eyebrow">{requestType === "return" ? "RETURN CART" : "REQUEST CART"}</p><h2 id="cart-title">Saved {requestType === "return" ? "Returns" : "Requests"}</h2>
+        <p className="modal-copy">These {requestType === "return" ? "returns" : "requests"} are waiting to be sent.</p>
         {!cart.length ? <div className="cart-empty">The cart is empty.</div> : <div className="cart-list">{cart.map((request) => <article className="cart-item" key={request.code}>
           <div><strong>{request.address}</strong><span>{request.code}</span><span>WO {request.workOrder} Â· {request.items.length} items</span></div>
           <button type="button" onClick={() => removeFromCart(request.code)} aria-label={`Remove ${request.code} from cart`}>Remove</button>
@@ -361,25 +361,25 @@ export function MaterialRequestForm() {
             <label><span>Date</span><input value={showDate(requestDate)} readOnly /></label>
           </div>
           <div className="start-cart-panel">
-            <div className="start-cart-title"><strong>Request Cart</strong><span>{cart.length}</span></div>
+            <div className="start-cart-title"><strong>{requestType === "return" ? "Return Cart" : "Request Cart"}</strong><span>{cart.length}</span></div>
             {!cart.length ? <p>The cart is empty.</p> : <>
               <div className="start-cart-list">{cart.map((request) => <article className="cart-item" key={request.code}>
                 <div><strong>{request.address}</strong><span>{request.code} Â· WO {request.workOrder} Â· {request.items.length} items</span></div>
                 <button type="button" onClick={() => removeFromCart(request.code)} aria-label={`Remove ${request.code} from cart`}>Remove</button>
               </article>)}</div>
-              <button className="button primary start-cart-send" disabled={saving} onClick={() => void sendRequests(cart)}>Send All Requests ({cart.length})</button>
+              <button className="button primary start-cart-send" disabled={saving} onClick={() => void sendRequests(cart)}>Send All {requestType === "return" ? "Returns" : "Requests"} ({cart.length})</button>
             </>}
           </div>
-          <div className="modal-actions start-actions"><button className="button danger" onClick={() => { setDeleteMode(true); setLookupMode(false); }}>Delete Request</button><button className="button ghost" onClick={() => { setLookupMode(true); setDeleteMode(false); }}>Change Request</button><button className="button primary" disabled={saving} onClick={() => void start()}>{saving ? "Generating..." : requestType === "return" ? "Start Return" : "Start Request"}</button></div>
+          <div className="modal-actions start-actions"><button className="button danger" onClick={() => { setDeleteMode(true); setLookupMode(false); }}>Delete {requestType === "return" ? "Return" : "Request"}</button><button className="button ghost" onClick={() => { setLookupMode(true); setDeleteMode(false); }}>Change {requestType === "return" ? "Return" : "Request"}</button><button className="button primary" disabled={saving} onClick={() => void start()}>{saving ? "Generating..." : requestType === "return" ? "Start Return" : "Start Request"}</button></div>
         </> : lookupMode ? <>
-          <p className="eyebrow">EXISTING REQUEST</p><h2 id="start-title">Change Request</h2><p className="modal-copy">Enter the unique code printed on the previous request.</p>
-          <label className="lookup-field"><span>Request Code</span><input autoFocus inputMode="numeric" value={lookupCode} onChange={(event) => setLookupCode(event.target.value.toUpperCase())} placeholder="4-digit code" /></label>
-          <div className="modal-actions"><button className="button ghost" onClick={() => setLookupMode(false)}>Back</button><button className="button primary" disabled={saving} onClick={() => void openRequest()}>{saving ? "Opening..." : "Open Request"}</button></div>
+          <p className="eyebrow">{requestType === "return" ? "EXISTING RETURN" : "EXISTING REQUEST"}</p><h2 id="start-title">Change {requestType === "return" ? "Return" : "Request"}</h2><p className="modal-copy">Enter the unique code printed on the previous {requestType === "return" ? "return" : "request"}.</p>
+          <label className="lookup-field"><span>{requestType === "return" ? "Return Code" : "Request Code"}</span><input autoFocus inputMode="numeric" value={lookupCode} onChange={(event) => setLookupCode(event.target.value.toUpperCase())} placeholder="4-digit code" /></label>
+          <div className="modal-actions"><button className="button ghost" onClick={() => setLookupMode(false)}>Back</button><button className="button primary" disabled={saving} onClick={() => void openRequest()}>{saving ? "Opening..." : requestType === "return" ? "Open Return" : "Open Request"}</button></div>
         </> : <>
-          <p className="eyebrow danger-text">DELETE REQUEST</p><h2 id="start-title">Delete Request</h2><p className="modal-copy">Enter the request code. This permanently removes the request and all its saved versions from the database.</p>
+          <p className="eyebrow danger-text">DELETE {requestType === "return" ? "RETURN" : "REQUEST"}</p><h2 id="start-title">Delete {requestType === "return" ? "Return" : "Request"}</h2><p className="modal-copy">Enter the {requestType === "return" ? "return" : "request"} code. This permanently removes it and all its saved versions from the database.</p>
           <label className="lookup-field"><span>Request Code</span><input autoFocus inputMode="numeric" value={deleteCode} onChange={(event) => setDeleteCode(event.target.value.toUpperCase())} placeholder="4-digit code" /></label>
           <div className="delete-warning">This action cannot be undone.</div>
-          <div className="modal-actions"><button className="button ghost" onClick={() => setDeleteMode(false)}>Back</button><button className="button danger" disabled={saving} onClick={() => void deleteRequest()}>{saving ? "Deleting..." : "Delete Request"}</button></div>
+          <div className="modal-actions"><button className="button ghost" onClick={() => setDeleteMode(false)}>Back</button><button className="button danger" disabled={saving} onClick={() => void deleteRequest()}>{saving ? "Deleting..." : `Delete ${requestType === "return" ? "Return" : "Request"}`}</button></div>
         </>}
         <div className="modal-notice" role="status">{notice}</div>
       </section></div>}
