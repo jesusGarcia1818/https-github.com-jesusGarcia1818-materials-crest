@@ -18,6 +18,7 @@ export type PdfMaterialRequest = {
   requestDate: string;
   version: number;
   items: PdfMaterialItem[];
+  type?: "request" | "return";
 };
 
 const LETTER_WIDTH = 612;
@@ -63,6 +64,7 @@ export async function createMaterialRequestPdf(request: PdfMaterialRequest) {
   let page: any;
   let y = 0;
   let pageNumber = 0;
+  const documentTitle = request.type === "return" ? "MATERIAL RETURN" : "MATERIAL REQUEST";
 
   function text(value: string, x: number, baseline: number, size = 8, font = regular, color = BLACK) {
     page.drawText(safeText(value), { x, y: baseline, size, font, color });
@@ -90,7 +92,7 @@ export async function createMaterialRequestPdf(request: PdfMaterialRequest) {
     y = LETTER_HEIGHT - margin;
 
     page.drawImage(logo, { x: margin, y: y - 31, width: 150, height: 41.2 });
-    const title = continued ? "MATERIAL REQUEST - CONTINUED" : "MATERIAL REQUEST";
+    const title = continued ? `${documentTitle} - CONTINUED` : documentTitle;
     const titleWidth = bold.widthOfTextAtSize(title, 15);
     text(title, LETTER_WIDTH - margin - titleWidth, y - 15, 15, bold, NAVY);
     const requestLabel = `${request.code} - V${request.version}`;
