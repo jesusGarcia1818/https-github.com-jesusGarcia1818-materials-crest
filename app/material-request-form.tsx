@@ -268,7 +268,7 @@ export function MaterialRequestForm() {
           <button className="button cart-button" onClick={() => setCartOpen(true)}>Cart <span>{cart.length}</span></button>
           <button className="button ghost" onClick={() => { setLookupMode(true); setModalOpen(true); }}>Change Request</button>
           <button className="button secondary" disabled={saving} onClick={() => void save()}>{saving ? "Saving..." : "Save Draft"}</button>
-          <button className="button primary" disabled={saving} onClick={reviewPrint}>Print Request</button>
+          <button className="button primary" disabled={saving} onClick={reviewPrint}>{requestType === "return" ? "Print Return" : "Print Request"}</button>
         </div>
       </header>
 
@@ -319,7 +319,7 @@ export function MaterialRequestForm() {
         <div className="print-footer"><span>Requested by: {name}</span><span>Total items: {selected.length}</span><span>Total units: {totalUnits}</span></div>
       </section>
 
-      <footer className="mobile-actions no-print"><button className="button cart-button" onClick={() => setCartOpen(true)}>Cart ({cart.length})</button><button className="button primary" onClick={reviewPrint}>Print</button></footer>
+      <footer className="mobile-actions no-print"><button className="button cart-button" onClick={() => setCartOpen(true)}>Cart ({cart.length})</button><button className="button primary" onClick={reviewPrint}>{requestType === "return" ? "Print Return" : "Print Request"}</button></footer>
 
       {checkoutOpen && <div className="modal-backdrop no-print"><section className="start-modal checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
         <p className="eyebrow">{requestType === "return" ? "RETURN READY" : "REQUEST READY"}</p><h2 id="checkout-title">Would you like to add another {requestType === "return" ? "return" : "request"}?</h2>
