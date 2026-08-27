@@ -137,10 +137,16 @@ export function MaterialRequestForm() {
       setNotice(error instanceof Error ? error.message : "A request number could not be generated.");
     } finally { setSaving(false); }
   }
-  function reset(preservedName = "") {
+  function reset(preservedName = "", returnToMenu = false) {
     setCode(""); setName(preservedName); setAddress(""); setWorkOrder(""); setRequestDate(localDate());
     setQuantities({}); setVersion(1); setSearch(""); setCategory("ALL"); setLookupCode(""); setDeleteCode("");
-    setLookupMode(false); setDeleteMode(false); setModalOpen(true); setNotice("Complete the information to begin.");
+    setLookupMode(false); setDeleteMode(false); setModalOpen(true);
+    if (returnToMenu) {
+      setRequestType(null);
+      setNotice("Choose an option to begin.");
+    } else {
+      setNotice("Complete the information to begin.");
+    }
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
   function quantity(key: string, value: string) {
@@ -240,7 +246,7 @@ export function MaterialRequestForm() {
         await submitRequest(requests[index], "printed");
       }
       setCart([]);
-      reset();
+      reset("", true);
       setNotice(`${requests.length} ${requestType === "return" ? "return" : "request"}${requests.length === 1 ? "" : "s"} sent successfully to materials@dfwcrest.com. Cart is empty.`);
     } catch (error) {
       setNotice(error instanceof Error ? `${error.message} The cart was kept so you can try again.` : "The requests could not be sent. The cart was kept.");
