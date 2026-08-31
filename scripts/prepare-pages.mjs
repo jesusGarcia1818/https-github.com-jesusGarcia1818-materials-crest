@@ -8,5 +8,26 @@ await mkdir(output, { recursive: true });
 await cp("dist/client", output, { recursive: true, force: true });
 await cp("dist/server/index.js", join(output, "index.js"), { force: true });
 await writeFile(join(output, "_worker.js"), 'export { default } from "./index.js";\n');
+await writeFile(
+  join(output, "_routes.json"),
+  `${JSON.stringify(
+    {
+      version: 1,
+      include: ["/*"],
+      exclude: [
+        "/assets/*",
+        "/crest-electrical-solutions-logo.png",
+        "/favicon.svg",
+        "/file.svg",
+        "/globe.svg",
+        "/og.png",
+        "/window.svg",
+        "/breaker-addresses.json",
+      ],
+    },
+    null,
+    2,
+  )}\n`,
+);
 await cp("dist/server/__vite_rsc_assets_manifest.js", join(output, "__vite_rsc_assets_manifest.js"), { force: true });
 await cp("dist/server/ssr", join(output, "ssr"), { recursive: true, force: true });
