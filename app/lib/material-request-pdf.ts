@@ -106,7 +106,7 @@ export async function createMaterialRequestPdf(request: PdfMaterialRequest) {
     const meta = [
       { label: "NAME", value: request.name, width: 104 },
       { label: "ADDRESS", value: request.address, width: 174 },
-      { label: "DEPARTMENT", value: request.department === "subcontractor" ? "SUBCONTRACTOR" : "TECHNICAL SERVICE", width: 112 },
+      { label: "REQUESTER TYPE", value: request.department === "subcontractor" ? "SUBCONTRACTOR" : "TECHNICAL SERVICE", width: 112 },
       { label: "WORK ORDER", value: request.workOrder || "OPTIONAL", width: 86 },
       { label: "DATE", value: displayDate(request.requestDate), width: tableWidth - 476 },
     ];
