@@ -37,6 +37,31 @@ type CartRequest = {
 const cartStorageKey = "crest-material-request-cart-v1";
 const languageStorageKey = "crest-language-v1";
 
+function normalizeCartRequest(entry: unknown): CartRequest | null {
+  if (!entry || typeof entry !== "object") return null;
+  const candidate = entry as Partial<CartRequest>;
+  const workOrder = String(candidate.workOrder || "").replace(/\D/g, "");
+  const department: Department = candidate.department === "subcontractor"
+    ? "subcontractor"
+    : candidate.department === "technical_service"
+      ? "technical_service"
+      : workOrder
+        ? "technical_service"
+        : "subcontractor";
+  if (!candidate.code || !candidate.name || !candidate.address || !candidate.requestDate || !Array.isArray(candidate.items)) return null;
+  return {
+    type: candidate.type === "return" ? "return" : "request",
+    code: String(candidate.code),
+    name: String(candidate.name),
+    address: String(candidate.address),
+    department,
+    workOrder,
+    requestDate: String(candidate.requestDate),
+    version: Number.isInteger(candidate.version) && Number(candidate.version) > 0 ? Number(candidate.version) : 1,
+    items: candidate.items,
+  };
+}
+
 function localDate() {
   const date = new Date();
   return new Date(date.getTime() - date.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
@@ -121,7 +146,7 @@ export function MaterialRequestForm() {
       const stored = window.sessionStorage.getItem(cartStorageKey);
       if (stored) {
         const parsed = JSON.parse(stored) as unknown;
-        if (Array.isArray(parsed)) setCart(parsed.map((entry) => ({ ...(entry as CartRequest), department: (entry as CartRequest).department === "subcontractor" ? "subcontractor" : "technical_service", type: (entry as CartRequest).type === "return" ? "return" : "request" })));
+        if (Array.isArray(parsed)) setCart(parsed.map(normalizeCartRequest).filter((entry): entry is CartRequest => entry !== null));
       }
     } catch {
       window.sessionStorage.removeItem(cartStorageKey);
@@ -194,9 +219,19 @@ export function MaterialRequestForm() {
   }
 
   async function submitRequest(request: CartRequest, status: "draft" | "printed") {
+    const normalized = normalizeCartRequest(request);
+    if (!normalized) throw new Error(tx("This transaction is incomplete. Open it again and verify its information.", "Esta transacción está incompleta. Ábrala nuevamente y verifique su información."));
+    const validWorkOrder = normalized.department === "technical_service"
+      ? /^\d+$/.test(normalized.workOrder)
+      : normalized.workOrder === "" || /^\d+$/.test(normalized.workOrder);
+    if (!validWorkOrder) {
+      throw new Error(normalized.department === "technical_service"
+        ? tx("Technical Service requests require a numeric Work Order.", "Las solicitudes de Servicio Técnico requieren una orden de trabajo numérica.")
+        : tx("The optional Subcontractor Work Order must contain only numbers.", "La orden de trabajo opcional de Subcontratista debe contener solo números."));
+    }
     const response = await fetch("/api/material-requests", {
       method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...request, type: request.type, status }),
+      body: JSON.stringify({ ...normalized, type: normalized.type, status }),
     });
     const payload = await response.json();
     if (!response.ok) throw new Error(payload.error || transactionCopy("The request could not be saved.", "The return could not be saved.", "No se pudo guardar la solicitud.", "No se pudo guardar la devolución."));
@@ -312,7 +347,7 @@ export function MaterialRequestForm() {
       <section className="request-summary no-print">
         <div><span>{transactionCopy("REQUEST", "RETURN", "SOLICITUD", "DEVOLUCIÓN")}</span><strong>{code || tx("Generating...", "Generando...")}</strong></div>
         <div><span>{tx("NAME", "NOMBRE")}</span><strong>{name || "-"}</strong></div>
-        <div><span>{tx("DEPARTMENT", "DEPARTAMENTO")}</span><strong>{department === "technical_service" ? tx("Technical Service", "Servicio Técnico") : tx("Subcontractor", "Subcontratista")}</strong></div>
+        <div><span>{tx("REQUESTER TYPE", "TIPO DE SOLICITANTE")}</span><strong>{department === "technical_service" ? tx("Technical Service", "Servicio Técnico") : tx("Subcontractor", "Subcontratista")}</strong></div>
         <div><span>{tx("WORK ORDER", "ORDEN DE TRABAJO")}</span><strong>{workOrder || tx("Optional", "Opcional")}</strong></div>
         <div><span>{tx("DATE", "FECHA")}</span><strong>{showDate(requestDate)}</strong></div>
         <button className="new-link" onClick={() => reset()}>+ {transactionCopy("New Request", "New Return", "Nueva solicitud", "Nueva devolución")}</button>
@@ -349,7 +384,7 @@ export function MaterialRequestForm() {
         <div className="print-brand-row"><img src="/crest-electrical-solutions-logo.png" alt="" /><div><h1>{isReturn ? "MATERIAL RETURN" : "MATERIAL REQUEST"}</h1><p>{code} - V{version}</p></div></div>
         <div className="print-meta">
           <div><span>NAME</span><strong>{name}</strong></div><div><span>ADDRESS</span><strong>{address}</strong></div>
-          <div><span>DEPARTMENT</span><strong>{department === "technical_service" ? "TECHNICAL SERVICE" : "SUBCONTRACTOR"}</strong></div>
+          <div><span>REQUESTER TYPE</span><strong>{department === "technical_service" ? "TECHNICAL SERVICE" : "SUBCONTRACTOR"}</strong></div>
           <div><span>WORK ORDER</span><strong>{workOrder || "OPTIONAL"}</strong></div><div><span>DATE</span><strong>{showDate(requestDate)}</strong></div>
         </div>
         <table className="print-table"><thead><tr><th>QTY</th><th>CREST CAT#</th><th>ITEM NUMBER</th><th>L/N</th><th>DESCRIPTION</th></tr></thead>
@@ -395,7 +430,7 @@ export function MaterialRequestForm() {
           <p className="eyebrow">{transactionCopy("NEW MATERIAL REQUEST", "NEW MATERIAL RETURN", "NUEVA SOLICITUD DE MATERIALES", "NUEVA DEVOLUCIÓN DE MATERIALES")}</p><h2 id="start-title">{transactionCopy("Request Information", "Return Information", "Información de la solicitud", "Información de la devolución")}</h2><p className="modal-copy">{transactionCopy("Enter the job information before selecting materials.", "Enter the return information before selecting materials.", "Ingrese la información del trabajo antes de seleccionar materiales.", "Ingrese la información de la devolución antes de seleccionar materiales.")}</p>
           <div className="modal-fields">
             <label><span>{tx("Address", "Dirección")}</span><input autoFocus value={address} onChange={(event) => setAddress(event.target.value)} placeholder={tx("Jobsite address", "Dirección del lugar de trabajo")} /></label>
-            <label><span>{tx("Department", "Departamento")}</span><select value={department} onChange={(event) => setDepartment(event.target.value === "subcontractor" ? "subcontractor" : "technical_service")}><option value="technical_service">{tx("Technical Service", "Servicio Técnico")}</option><option value="subcontractor">{tx("Subcontractor", "Subcontratista")}</option></select></label>
+            <label><span>{tx("Requester Type", "Tipo de solicitante")}</span><select value={department} onChange={(event) => setDepartment(event.target.value === "subcontractor" ? "subcontractor" : "technical_service")}><option value="technical_service">{tx("Technical Service", "Servicio Técnico")}</option><option value="subcontractor">{tx("Subcontractor", "Subcontratista")}</option></select></label>
             <label><span>{tx("Work Order", "Orden de trabajo")} {department === "subcontractor" ? tx("(optional)", "(opcional)") : "*"}</span><input inputMode="numeric" pattern="[0-9]*" required={department === "technical_service"} value={workOrder} onChange={(event) => setWorkOrder(event.target.value.replace(/\D/g, ""))} placeholder={department === "subcontractor" ? tx("Optional — numbers only", "Opcional — solo números") : tx("Required — numbers only", "Obligatoria — solo números")} /></label>
             <label><span>{tx("Name", "Nombre")}</span><input value={name} onChange={(event) => setName(event.target.value)} placeholder={transactionCopy("Requester name", "Person returning materials", "Nombre del solicitante", "Nombre de quien devuelve los materiales")} /></label>
             <label><span>{tx("Date", "Fecha")}</span><input value={showDate(requestDate)} readOnly /></label>
