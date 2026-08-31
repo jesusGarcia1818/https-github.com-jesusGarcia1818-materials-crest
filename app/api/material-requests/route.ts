@@ -77,8 +77,8 @@ async function sendRequestEmail(input: {
       from,
       to: [to],
       subject,
-      html: `<h2>${documentName}</h2><p><strong>${input.type === "return" ? "Return" : "Request"}:</strong> ${escapeHtml(input.code)}</p><p><strong>Name:</strong> ${escapeHtml(input.name)}<br><strong>Address:</strong> ${escapeHtml(input.address)}<br><strong>Department:</strong> ${departmentName}<br><strong>Work Order:</strong> ${escapeHtml(input.workOrder || "Optional")}<br><strong>Date:</strong> ${escapeHtml(input.requestDate)}</p><p>The complete ${documentName.toLowerCase()} is attached as a PDF.</p>`,
-      text: `${documentName}\n${input.type === "return" ? "Return" : "Request"}: ${input.code}\nName: ${input.name}\nAddress: ${input.address}\nDepartment: ${departmentName}\nWork Order: ${input.workOrder || "Optional"}\nDate: ${input.requestDate}\n\nThe complete ${documentName.toLowerCase()} is attached as a PDF.`,
+      html: `<h2>${documentName}</h2><p><strong>${input.type === "return" ? "Return" : "Request"}:</strong> ${escapeHtml(input.code)}</p><p><strong>Name:</strong> ${escapeHtml(input.name)}<br><strong>Address:</strong> ${escapeHtml(input.address)}<br><strong>Requester Type:</strong> ${departmentName}<br><strong>Work Order:</strong> ${escapeHtml(input.workOrder || "Optional")}<br><strong>Date:</strong> ${escapeHtml(input.requestDate)}</p><p>The complete ${documentName.toLowerCase()} is attached as a PDF.</p>`,
+      text: `${documentName}\n${input.type === "return" ? "Return" : "Request"}: ${input.code}\nName: ${input.name}\nAddress: ${input.address}\nRequester Type: ${departmentName}\nWork Order: ${input.workOrder || "Optional"}\nDate: ${input.requestDate}\n\nThe complete ${documentName.toLowerCase()} is attached as a PDF.`,
       attachments: [{
         content: bytesToBase64(pdf),
         filename: `${input.code}-V${input.version}.pdf`,
@@ -189,6 +189,7 @@ export async function POST(request: NextRequest) {
       p_request_code: code,
       p_requester_name: name,
       p_address: address,
+      p_department: department,
       p_work_order: workOrder,
       p_request_date: requestDate,
       p_request_type: type,
@@ -200,6 +201,9 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ...(saved as Record<string, unknown>), emailId });
   } catch (error) {
     const message = error instanceof Error ? error.message : "";
+    if (/invalid work order/i.test(message)) {
+      return NextResponse.json({ error: "La orden de trabajo no es válida para el tipo de solicitante seleccionado" }, { status: 400 });
+    }
     if (message === "Email delivery is not configured") {
       return NextResponse.json({ error: "El envío por correo todavía no está configurado" }, { status: 503 });
     }
