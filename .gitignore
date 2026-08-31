@@ -41,4 +41,6 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
-
+/.wrangler-config/
+/pages-output/
+/tmp/

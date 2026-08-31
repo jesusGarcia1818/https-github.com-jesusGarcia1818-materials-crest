@@ -1,4 +1,4 @@
-import { PDFDocument, StandardFonts, rgb } from "pdf-lib";
+import { PDFDocument, StandardFonts, rgb } from "./vendor/pdf-lib.esm.min.js";
 import { CREST_LOGO_PNG_BASE64 } from "./crest-logo-data.ts";
 
 export type PdfMaterialItem = {
@@ -11,14 +11,15 @@ export type PdfMaterialItem = {
 };
 
 export type PdfMaterialRequest = {
+  type: "request" | "return";
   code: string;
   name: string;
   address: string;
+  department: "technical_service" | "subcontractor";
   workOrder: string;
   requestDate: string;
   version: number;
   items: PdfMaterialItem[];
-  type?: "request" | "return";
 };
 
 const LETTER_WIDTH = 612;
@@ -64,7 +65,6 @@ export async function createMaterialRequestPdf(request: PdfMaterialRequest) {
   let page: any;
   let y = 0;
   let pageNumber = 0;
-  const documentTitle = request.type === "return" ? "MATERIAL RETURN" : "MATERIAL REQUEST";
 
   function text(value: string, x: number, baseline: number, size = 8, font = regular, color = BLACK) {
     page.drawText(safeText(value), { x, y: baseline, size, font, color });
@@ -92,6 +92,7 @@ export async function createMaterialRequestPdf(request: PdfMaterialRequest) {
     y = LETTER_HEIGHT - margin;
 
     page.drawImage(logo, { x: margin, y: y - 31, width: 150, height: 41.2 });
+    const documentTitle = request.type === "return" ? "MATERIAL RETURN" : "MATERIAL REQUEST";
     const title = continued ? `${documentTitle} - CONTINUED` : documentTitle;
     const titleWidth = bold.widthOfTextAtSize(title, 15);
     text(title, LETTER_WIDTH - margin - titleWidth, y - 15, 15, bold, NAVY);
@@ -103,10 +104,11 @@ export async function createMaterialRequestPdf(request: PdfMaterialRequest) {
     y -= 10;
 
     const meta = [
-      { label: "NAME", value: request.name, width: 132 },
-      { label: "ADDRESS", value: request.address, width: 214 },
-      { label: "WORK ORDER", value: request.workOrder, width: 116 },
-      { label: "DATE", value: displayDate(request.requestDate), width: tableWidth - 462 },
+      { label: "NAME", value: request.name, width: 104 },
+      { label: "ADDRESS", value: request.address, width: 174 },
+      { label: "DEPARTMENT", value: request.department === "subcontractor" ? "SUBCONTRACTOR" : "TECHNICAL SERVICE", width: 112 },
+      { label: "WORK ORDER", value: request.workOrder || "OPTIONAL", width: 86 },
+      { label: "DATE", value: displayDate(request.requestDate), width: tableWidth - 476 },
     ];
     let x = margin;
     meta.forEach((entry) => {
@@ -153,7 +155,7 @@ export async function createMaterialRequestPdf(request: PdfMaterialRequest) {
   ensureSpace(28);
   y -= 10;
   page.drawLine({ start: { x: margin, y }, end: { x: LETTER_WIDTH - margin, y }, thickness: 0.6, color: GRAY });
-  text(`Requested by: ${request.name}`, margin, y - 13, 7, regular, GRAY);
+  text(`${request.type === "return" ? "Returned" : "Requested"} by: ${request.name}`, margin, y - 13, 7, regular, GRAY);
   const totals = `Total items: ${request.items.length}   Total units: ${totalUnits}`;
   const totalsWidth = regular.widthOfTextAtSize(totals, 7);
   text(totals, LETTER_WIDTH - margin - totalsWidth, y - 13, 7, regular, GRAY);
@@ -166,4 +168,3 @@ export async function createMaterialRequestPdf(request: PdfMaterialRequest) {
 
   return pdf.save();
 }
-

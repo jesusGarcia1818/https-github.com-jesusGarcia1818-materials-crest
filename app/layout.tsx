@@ -8,7 +8,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const protocol = requestHeaders.get("x-forwarded-proto") || (host.includes("localhost") ? "http" : "https");
   const metadataBase = new URL(`${protocol}://${host}`);
   const title = "Material Request | Crest Electrical Solutions";
-  const description = "Sistema digital de solicitud y devoluciÃ³n de materiales de Crest Electrical Solutions.";
+  const description = "Sistema digital de solicitud y devolución de materiales de Crest Electrical Solutions.";
   return {
     metadataBase,
     title,
@@ -25,4 +25,3 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     </html>
   );
 }
-

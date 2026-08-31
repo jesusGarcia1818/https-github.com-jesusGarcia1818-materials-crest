@@ -294,4 +294,3 @@ revoke all on function public.allocate_material_request_code(text) from public;
 revoke all on function public.delete_material_request(text,text) from public;
 grant execute on function public.allocate_material_request_code(text) to anon, authenticated, service_role;
 grant execute on function public.delete_material_request(text,text) to anon, authenticated, service_role;
-

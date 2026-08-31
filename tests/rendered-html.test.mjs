@@ -40,7 +40,7 @@ test("server-renders the starter loading skeleton", async () => {
   assert.match(html, /Your site is taking shape/);
   assert.match(
     html,
-    /Your first version will appear here automatically when itâ€™s ready\./,
+    /Your first version will appear here automatically when it’s ready\./,
   );
   assert.doesNotMatch(html, /Codex/);
   assert.match(html, /react-loading-skeleton/);
@@ -89,4 +89,3 @@ test("keeps the loading skeleton scoped and disposable", async () => {
     access(new URL("public/_sites-preview", templateRoot)),
   );
 });
-

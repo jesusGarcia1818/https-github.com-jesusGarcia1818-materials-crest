@@ -55,6 +55,7 @@ async function sendRequestEmail(input: {
   code: string;
   name: string;
   address: string;
+  department: "technical_service" | "subcontractor";
   workOrder: string;
   requestDate: string;
   version: number;
@@ -62,8 +63,9 @@ async function sendRequestEmail(input: {
 }) {
   const { apiKey, from, to } = emailConfiguration();
   const pdf = await createMaterialRequestPdf(input);
-  const documentLabel = input.type === "return" ? "Material Return" : "Material Request";
-  const subject = `${documentLabel} ${input.code} - WO ${input.workOrder}`;
+  const documentName = input.type === "return" ? "Material Return" : "Material Request";
+  const departmentName = input.department === "subcontractor" ? "Subcontractor" : "Technical Service";
+  const subject = `${documentName} ${input.code}${input.workOrder ? ` - WO ${input.workOrder}` : ""}`;
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {
@@ -75,8 +77,8 @@ async function sendRequestEmail(input: {
       from,
       to: [to],
       subject,
-      html: `<h2>${documentLabel}</h2><p><strong>${input.type === "return" ? "Return" : "Request"}:</strong> ${escapeHtml(input.code)}</p><p><strong>Name:</strong> ${escapeHtml(input.name)}<br><strong>Address:</strong> ${escapeHtml(input.address)}<br><strong>Work Order:</strong> ${escapeHtml(input.workOrder)}<br><strong>Date:</strong> ${escapeHtml(input.requestDate)}</p><p>The complete material document is attached as a PDF.</p>`,
-      text: `${documentLabel}\n${input.type === "return" ? "Return" : "Request"}: ${input.code}\nName: ${input.name}\nAddress: ${input.address}\nWork Order: ${input.workOrder}\nDate: ${input.requestDate}\n\nThe complete material document is attached as a PDF.`,
+      html: `<h2>${documentName}</h2><p><strong>${input.type === "return" ? "Return" : "Request"}:</strong> ${escapeHtml(input.code)}</p><p><strong>Name:</strong> ${escapeHtml(input.name)}<br><strong>Address:</strong> ${escapeHtml(input.address)}<br><strong>Department:</strong> ${departmentName}<br><strong>Work Order:</strong> ${escapeHtml(input.workOrder || "Optional")}<br><strong>Date:</strong> ${escapeHtml(input.requestDate)}</p><p>The complete ${documentName.toLowerCase()} is attached as a PDF.</p>`,
+      text: `${documentName}\n${input.type === "return" ? "Return" : "Request"}: ${input.code}\nName: ${input.name}\nAddress: ${input.address}\nDepartment: ${departmentName}\nWork Order: ${input.workOrder || "Optional"}\nDate: ${input.requestDate}\n\nThe complete ${documentName.toLowerCase()} is attached as a PDF.`,
       attachments: [{
         content: bytesToBase64(pdf),
         filename: `${input.code}-V${input.version}.pdf`,
@@ -116,12 +118,12 @@ export async function GET(request: NextRequest) {
       const allocated = await callRpc("allocate_material_request_code", {});
       return NextResponse.json({ code: String(allocated) }, { headers: { "Cache-Control": "no-store" } });
     } catch {
-      return NextResponse.json({ error: "No se pudo generar un cÃ³digo Ãºnico" }, { status: 500 });
+      return NextResponse.json({ error: "No se pudo generar un código único" }, { status: 500 });
     }
   }
   const code = request.nextUrl.searchParams.get("code")?.trim().toUpperCase() || "";
   if (!requestCodePattern.test(code)) {
-    return NextResponse.json({ error: "CÃ³digo invÃ¡lido" }, { status: 400 });
+    return NextResponse.json({ error: "Código inválido" }, { status: 400 });
   }
   try {
     const record = await callRpc("get_material_request", { p_request_code: code });
@@ -135,7 +137,7 @@ export async function GET(request: NextRequest) {
 export async function DELETE(request: NextRequest) {
   const code = request.nextUrl.searchParams.get("code")?.trim().toUpperCase() || "";
   if (!requestCodePattern.test(code)) {
-    return NextResponse.json({ error: "CÃ³digo invÃ¡lido" }, { status: 400 });
+    return NextResponse.json({ error: "Código inválido" }, { status: 400 });
   }
   try {
     const deleted = await callRpc("delete_material_request", { p_request_code: code });
@@ -152,37 +154,35 @@ export async function POST(request: NextRequest) {
     const code = String(input.code || "").trim().toUpperCase();
     const name = String(input.name || "").trim();
     const address = String(input.address || "").trim();
+    const department = input.department === "subcontractor" ? "subcontractor" : "technical_service";
     const workOrder = String(input.workOrder || "").trim();
     const requestDate = String(input.requestDate || "").trim();
     const type = input.type === "return" ? "return" : "request";
     const status = String(input.status || "draft");
     const version = Number(input.version);
-    const rawItems = Array.isArray(input.items) ? input.items.slice(0, 500) : [];
-    const items = rawItems.map((item: Record<string, unknown>) => ({
-      ...item,
-      quantity: type === "return" ? -Math.abs(Number(item.quantity)) : Math.abs(Number(item.quantity)),
-    }));
+    const items = Array.isArray(input.items) ? input.items.slice(0, 500) : [];
     const eventType = status === "printed" ? "printed" : version > 1 ? "modified" : "saved";
 
-    if (!requestCodePattern.test(code) || name.length < 2 || address.length < 2 || !/^\d+$/.test(workOrder) || !/^\d{4}-\d{2}-\d{2}$/.test(requestDate) || !allowedStatuses.has(status) || !Number.isInteger(version) || version < 1) {
+    const workOrderIsValid = department === "technical_service" ? /^\d+$/.test(workOrder) : workOrder === "" || /^\d+$/.test(workOrder);
+    if (!requestCodePattern.test(code) || name.length < 2 || address.length < 2 || !workOrderIsValid || !/^\d{4}-\d{2}-\d{2}$/.test(requestDate) || !allowedStatuses.has(status) || !Number.isInteger(version) || version < 1) {
       return NextResponse.json({ error: "Completa correctamente los datos requeridos" }, { status: 400 });
     }
 
     const emailItems: PdfMaterialItem[] = items.map((item: Record<string, unknown>) => ({
-      category: String(item.category || "OTHER MATERIALS").slice(0, 120),
+      category: String(item.category || "Others").slice(0, 120),
       material_code: String(item.material_code || "").slice(0, 60),
       item_number: String(item.item_number || "").slice(0, 120),
       line_number: String(item.line_number || "").slice(0, 30),
       description: String(item.description || "").slice(0, 300),
       quantity: Number(item.quantity),
     }));
-    if (status === "printed" && (!emailItems.length || emailItems.some((item) => !Number.isFinite(item.quantity) || Math.abs(item.quantity) <= 0 || Math.abs(item.quantity) > 999999))) {
-      return NextResponse.json({ error: "Selecciona al menos un material con una cantidad vÃ¡lida" }, { status: 400 });
+    if (status === "printed" && (!emailItems.length || emailItems.some((item) => !Number.isFinite(item.quantity) || item.quantity <= 0 || item.quantity > 999999))) {
+      return NextResponse.json({ error: "Selecciona al menos un material con una cantidad válida" }, { status: 400 });
     }
 
     let emailId: string | undefined;
     if (status === "printed") {
-      emailId = await sendRequestEmail({ type, code, name, address, workOrder, requestDate, version, items: emailItems });
+      emailId = await sendRequestEmail({ type, code, name, address, department, workOrder, requestDate, version, items: emailItems });
     }
 
     const saved = await callRpc("save_material_request", {
@@ -201,7 +201,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     const message = error instanceof Error ? error.message : "";
     if (message === "Email delivery is not configured") {
-      return NextResponse.json({ error: "El envÃ­o por correo todavÃ­a no estÃ¡ configurado" }, { status: 503 });
+      return NextResponse.json({ error: "El envío por correo todavía no está configurado" }, { status: 503 });
     }
     if (message === "Email delivery failed" || /resend|email|domain|recipient|rate/i.test(message)) {
       return NextResponse.json({ error: "No se pudo enviar el PDF por correo" }, { status: 502 });
@@ -209,4 +209,3 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "No se pudo guardar la solicitud en Supabase" }, { status: 500 });
   }
 }
-
