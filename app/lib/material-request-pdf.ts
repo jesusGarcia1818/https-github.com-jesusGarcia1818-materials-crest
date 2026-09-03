@@ -98,8 +98,15 @@ export async function createMaterialRequestPdf(request: PdfMaterialRequest) {
     const titleSize = isReturn ? 18 : 15;
     const titleColor = isReturn ? BLACK : NAVY;
     const titleWidth = bold.widthOfTextAtSize(title, titleSize);
-    const titleX = isReturn ? (LETTER_WIDTH - titleWidth) / 2 : LETTER_WIDTH - margin - titleWidth;
-    text(title, titleX, y - 15, titleSize, bold, titleColor);
+    if (isReturn) {
+      const titleBoxWidth = Math.max(230, titleWidth + 36);
+      const titleBoxHeight = 32;
+      const titleBoxX = (LETTER_WIDTH - titleBoxWidth) / 2;
+      box(titleBoxX, y + 4, titleBoxWidth, titleBoxHeight, WHITE, NAVY, 1.4);
+      text(title, (LETTER_WIDTH - titleWidth) / 2, y - 17, titleSize, bold, titleColor);
+    } else {
+      text(title, LETTER_WIDTH - margin - titleWidth, y - 15, titleSize, bold, titleColor);
+    }
     const requestLabel = `${request.code} - V${request.version}`;
     const requestWidth = regular.widthOfTextAtSize(requestLabel, 7);
     text(requestLabel, LETTER_WIDTH - margin - requestWidth, y - 27, 7, regular, GRAY);
