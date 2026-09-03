@@ -92,10 +92,14 @@ export async function createMaterialRequestPdf(request: PdfMaterialRequest) {
     y = LETTER_HEIGHT - margin;
 
     page.drawImage(logo, { x: margin, y: y - 31, width: 150, height: 41.2 });
-    const documentTitle = request.type === "return" ? "MATERIAL RETURN" : "MATERIAL REQUEST";
-    const title = continued ? `${documentTitle} - CONTINUED` : documentTitle;
-    const titleWidth = bold.widthOfTextAtSize(title, 15);
-    text(title, LETTER_WIDTH - margin - titleWidth, y - 15, 15, bold, NAVY);
+    const isReturn = request.type === "return";
+    const documentTitle = isReturn ? "MATERIALS RETURNS" : "MATERIAL REQUEST";
+    const title = !isReturn && continued ? `${documentTitle} - CONTINUED` : documentTitle;
+    const titleSize = isReturn ? 18 : 15;
+    const titleColor = isReturn ? BLACK : NAVY;
+    const titleWidth = bold.widthOfTextAtSize(title, titleSize);
+    const titleX = isReturn ? (LETTER_WIDTH - titleWidth) / 2 : LETTER_WIDTH - margin - titleWidth;
+    text(title, titleX, y - 15, titleSize, bold, titleColor);
     const requestLabel = `${request.code} - V${request.version}`;
     const requestWidth = regular.widthOfTextAtSize(requestLabel, 7);
     text(requestLabel, LETTER_WIDTH - margin - requestWidth, y - 27, 7, regular, GRAY);
@@ -168,3 +172,4 @@ export async function createMaterialRequestPdf(request: PdfMaterialRequest) {
 
   return pdf.save();
 }
+

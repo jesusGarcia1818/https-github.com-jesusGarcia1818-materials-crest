@@ -160,7 +160,11 @@ export async function POST(request: NextRequest) {
     const type = input.type === "return" ? "return" : "request";
     const status = String(input.status || "draft");
     const version = Number(input.version);
-    const items = Array.isArray(input.items) ? input.items.slice(0, 500) : [];
+    const rawItems = Array.isArray(input.items) ? input.items.slice(0, 500) : [];
+    const items = rawItems.map((item: Record<string, unknown>) => ({
+      ...item,
+      quantity: type === "return" ? -Math.abs(Number(item.quantity)) : Math.abs(Number(item.quantity)),
+    }));
     const eventType = status === "printed" ? "printed" : version > 1 ? "modified" : "saved";
 
     const workOrderIsValid = department === "technical_service" ? /^\d+$/.test(workOrder) : workOrder === "" || /^\d+$/.test(workOrder);
@@ -168,7 +172,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Completa correctamente los datos requeridos" }, { status: 400 });
     }
 
-    const emailItems: PdfMaterialItem[] = items.map((item: Record<string, unknown>) => ({
+    const emailItems: PdfMaterialItem[] = rawItems.map((item: Record<string, unknown>) => ({
       category: String(item.category || "Others").slice(0, 120),
       material_code: String(item.material_code || "").slice(0, 60),
       item_number: String(item.item_number || "").slice(0, 120),
@@ -213,3 +217,4 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "No se pudo guardar la solicitud en Supabase" }, { status: 500 });
   }
 }
+
