@@ -72,7 +72,7 @@ export async function createBreakerSwapPdf(request: BreakerSwapPdfRequest) {
 
   page.drawImage(logo, { x: margin, y: y - 31, width: 150, height: 41.2 });
   const title = request.documentType === "return" ? "MATERIAL RETURN" : "MATERIAL PICKUP";
-  text(title, LETTER_WIDTH - margin - bold.widthOfTextAtSize(title, 15), y - 15, 15, bold, NAVY);
+  if (request.documentType === "return") { const titleSize = 18; const titleWidth = bold.widthOfTextAtSize(title, titleSize); const titleBoxWidth = Math.max(230, titleWidth + 36); const titleBoxHeight = 32; const titleBoxX = (LETTER_WIDTH - titleBoxWidth) / 2; box(titleBoxX, y + 4, titleBoxWidth, titleBoxHeight, WHITE, BLACK, 1.4); text(title, (LETTER_WIDTH - titleWidth) / 2, y - 17, titleSize, bold, BLACK); } else { text(title, LETTER_WIDTH - margin - bold.widthOfTextAtSize(title, 15), y - 15, 15, bold, NAVY); }
   const previewLabel = request.documentType === "return" ? "BREAKER SWAP - PENDING RETURN" : "BREAKER SWAP - INVENTORY OUT";
   text(previewLabel, LETTER_WIDTH - margin - regular.widthOfTextAtSize(previewLabel, 7), y - 27, 7, regular, GRAY);
   y -= 40;
