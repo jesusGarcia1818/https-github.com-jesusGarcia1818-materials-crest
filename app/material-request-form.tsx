@@ -393,7 +393,14 @@ export function MaterialRequestForm() {
         <div className="print-footer"><span>{isReturn ? "Returned by" : "Requested by"}: {name}</span><span>Total items: {selected.length}</span><span>Total units: {totalUnits}</span></div>
       </section>
 
-      <footer className="mobile-actions no-print"><button className="button cart-button" onClick={() => setCartOpen(true)}>{tx("Cart", "Carrito")} ({cart.length})</button><button className="button primary" onClick={reviewPrint}>{transactionCopy("Print Request", "Print Return", "Imprimir solicitud", "Imprimir devolución")}</button></footer>
+      <footer className="mobile-actions no-print">
+        <div className="mobile-request-code" aria-live="polite">
+          <span>{transactionCopy("REQUEST", "RETURN", "SOLICITUD", "DEVOLUCIÓN")}</span>
+          <strong>{code || tx("Generating...", "Generando...")}</strong>
+        </div>
+        <button className="button cart-button" onClick={() => setCartOpen(true)}>{tx("Cart", "Carrito")} ({cart.length})</button>
+        <button className="button primary" onClick={reviewPrint}>{transactionCopy("Print Request", "Print Return", "Imprimir solicitud", "Imprimir devolución")}</button>
+      </footer>
 
       {checkoutOpen && <div className="modal-backdrop no-print"><section className="start-modal checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
         <p className="eyebrow">{transactionCopy("REQUEST READY", "RETURN READY", "SOLICITUD LISTA", "DEVOLUCIÓN LISTA")}</p><h2 id="checkout-title">{transactionCopy("Would you like to add another request?", "Would you like to add another return?", "¿Desea agregar otra solicitud?", "¿Desea agregar otra devolución?")}</h2>
