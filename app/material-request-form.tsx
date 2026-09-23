@@ -191,7 +191,7 @@ export function MaterialRequestForm() {
       const requestCode = await allocateCode();
       setCode(requestCode);
       setModalOpen(false);
-      setNotice(transactionCopy(`Request ${requestCode} is ready for material selection.`, `Return ${requestCode} is ready for material selection.`, `La solicitud ${requestCode} está lista para seleccionar materiales.`, `La devolución ${requestCode} está lista para seleccionar materiales.`));
+      setNotice("");
     } catch (error) {
       setNotice(error instanceof Error ? error.message : transactionCopy("A request number could not be generated.", "A return number could not be generated.", "No se pudo generar un número de solicitud.", "No se pudo generar un número de devolución."));
     } finally { setSaving(false); }
@@ -378,7 +378,7 @@ export function MaterialRequestForm() {
         </div>
       </section>
 
-      <div className="notice no-print" role="status"><span>●</span>{notice}</div>
+      {notice && <div className="notice no-print" role="status"><span>●</span>{notice}</div>}
 
       <section className="print-sheet" aria-hidden="true">
         <div className="print-brand-row"><img src="/crest-electrical-solutions-logo.png" alt="" /><div><h1>{isReturn ? "MATERIAL RETURN" : "MATERIAL REQUEST"}</h1><p>{code} - V{version}</p></div></div>
