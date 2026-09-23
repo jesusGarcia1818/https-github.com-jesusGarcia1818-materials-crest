@@ -488,7 +488,7 @@
     "code": "CE0638",
     "itemNumber": "TRSGF15BK",
     "line": "",
-    "description": "15A GFCI TR Self Test - BK",
+    "description": "15A GFCI TR PLUG BLACK",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 166
@@ -527,7 +527,7 @@
     "code": "CE0599",
     "itemNumber": "PJ8BK",
     "line": "",
-    "description": "1G DUPLEX WALLPLATE POLY BLACK",
+    "description": "EATON PLUG PLATE - BLACK",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 159
@@ -605,7 +605,7 @@
     "code": "CE0355",
     "itemNumber": "SP33W",
     "line": "",
-    "description": "3 GANG BLANK WALLPLATE",
+    "description": "EATON BLANK PLATE 3G",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 112
@@ -631,7 +631,7 @@
     "code": "CE0604",
     "itemNumber": "SP43W",
     "line": "",
-    "description": "4 GANG BLANK WALLPLATE WHITE",
+    "description": "EATON BLANK PLATE 4G",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 162
@@ -644,7 +644,7 @@
     "code": "CE0275",
     "itemNumber": "1254",
     "line": "",
-    "description": "50A FLUSH RECEPTACLE (NO NEUTRAL)",
+    "description": "50A FLUSH RECEPTACLE DISCONTINUED",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 85
@@ -748,7 +748,7 @@
     "code": "CE0111",
     "itemNumber": "TR775WBOXSP",
     "line": "",
-    "description": "CLOCKHANGER WHITE 15A 125V TR",
+    "description": "CLOCKHANGER PLUG",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 66
@@ -761,7 +761,7 @@
     "code": "CE0415",
     "itemNumber": "7737W-BOX",
     "line": "",
-    "description": "COOPER FULL LED NIGHTLIGHT",
+    "description": "EATON FULL LED NIGHTLIGHT",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 130
@@ -813,7 +813,7 @@
     "code": "CE0095",
     "itemNumber": "1257-SP",
     "line": "",
-    "description": "DRYER PLUG",
+    "description": "EATON DRYER PLUG",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 63
@@ -839,7 +839,7 @@
     "code": "CE0565",
     "itemNumber": "BRP24L125",
     "line": "",
-    "description": "EA 125A 48 Circuit Indoor Load Center",
+    "description": "EATON 125A 48CIRCUIT PANEL",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 152
@@ -852,7 +852,7 @@
     "code": "CE0309",
     "itemNumber": "BRP12L125",
     "line": "",
-    "description": "EA 125A LOADCENTER INDOOR",
+    "description": "EATON 125A PANEL INDOOR",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 102
@@ -865,7 +865,7 @@
     "code": "CE0302",
     "itemNumber": "BRP12B100R",
     "line": "",
-    "description": "EA 125A MAIN CIRCUIT BREAKER",
+    "description": "EATON 125A MAIN CIRCUIT BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 96
@@ -878,7 +878,7 @@
     "code": "CE0477",
     "itemNumber": "BRP115AF",
     "line": "",
-    "description": "EA 1P 15A AFCI BRKR",
+    "description": "EATON 1P 15A AFCI BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 144
@@ -891,7 +891,7 @@
     "code": "CE0479",
     "itemNumber": "BR115",
     "line": "",
-    "description": "EA 1P 15A TM CIRCUIT BRKR",
+    "description": "EATON 1P 15A BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 146
@@ -904,7 +904,7 @@
     "code": "CE0476",
     "itemNumber": "BRP120DF",
     "line": "",
-    "description": "EA 1P 20A AF/GF FUNCTION BRKR",
+    "description": "EATON 1P 20A AFCI/GFCI COMBO BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 143
@@ -917,7 +917,7 @@
     "code": "CE0478",
     "itemNumber": "BRP120AF",
     "line": "",
-    "description": "EA 1P 20A AFCI BRKR",
+    "description": "EATON 1P 20A AFCI BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 145
@@ -930,7 +930,7 @@
     "code": "CE0480",
     "itemNumber": "BR120",
     "line": "",
-    "description": "EA 1P 20A TM CIRCUIT BREAKER",
+    "description": "EATON 1P 20A BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 147
@@ -943,7 +943,7 @@
     "code": "CE0460",
     "itemNumber": "BR150",
     "line": "",
-    "description": "EA 1P 50A TM CIRCUIT BREAKER",
+    "description": "EATON 1P 50A BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 140
@@ -956,7 +956,7 @@
     "code": "CE0371",
     "itemNumber": "CSR2200N",
     "line": "",
-    "description": "EA 200A 2P 120/240 CIRCUIT BREAKER",
+    "description": "EATON 200A 2P 120/240 CIRCUIT BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 117
@@ -969,7 +969,7 @@
     "code": "CE0475",
     "itemNumber": "BRP40L200G",
     "line": "",
-    "description": "EA 200A LOADCENTER MLO W/G BAR INDOOR",
+    "description": "EATON 200A PANEL MLO W/G BAR INDOOR",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 142
@@ -982,7 +982,7 @@
     "code": "CE0630",
     "itemNumber": "BRP40B200R",
     "line": "",
-    "description": "EA 200A LOADCENTER MLO W/G BAR OUTDOOR",
+    "description": "EATON 200A PANEL MLO W/G BAR OUTDOOR",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 165
@@ -995,7 +995,7 @@
     "code": "CE0301",
     "itemNumber": "BRP40B200",
     "line": "",
-    "description": "EA 200A LOADCENTER W/BRKR 40SP",
+    "description": "EATON 200A PANEL W/BRKR 40SP",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 95
@@ -1008,7 +1008,7 @@
     "code": "CE0004",
     "itemNumber": "UTRS213CE",
     "line": "",
-    "description": "EA 200A Meter Base",
+    "description": "EATON 200A Meter Base",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 38
@@ -1021,7 +1021,7 @@
     "code": "CE0307",
     "itemNumber": "UTRS213CE",
     "line": "",
-    "description": "EA 200A METER SOCKET",
+    "description": "EATON 200A METER SOCKET",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 101
@@ -1034,7 +1034,7 @@
     "code": "CE0305",
     "itemNumber": "BRH2100",
     "line": "",
-    "description": "EA 2P 100A TM CIRCUIT BREAKER",
+    "description": "EATON 2P 100A TM CIRCUIT BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 99
@@ -1047,7 +1047,7 @@
     "code": "CE0380",
     "itemNumber": "BR215",
     "line": "",
-    "description": "EA 2P 15A TM CIRCUIT BREAKER",
+    "description": "EATON 2P 15A TM CIRCUIT BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 121
@@ -1060,7 +1060,7 @@
     "code": "CE0306",
     "itemNumber": "BQC2302120",
     "line": "",
-    "description": "EA 2P 20A 2P 30A CIRCUIT BRKR",
+    "description": "EATON 2P 20A 2P 30A CIRCUIT BRKR",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 100
@@ -1073,7 +1073,7 @@
     "code": "CE0282",
     "itemNumber": "BR220",
     "line": "",
-    "description": "EA 2P 20A TM CIRCUIT BREAKER",
+    "description": "EATON 2P 20A BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 87
@@ -1086,7 +1086,7 @@
     "code": "CE0285",
     "itemNumber": "BR225",
     "line": "",
-    "description": "EA 2P 25A TM CIRCUIT BREAKER",
+    "description": "EATON 2P 25A BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 90
@@ -1099,7 +1099,7 @@
     "code": "CE0482",
     "itemNumber": "GFTCB230",
     "line": "",
-    "description": "EA 2P 30 AMP GFI BREAKER",
+    "description": "EATON PIGTIAIL 2P 30 AMP GFI BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 149
@@ -1112,7 +1112,7 @@
     "code": "CE0435",
     "itemNumber": "BR230",
     "line": "",
-    "description": "EA 2P 30A TM CIRCUIT BREAKER",
+    "description": "EATON 2P 30A BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 132
@@ -1125,7 +1125,7 @@
     "code": "CE0462",
     "itemNumber": "BR235",
     "line": "",
-    "description": "EA 2P 35A TM CIRCUIT BREAKER",
+    "description": "EATON 2P 35A BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 141
@@ -1138,7 +1138,7 @@
     "code": "CE0481",
     "itemNumber": "BR240",
     "line": "",
-    "description": "EA 2P 40A TM CIRCUIT BREAKER",
+    "description": "EATON 2P 40A BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 148
@@ -1151,7 +1151,7 @@
     "code": "CE0449",
     "itemNumber": "BR245",
     "line": "",
-    "description": "EA 2P 45A TM CIRCUIT BREAKER",
+    "description": "EATON 2P 45A BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 137
@@ -1164,7 +1164,7 @@
     "code": "CE0254",
     "itemNumber": "BR250",
     "line": "",
-    "description": "EA 2P 50A TM CIRCUIT BREAKER",
+    "description": "EATON 2P 50A BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 82
@@ -1177,7 +1177,7 @@
     "code": "CE0253",
     "itemNumber": "BR260",
     "line": "",
-    "description": "EA 2P 60A TM CIRCUIT BREAKER",
+    "description": "EATON 2P 60A BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 81
@@ -1190,7 +1190,7 @@
     "code": "CE0627",
     "itemNumber": "BRH260",
     "line": "",
-    "description": "EA 2P 60A TM CIRCUIT BREAKER (T-POLE)",
+    "description": "EATON 2P 60A TM CIRCUIT BREAKER (T-POLE)",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 164
@@ -1203,7 +1203,7 @@
     "code": "CE0287",
     "itemNumber": "C25DND330A",
     "line": "",
-    "description": "EA 3 POLE CONTACTOR 30A",
+    "description": "EATON 3 POLE CONTACTOR 30A",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 91
@@ -1216,7 +1216,7 @@
     "code": "CE0327",
     "itemNumber": "C25END430A",
     "line": "",
-    "description": "EA 4 POLE CONTACTOR 40A",
+    "description": "EATON 4 POLE CONTACTOR 40A",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 110
@@ -1229,7 +1229,7 @@
     "code": "CE0457",
     "itemNumber": "BRLW",
     "line": "",
-    "description": "EA BR CIRCUIT HANDLE LOCKOFF",
+    "description": "EATON 2P LOCKOFF",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 139
@@ -1242,7 +1242,7 @@
     "code": "CE0304",
     "itemNumber": "TICC300",
     "line": "",
-    "description": "EA CCV RUBBER BOOT KIT",
+    "description": "EATON CCV RUBBER BOOT KIT",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 98
@@ -1255,7 +1255,7 @@
     "code": "CE0372",
     "itemNumber": "ECB225R",
     "line": "",
-    "description": "EA CH CIRCUIT BREAKER UNIT ENCLOSURE",
+    "description": "EATON CH CIRCUIT BREAKER UNIT ENCLOSURE",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 118
@@ -1268,7 +1268,7 @@
     "code": "CE0184",
     "itemNumber": "D24SF-1BW",
     "line": "",
-    "description": "EA FAN CONTROL SWITCH",
+    "description": "LEVITON FAN CONTROL SWITCH",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 79
@@ -1281,7 +1281,7 @@
     "code": "CE0608",
     "itemNumber": "TIMCB3/0",
     "line": "",
-    "description": "EA TERMINAL INSULATOR KIT",
+    "description": "EATON TERMINAL INSULATOR KIT",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 163
@@ -1294,7 +1294,7 @@
     "code": "CE0483",
     "itemNumber": "BRNSURGE10",
     "line": "",
-    "description": "EA Type BR 2 Pole Surge Arrester",
+    "description": "EATON SURGE PROTECTOR",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 150
@@ -1333,7 +1333,7 @@
     "code": "CE0584",
     "itemNumber": "LCCS",
     "line": "",
-    "description": "Eaton CH 3/4\" Loadcenter Screw",
+    "description": "Eaton CH 3/4\" PANEL SCREW",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 157
@@ -1359,7 +1359,7 @@
     "code": "CE0452",
     "itemNumber": "BRN220GF",
     "line": "",
-    "description": "EATON GFCI 2P 20A 120/240V",
+    "description": "EATON GFCI 2P 20A BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 138
@@ -1372,7 +1372,7 @@
     "code": "CE0445",
     "itemNumber": "BRN230GF",
     "line": "",
-    "description": "EATON GFCI 2P 30A 120/240V",
+    "description": "EATON GFCI 2P 30A BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 135
@@ -1385,7 +1385,7 @@
     "code": "CE0446",
     "itemNumber": "BRN240GF",
     "line": "",
-    "description": "EATON GFCI 2P 40A 120/240V",
+    "description": "EATON GFCI 2P 40A BREAKER",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 136
@@ -1411,7 +1411,7 @@
     "code": "CE0595",
     "itemNumber": "BRN250GF",
     "line": "",
-    "description": "EATON GFCI 2P 50A 120/240V",
+    "description": "EATON GFCI 2P 50A",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 158
@@ -1489,7 +1489,7 @@
     "code": "CE0144",
     "itemNumber": "SGFD20W",
     "line": "",
-    "description": "FACELESS GFCI-WHITE",
+    "description": "FACELESS GFCI",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 68
@@ -1502,7 +1502,7 @@
     "code": "CE0062",
     "itemNumber": "TWRGF15W",
     "line": "",
-    "description": "GFCI TWR SELF TEST DUPLEX 15A 125V WH",
+    "description": "GFCI TWR SELF TEST PLUG",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 40
@@ -1541,7 +1541,7 @@
     "code": "CE0145",
     "itemNumber": "TRSGF15W",
     "line": "",
-    "description": "GFI TAMPER RESISTANT - WHITE",
+    "description": "GFI TAMPER RESISTANT",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 69
@@ -1619,7 +1619,7 @@
     "code": "CE0096",
     "itemNumber": "1258-SP",
     "line": "",
-    "description": "RANGE PLUG",
+    "description": "EATON RANGE PLUG",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 64
@@ -1658,7 +1658,7 @@
     "code": "CE0089",
     "itemNumber": "TWR270W",
     "line": "",
-    "description": "RECP TR WR DUPLEX 15A 125V 2P3W STR WH",
+    "description": "EATON WR PLUG RECEPTACLE",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 61
@@ -1671,7 +1671,7 @@
     "code": "CE0181",
     "itemNumber": "RF9642NDW",
     "line": "",
-    "description": "Smart Dimmer - Accessory",
+    "description": "EATON Smart Dimmer - Accessory",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 76
@@ -1684,7 +1684,7 @@
     "code": "CE0180",
     "itemNumber": "RF9640NWS",
     "line": "",
-    "description": "Smart Dimmer - Master",
+    "description": "EATON Smart Dimmer - Master",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 75
@@ -1697,7 +1697,7 @@
     "code": "CE0182",
     "itemNumber": "RF9601DW",
     "line": "",
-    "description": "Smart Switch - Master (Z-WAVE)",
+    "description": "EATON Smart Switch - Master (Z-WAVE)",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 77
@@ -1736,7 +1736,7 @@
     "code": "CE0083",
     "itemNumber": "7503WBOX",
     "line": "",
-    "description": "SWITCH DECORATOR 3WAY 15A 120/277V WH",
+    "description": "EATON DECORA SWITCH 33-WAY",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 55
@@ -1749,7 +1749,7 @@
     "code": "CE0084",
     "itemNumber": "7504WBOX",
     "line": "",
-    "description": "SWITCH DECORATOR 4WAY 15A 120/277V WH",
+    "description": "EATON DECORA SWITCH 4-WAY",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 56
@@ -1775,7 +1775,7 @@
     "code": "CE0082",
     "itemNumber": "7501WBOX",
     "line": "",
-    "description": "SWITCH DECORATOR SP 15A 120/277V WH",
+    "description": "EATON DECORA SWITCH",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 54
@@ -1788,7 +1788,7 @@
     "code": "CE0076",
     "itemNumber": "13037W",
     "line": "",
-    "description": "SWITCH TOGGLE 3-WAY 15A 120V GRD WH",
+    "description": "EATON TOGGLE SWITCH 3-WAY",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 48
@@ -1801,7 +1801,7 @@
     "code": "CE0077",
     "itemNumber": "12427WBOX",
     "line": "",
-    "description": "SWITCH TOGGLE 4WAY 15A 120V GRD WH",
+    "description": "EATON TOGGLE SWITCH 4-WAY",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 49
@@ -1814,7 +1814,7 @@
     "code": "CE0075",
     "itemNumber": "13017W",
     "line": "",
-    "description": "SWITCH TOGGLE SP 15A 120V GRD WH",
+    "description": "EATON TOGGLE SWITCH",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 47
@@ -1879,7 +1879,7 @@
     "code": "CE0152",
     "itemNumber": "PJ13W",
     "line": "",
-    "description": "WALLPLATE 1G BLANK BOX MOUNT POLY MID WH",
+    "description": "EATON BLANK PLATE 1G",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 73
@@ -1905,7 +1905,7 @@
     "code": "CE0085",
     "itemNumber": "2051W",
     "line": "",
-    "description": "WALLPLATE 1G DECORATOR THERMOSET MID WH",
+    "description": "EATON 1-GANG DECORA PLATE",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 57
@@ -1957,7 +1957,7 @@
     "code": "CE0078",
     "itemNumber": "2034W",
     "line": "",
-    "description": "WALLPLATE 1G TOGGLE THERMOSET MID WH",
+    "description": "EATON 1-GANG TOGGLE PLATE",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 50
@@ -1970,7 +1970,7 @@
     "code": "CE0092",
     "itemNumber": "PJ11W",
     "line": "",
-    "description": "WALLPLATE 1GTEL/COAX.406\"HOLE POLY MID BX WH",
+    "description": "EATON TV PLATE COAXIAL",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 62
@@ -1983,7 +1983,7 @@
     "code": "CE0153",
     "itemNumber": "PJ23W",
     "line": "",
-    "description": "WALLPLATE 2G BLANK BOX MOUNT POLY MID WH",
+    "description": "EATON BLANK PLATE 2G",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 74
@@ -1996,7 +1996,7 @@
     "code": "CE0086",
     "itemNumber": "2052WBOX",
     "line": "",
-    "description": "WALLPLATE 2G DECORATOR THERMOSET MID WH",
+    "description": "EATON 2-GANG DECORA PLATE",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 58
@@ -2009,7 +2009,7 @@
     "code": "CE0439",
     "itemNumber": "PJ82W",
     "line": "",
-    "description": "WALLPLATE 2G DUPLEX POLY MID WH",
+    "description": "EATON QUAD PLATE 2G",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 133
@@ -2022,7 +2022,7 @@
     "code": "CE0097",
     "itemNumber": "PJ703W",
     "line": "",
-    "description": "WALLPLATE 2G SGL REC W/2.15\"HOLE POLY MID WH",
+    "description": "EATON DRYER PLATE/ RANGE PLATE",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 65
@@ -2035,7 +2035,7 @@
     "code": "CE0079",
     "itemNumber": "2039W",
     "line": "",
-    "description": "WALLPLATE 2G TOGGLE THERMOSET MID WH",
+    "description": "EATON 2-GANG TOGGLE PLATE",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 51
@@ -2048,7 +2048,7 @@
     "code": "CE0149",
     "itemNumber": "PJ126W",
     "line": "",
-    "description": "WALLPLATE 2G TOGGLE/DECO POLY MID WH",
+    "description": "EATON 2G TOGGLE DECORA PLATE",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 70
@@ -2061,7 +2061,7 @@
     "code": "CE0150",
     "itemNumber": "PJ226W",
     "line": "",
-    "description": "WALLPLATE 3G 2TOGGLE/DECO POLY MID WH",
+    "description": "EATON 3G TOGGLE DECORA PLATE",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 71
@@ -2074,7 +2074,7 @@
     "code": "CE0087",
     "itemNumber": "2063WBOX",
     "line": "",
-    "description": "WALLPLATE 3G DECORATOR THERMOSET MID WH",
+    "description": "EATON 3-GANG DECORA PLATE",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 59
@@ -2087,7 +2087,7 @@
     "code": "CE0080",
     "itemNumber": "2041WBOX",
     "line": "",
-    "description": "WALLPLATE 3G TOGGLE THERMOSET MID WH",
+    "description": "EATON 3-GANG TOGGLE PLATE",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 52
@@ -2100,7 +2100,7 @@
     "code": "CE0088",
     "itemNumber": "2064WBOX",
     "line": "",
-    "description": "WALLPLATE 4G DECORATOR THERMOSET MID WH",
+    "description": "EATON 4-GANG DECORA PLATE",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 60
@@ -2113,7 +2113,7 @@
     "code": "CE0081",
     "itemNumber": "PJ4W",
     "line": "",
-    "description": "WALLPLATE 4G TOGGLE POLY MID WH",
+    "description": "EATON 4-GANG TOGGLE PLATE",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 53
@@ -2126,7 +2126,7 @@
     "code": "CE0151",
     "itemNumber": "SP326W",
     "line": "",
-    "description": "White 4-Gang Toggle/ Decora Plate",
+    "description": "EATON 4G TOGGLE DECORA PLATE",
     "category": "Eaton",
     "groupedCategory": "Eaton",
     "excelRow": 72
@@ -2217,7 +2217,7 @@
     "code": "CE0637",
     "itemNumber": "B225RUPC",
     "line": "",
-    "description": "2 GANG CUTIN BXS. Plastic",
+    "description": "2 GANG CUTIN PLASTIC BOX",
     "category": "Electrical Boxes",
     "groupedCategory": "Electrical Boxes",
     "excelRow": 211
@@ -2425,7 +2425,7 @@
     "code": "CE0018",
     "itemNumber": "AS HSG",
     "line": "",
-    "description": "Air King - 50CFM Fan Rough Box",
+    "description": "AIR KING - 50CFM EXHAUST ROUGH",
     "category": "Electrical Boxes",
     "groupedCategory": "Electrical Boxes",
     "excelRow": 174
@@ -2438,7 +2438,7 @@
     "code": "CE0019",
     "itemNumber": "BFQHSG",
     "line": "",
-    "description": "Air King - 80CFM Fan Rough Box (Frisco)",
+    "description": "AIR KING - 80CFM EXHAUST ROUGH",
     "category": "Electrical Boxes",
     "groupedCategory": "Electrical Boxes",
     "excelRow": 175
@@ -2451,7 +2451,7 @@
     "code": "CE0054",
     "itemNumber": "5322-0",
     "line": "",
-    "description": "BELL BOXES/SINGLE GANG BOX FIVE OUTLETS 1/2\"",
+    "description": "1-GANG BELL BOX",
     "category": "Electrical Boxes",
     "groupedCategory": "Electrical Boxes",
     "excelRow": 191
@@ -2529,7 +2529,7 @@
     "code": "CE0250",
     "itemNumber": "A000HFNF",
     "line": "",
-    "description": "FLEX HOUSING PACK rough (BROAN)",
+    "description": "BROAN - EXHAUST ROUGH HOUSING",
     "category": "Electrical Boxes",
     "groupedCategory": "Electrical Boxes",
     "excelRow": 200
@@ -2568,7 +2568,7 @@
     "code": "CE0147",
     "itemNumber": "TP614",
     "line": "",
-    "description": "HANDY (UTILITY) BOX BLANK WITH 1/2\" KO",
+    "description": "HANDY BOX BLANK WITH 1/2\" KO",
     "category": "Electrical Boxes",
     "groupedCategory": "Electrical Boxes",
     "excelRow": 198
@@ -2594,7 +2594,7 @@
     "code": "CE0037",
     "itemNumber": "DW143",
     "line": "",
-    "description": "NAIL ON LT BOX",
+    "description": "NAIL ON LIGHT BOX",
     "category": "Electrical Boxes",
     "groupedCategory": "Electrical Boxes",
     "excelRow": 181
@@ -2633,7 +2633,7 @@
     "code": "CE0256",
     "itemNumber": "FB4050",
     "line": "",
-    "description": "PLASTIC PANCAKE BOXES",
+    "description": "REUSE",
     "category": "Electrical Boxes",
     "groupedCategory": "Electrical Boxes",
     "excelRow": 201
@@ -2659,7 +2659,7 @@
     "code": "CE0043",
     "itemNumber": "FLBC4502",
     "line": "",
-    "description": "PVC ROUND FLOOR BOX",
+    "description": "PVC ROUND FLOOR PLUG ROUGH",
     "category": "Electrical Boxes",
     "groupedCategory": "Electrical Boxes",
     "excelRow": 187
@@ -2711,7 +2711,7 @@
     "code": "CE0039",
     "itemNumber": "DW104",
     "line": "",
-    "description": "Round Ceiling Box W Bar Hanger",
+    "description": "PLASTIC BAR HANGER",
     "category": "Electrical Boxes",
     "groupedCategory": "Electrical Boxes",
     "excelRow": 183
@@ -2724,7 +2724,7 @@
     "code": "CE0055",
     "itemNumber": "5173-0",
     "line": "",
-    "description": "SINGLE GANG BELL BOX BLANK",
+    "description": "1-GANG BELL BOX COVER BLANK",
     "category": "Electrical Boxes",
     "groupedCategory": "Electrical Boxes",
     "excelRow": 192
@@ -2750,7 +2750,7 @@
     "code": "CE3119",
     "itemNumber": "12354",
     "line": "",
-    "description": "1-Foot Fan Extension MB",
+    "description": "DR-12MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 349
@@ -2763,7 +2763,7 @@
     "code": "CE3028",
     "itemNumber": "12357",
     "line": "",
-    "description": "1-Foot Fan Extension NK",
+    "description": "DR-12NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 277
@@ -2776,7 +2776,7 @@
     "code": "CE3009",
     "itemNumber": "12360",
     "line": "",
-    "description": "1-Foot RB Fan Extension",
+    "description": "DR-12RB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 263
@@ -2789,7 +2789,7 @@
     "code": "CE3019",
     "itemNumber": "14997",
     "line": "",
-    "description": "1-Light White Glass Mushroom - NK",
+    "description": "LF6-2-NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 270
@@ -2802,7 +2802,7 @@
     "code": "CE3138",
     "itemNumber": "81255",
     "line": "",
-    "description": "10\" Clear Glass Beehive Pendant - NK - Silver Braided Cord",
+    "description": "MP-249CL-10-NK(E26)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 368
@@ -2841,7 +2841,7 @@
     "code": "CE3011",
     "itemNumber": "16701",
     "line": "",
-    "description": "10W LED Small Bullet Flood",
+    "description": "LED-FLOOD-226-BK(3000K)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 265
@@ -2854,7 +2854,7 @@
     "code": "CE3096",
     "itemNumber": "18857",
     "line": "",
-    "description": "11W BR30 LED Lamp 3000K Dimmable",
+    "description": "LED-BR30-3K",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 329
@@ -2880,7 +2880,7 @@
     "code": "CE3141",
     "itemNumber": "19518",
     "line": "",
-    "description": "13' Metal Dome Pendant Cover - White Glass - MB",
+    "description": "MP-CAP-MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 371
@@ -2893,7 +2893,7 @@
     "code": "CE3085",
     "itemNumber": "19509",
     "line": "",
-    "description": "14\" Clear Glass Beehive Pendant - MB- Black Braided Cord",
+    "description": "MP-249CL-MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 319
@@ -2906,7 +2906,7 @@
     "code": "CE3084",
     "itemNumber": "19512",
     "line": "",
-    "description": "14\" Clear Glass Beehive Pendant - NK - Silver Braided Cord",
+    "description": "MP-249CL-NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 318
@@ -2919,7 +2919,7 @@
     "code": "CE3116",
     "itemNumber": "LED15T848GC850D",
     "line": "",
-    "description": "15W LED T8 48\" 50K LINE VOLTAGE",
+    "description": "4FT 15W T8 50K WRAP AROUND FLOURESCENT BULB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 346
@@ -2932,7 +2932,7 @@
     "code": "CE3010",
     "itemNumber": "18860",
     "line": "",
-    "description": "17 Watt LED BR40 Lamp - 3000K - Dimmable",
+    "description": "LED-BR40-3K",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 264
@@ -3023,7 +3023,7 @@
     "code": "CE3094",
     "itemNumber": "21069",
     "line": "",
-    "description": "2-Bulb 24\" Wrap-LED-Direct Wire-Lamps Included",
+    "description": "LED-WRAP-2X2-WH-120V-LAMPS",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 327
@@ -3036,7 +3036,7 @@
     "code": "CE3033",
     "itemNumber": "21072",
     "line": "",
-    "description": "2-Bulb 48\" Wrap-LED-Direct Wire-Lamps Included",
+    "description": "LED-WRAP-2x4-WH-120V-LAMPS",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 282
@@ -3049,7 +3049,7 @@
     "code": "CE3150",
     "itemNumber": "MIS-500-CH",
     "line": "",
-    "description": "2-Light 3 Square Tab Ceiling Mount - MB  White Glass",
+    "description": "CFZ-212WH-MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 379
@@ -3062,7 +3062,7 @@
     "code": "CE3164",
     "itemNumber": "WPL-003-WH",
     "line": "",
-    "description": "2-Light 3 Square Tab Ceiling Mount - MB  White Glass",
+    "description": "CFZ-212WH-MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 393
@@ -3075,7 +3075,7 @@
     "code": "CE3080",
     "itemNumber": "20166",
     "line": "",
-    "description": "2-Light 3 Square Tab Ceiling Mount - NK  White Glass",
+    "description": "CFZ-212WH-NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 314
@@ -3088,7 +3088,7 @@
     "code": "CE3091",
     "itemNumber": "15993",
     "line": "",
-    "description": "2-Light Contemporary Vanity - NK",
+    "description": "VS154-2-NK(GC-725-WH)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 325
@@ -3101,7 +3101,7 @@
     "code": "CE3055",
     "itemNumber": "19494",
     "line": "",
-    "description": "2-Light Open Bottom Front Porch Ceiling Mount - MB",
+    "description": "FP-31-MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 299
@@ -3114,7 +3114,7 @@
     "code": "CE3053",
     "itemNumber": "20271",
     "line": "",
-    "description": "2-Light White Bowl Light Kit - 13W Max - 2xLED3K",
+    "description": "FL-111-WH(2XLED3K)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 297
@@ -3127,7 +3127,7 @@
     "code": "CE3020",
     "itemNumber": "13851",
     "line": "",
-    "description": "2-Light White Glass Mushroom - NK",
+    "description": "LF8-2-NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 271
@@ -3140,7 +3140,7 @@
     "code": "CE3123",
     "itemNumber": "16476",
     "line": "",
-    "description": "2.25\" Frosted White UFan Glass - Smooth - No Flare",
+    "description": "G-431",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 353
@@ -3179,7 +3179,7 @@
     "code": "CE3018",
     "itemNumber": "13860",
     "line": "",
-    "description": "250' Foot Light Fixture Chain - AB",
+    "description": "CHAIN-ABR",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 269
@@ -3192,7 +3192,7 @@
     "code": "CE3175",
     "itemNumber": "",
     "line": "",
-    "description": "250' Foot Light Fixture Chain - CH-GD",
+    "description": "CHAIN-PBR",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 402
@@ -3205,7 +3205,7 @@
     "code": "CE3017",
     "itemNumber": "13863",
     "line": "",
-    "description": "250' Foot Light Fixture Chain - CH-NK",
+    "description": "CHAIN-CHR",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 268
@@ -3257,7 +3257,7 @@
     "code": "CE3076",
     "itemNumber": "DR-36RB",
     "line": "",
-    "description": "3 Foot RB Fan Extension",
+    "description": "DR-36RB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 311
@@ -3283,7 +3283,7 @@
     "code": "CE3166",
     "itemNumber": "WPL-004-WH",
     "line": "",
-    "description": "3-Blade 42\" MB Modern Damp Location Fan Matte Black Blades Pull Chain 3K, 4K, 5K",
+    "description": "PC342D MB3MB(SELECT)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 395
@@ -3296,7 +3296,7 @@
     "code": "CE3167",
     "itemNumber": "WPL-104-WH",
     "line": "",
-    "description": "3-Blade 52\" NK Neo Fan SV/WL Blades WC6 3K4K5K",
+    "description": "SUN352 NK3SV/WL(WC-6-WH)(SELECT)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 396
@@ -3335,7 +3335,7 @@
     "code": "CE3114",
     "itemNumber": "20169",
     "line": "",
-    "description": "3-Light 3 Square Tab Ceiling Mount - MB  White Glass",
+    "description": "CFZ-216WH-MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 345
@@ -3348,7 +3348,7 @@
     "code": "CE3093",
     "itemNumber": "20172",
     "line": "",
-    "description": "3-Light 3 Square Tab Ceiling Mount - NK  White Glass",
+    "description": "CFZ-216WH-NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 326
@@ -3361,7 +3361,7 @@
     "code": "CE3183",
     "itemNumber": "",
     "line": "",
-    "description": "3-Light Clear Glass Vanity - NK",
+    "description": "VS394-3CL-MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 409
@@ -3374,7 +3374,7 @@
     "code": "CE3075",
     "itemNumber": "15996",
     "line": "",
-    "description": "3-Light Contemporary Vanity Light - NK",
+    "description": "VS154-3-NK(GC-725-WH)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 310
@@ -3387,7 +3387,7 @@
     "code": "CE3034",
     "itemNumber": "16674",
     "line": "",
-    "description": "3-Light Racetrack w/Arms - NK G-423",
+    "description": "VSBB-3-NK(G-423)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 283
@@ -3400,7 +3400,7 @@
     "code": "CE3035",
     "itemNumber": "16704",
     "line": "",
-    "description": "3-Light Racetrack w/Arms - NK G-423",
+    "description": "VSBB-5-NK(G-423)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 284
@@ -3413,7 +3413,7 @@
     "code": "CE3131",
     "itemNumber": "19755",
     "line": "",
-    "description": "3-Light White Glass Vanity - NK",
+    "description": "VS394-3WH-NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 361
@@ -3452,7 +3452,7 @@
     "code": "CE3187",
     "itemNumber": "",
     "line": "",
-    "description": "4-Foot Fan Extension MB",
+    "description": "DR-48MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 413
@@ -3465,7 +3465,7 @@
     "code": "CE3186",
     "itemNumber": "",
     "line": "",
-    "description": "4-Foot Fan Extension NK",
+    "description": "DR-48NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 412
@@ -3478,7 +3478,7 @@
     "code": "CE3095",
     "itemNumber": "12441",
     "line": "",
-    "description": "4-Foot NK Fan Extension",
+    "description": "DR-48NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 328
@@ -3491,7 +3491,7 @@
     "code": "CE3135",
     "itemNumber": "19758",
     "line": "",
-    "description": "4-Light Clear Glass Vanity - NK",
+    "description": "VS394-4CL-NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 365
@@ -3504,7 +3504,7 @@
     "code": "CE3046",
     "itemNumber": "16818",
     "line": "",
-    "description": "4-Light Racetrack w/Arms - NK G-423",
+    "description": "VSBB-4-NK(G-423)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 293
@@ -3517,7 +3517,7 @@
     "code": "CE3089",
     "itemNumber": "21321",
     "line": "",
-    "description": "4-Sided Open Bottom Coach Light - MB",
+    "description": "CL-471-MB(E26)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 323
@@ -3530,7 +3530,7 @@
     "code": "CE3143",
     "itemNumber": "50064",
     "line": "",
-    "description": "4\" Downrod Black",
+    "description": "DR-48BK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 373
@@ -3543,7 +3543,7 @@
     "code": "CE3142",
     "itemNumber": "50064",
     "line": "",
-    "description": "4\" Downrod Nickel",
+    "description": "DR-48NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 372
@@ -3556,7 +3556,7 @@
     "code": "CE0053",
     "itemNumber": "S1174WSP",
     "line": "",
-    "description": "4\" LAMPHOLDER KEYLESS 660W 250V PLAS WH",
+    "description": "4\" LAMPHOLDER KEYLESS",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 217
@@ -3595,7 +3595,7 @@
     "code": "CE3181",
     "itemNumber": "",
     "line": "",
-    "description": "42\" Square Cage Island Pendant - MB",
+    "description": "HF-480IL-MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 407
@@ -3608,7 +3608,7 @@
     "code": "CE3072",
     "itemNumber": "7-70097",
     "line": "",
-    "description": "48 Ft LED 15 String Lights - Black",
+    "description": "STRING LIGHTS",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 307
@@ -3621,7 +3621,7 @@
     "code": "CE3125",
     "itemNumber": "S8419",
     "line": "",
-    "description": "4FT 32W T8 35K WRAP AROUND FLOURESCENT",
+    "description": "4FT 32W T8 35K WRAP AROUND FLOURESCENT BULB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 355
@@ -3634,7 +3634,7 @@
     "code": "CE3122",
     "itemNumber": "S8436",
     "line": "",
-    "description": "4ft 32W T8 65K WRAP AROUND FLOURESCENT",
+    "description": "4FT 32W T8 65K WRAP AROUND FLOURESCENT BULB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 352
@@ -3660,7 +3660,7 @@
     "code": "CE3163",
     "itemNumber": "WPL-102-WH",
     "line": "",
-    "description": "5-Blade 52\" MB Modern Cylinder Fan Matte Black/Walnut Blades Pull Chain 3K, 4K, 5K",
+    "description": "PC552 MB5MB/WL(LED SELECT)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 392
@@ -3673,7 +3673,7 @@
     "code": "CE3008",
     "itemNumber": "21696",
     "line": "",
-    "description": "5-Blade 52\" MB Modern Cylinder Fan MB Walnut Blades",
+    "description": "SUN552 MB5MB/WL(WC-6-WH)(SELECT)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 262
@@ -3686,7 +3686,7 @@
     "code": "CE3130",
     "itemNumber": "20124",
     "line": "",
-    "description": "5-Blade 52\" NK Modern Cylinder Fan",
+    "description": "REUSE",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 360
@@ -3699,7 +3699,7 @@
     "code": "CE3155",
     "itemNumber": "",
     "line": "",
-    "description": "5-Blade 52\" NK Modern Cylinder Fan Silver/Walnut",
+    "description": "PC552 NK5SV/WL(LED SELECT)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 384
@@ -3712,7 +3712,7 @@
     "code": "CE3184",
     "itemNumber": "",
     "line": "",
-    "description": "5-Blade Ceiling Fan - MB/Walnut Blades",
+    "description": "SUN505 MB5MB/WL(2XLED3K)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 410
@@ -3725,7 +3725,7 @@
     "code": "CE3071",
     "itemNumber": "18821",
     "line": "",
-    "description": "5-Blade Contemporary NK Ceiling Fan - Silver/Walnut Blades",
+    "description": "SUN505 NK5SV/WL(2XLED3K)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 306
@@ -3738,7 +3738,7 @@
     "code": "CE3038",
     "itemNumber": "21279",
     "line": "",
-    "description": "5/6\" LED Disc Light 15W - 3K, 4K, 5K",
+    "description": "DISC LIGHT 6\"",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 287
@@ -3751,7 +3751,7 @@
     "code": "CE3079",
     "itemNumber": "21282",
     "line": "",
-    "description": "5/6\" Low Profile Light - MB 3K, 4K, 5K",
+    "description": "LED-DL712-MB(E26 SELECT)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 313
@@ -3816,7 +3816,7 @@
     "code": "CE3086",
     "itemNumber": "19458",
     "line": "",
-    "description": "52\" Fan MB Black/Walnut Blades 4-Light White LED Kit",
+    "description": "U552 MB5MB/WL+4G431(4XLED3K)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 320
@@ -3829,7 +3829,7 @@
     "code": "CE3088",
     "itemNumber": "19455",
     "line": "",
-    "description": "52\" Fan MB Black/Walnut Blades White Bowl LED Kit",
+    "description": "U552 MB5MB/WL+G168(2XLED3K)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 322
@@ -3842,7 +3842,7 @@
     "code": "CE3087",
     "itemNumber": "18923",
     "line": "",
-    "description": "52\" Fan NK Silver/Walnut Blades 2-Light WH Glass LED Kit",
+    "description": "U552 NK5SV/WL+G168(2xLED3K)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 321
@@ -3855,7 +3855,7 @@
     "code": "CE3159",
     "itemNumber": "SWI-400-WH",
     "line": "",
-    "description": "52\" Verona 3 Blade Matte Black Fan Integrated LED",
+    "description": "SUN523 MB/NK3MB(20WLED 3K)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 388
@@ -3868,7 +3868,7 @@
     "code": "CE3097",
     "itemNumber": "16344",
     "line": "",
-    "description": "54\" 3-Metal Blade Industrial Fan - MB",
+    "description": "SUN543 MB3MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 330
@@ -3881,7 +3881,7 @@
     "code": "CE3090",
     "itemNumber": "21324",
     "line": "",
-    "description": "6-Sided Open Bottom Coach Light - MB",
+    "description": "CL-671-MB(E26)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 324
@@ -3894,7 +3894,7 @@
     "code": "CE3016",
     "itemNumber": "18053",
     "line": "",
-    "description": "6\" LED Under Cabinet Light",
+    "description": "REUSE",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 267
@@ -3959,7 +3959,7 @@
     "code": "CE3165",
     "itemNumber": "WPL-103-WH",
     "line": "",
-    "description": "Acheron 3-Light Clear Glass Vanity - MB",
+    "description": "ACR-VS3(CLR)-MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 394
@@ -3972,7 +3972,7 @@
     "code": "CE3168",
     "itemNumber": "WPL-300-WH",
     "line": "",
-    "description": "Acheron 3-Light Vanity Light - NK",
+    "description": "ACR-VS3(CLR)-NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 397
@@ -3985,7 +3985,7 @@
     "code": "CE3172",
     "itemNumber": "",
     "line": "",
-    "description": "ADJUSTABLE FLOODLIGHT 2K-5K BZE",
+    "description": "SINGLE FLOODLIGHT 2K-5K BZE",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 400
@@ -3998,7 +3998,7 @@
     "code": "CE3180",
     "itemNumber": "",
     "line": "",
-    "description": "Alu Small Clear Glass Cube Coach Light - MB",
+    "description": "CL-1800-MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 406
@@ -4050,7 +4050,7 @@
     "code": "CE3059",
     "itemNumber": "18866",
     "line": "",
-    "description": "B10 Torpedo Candle LED Lamp",
+    "description": "REUSE",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 300
@@ -4063,7 +4063,7 @@
     "code": "CE3067",
     "itemNumber": "20388",
     "line": "",
-    "description": "Barcelona 8-Blade 72\" NK Fan Matte Black Blades",
+    "description": "SUN872 NK8MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 303
@@ -4089,7 +4089,7 @@
     "code": "CE0104",
     "itemNumber": "401P",
     "line": "",
-    "description": "CAN TRIMS (RINGS)",
+    "description": "CAN TRIMS RINGS",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 226
@@ -4141,7 +4141,7 @@
     "code": "CE3007",
     "itemNumber": "12756",
     "line": "",
-    "description": "Chup Small Black Cast Coach Light",
+    "description": "CL-21-BK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 261
@@ -4154,7 +4154,7 @@
     "code": "CE3100",
     "itemNumber": "CNPY-45-MB",
     "line": "",
-    "description": "CNPY-45-MB SLOPED CEILING CANOPY - BK",
+    "description": "SLOPED FAN CANOPY MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 332
@@ -4167,7 +4167,7 @@
     "code": "CE3099",
     "itemNumber": "CNPY-45-NK",
     "line": "",
-    "description": "CNPY-45-NK SLOPED CEILING CANOPY - NK",
+    "description": "SLOPED FAN CANOPY NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 331
@@ -4193,7 +4193,7 @@
     "code": "CE3154",
     "itemNumber": "",
     "line": "",
-    "description": "Connectors for Ceiling Fan Chain - CHR",
+    "description": "CHAIN CONNECTORS-CHR",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 383
@@ -4206,7 +4206,7 @@
     "code": "CE3117",
     "itemNumber": "24CGTSL3C3",
     "line": "",
-    "description": "COOPER 2x4 LED FLAT PANEL SELECTABLE",
+    "description": "ETON 2x4 LED WRAP",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 347
@@ -4219,7 +4219,7 @@
     "code": "CE3037",
     "itemNumber": "16587",
     "line": "",
-    "description": "Dallas 16' Glass Bowl Entry Fixture - NK White",
+    "description": "HF-145WH-NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 286
@@ -4232,7 +4232,7 @@
     "code": "CE3039",
     "itemNumber": "16008",
     "line": "",
-    "description": "Dallas 16' White Glass Short Entry Bowl - NK",
+    "description": "HF-146WH-NK(15.5)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 288
@@ -4245,7 +4245,7 @@
     "code": "CE3040",
     "itemNumber": "19055",
     "line": "",
-    "description": "Drum Coach Light - MB",
+    "description": "REUSE",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 289
@@ -4284,7 +4284,7 @@
     "code": "CE3030",
     "itemNumber": "12636",
     "line": "",
-    "description": "Fan Balance Kit (5 Gram)",
+    "description": "BK-2",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 279
@@ -4297,7 +4297,7 @@
     "code": "CE3148",
     "itemNumber": "",
     "line": "",
-    "description": "Fan Control - White Slider with On/Off Light Switch",
+    "description": "WC-6-WH",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 377
@@ -4310,7 +4310,7 @@
     "code": "CE3147",
     "itemNumber": "SWI-500-10",
     "line": "",
-    "description": "Fan Pull Chain Fob - AB color - 30cm AB chain",
+    "description": "PZ-2-AB(X)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 376
@@ -4323,7 +4323,7 @@
     "code": "CE3001",
     "itemNumber": "13065",
     "line": "",
-    "description": "Front Porch Ceiling Mount - BK",
+    "description": "FP-1-BK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 258
@@ -4349,7 +4349,7 @@
     "code": "CE3063",
     "itemNumber": "15123",
     "line": "",
-    "description": "Home Enhancements Fan Pull Chain Fob - CH color - 30cm CH chain",
+    "description": "PZ-3-CH(X)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 302
@@ -4505,7 +4505,7 @@
     "code": "CE0277",
     "itemNumber": "1465YSP",
     "line": "",
-    "description": "LAMP GUARD PLASTIC 200W MAX YL",
+    "description": "BULB PROTECTOR / LAMP GUARD / ATTIC LIGHT CAGE",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 236
@@ -4518,7 +4518,7 @@
     "code": "CE3025",
     "itemNumber": "15390",
     "line": "",
-    "description": "Laredo 3-Light Chandelier - NK  White Glass",
+    "description": "LE-CH3WH-NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 275
@@ -4531,7 +4531,7 @@
     "code": "CE3036",
     "itemNumber": "15396",
     "line": "",
-    "description": "Laredo 5-Light Chandelier - NK  White Glass",
+    "description": "LE-CH5WH-NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 285
@@ -4622,7 +4622,7 @@
     "code": "CE3048",
     "itemNumber": "LED-WRAP-DECO-48W-SELECT",
     "line": "",
-    "description": "LED INTEGRATED WRAP 48W 3K 4K 5K",
+    "description": "LED-WRAP-DECO-48W-SELECT",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 295
@@ -4661,7 +4661,7 @@
     "code": "CE3179",
     "itemNumber": "",
     "line": "",
-    "description": "LED ST19 Amber Vintage Filament Lamp - 7W - 2200K",
+    "description": "LED-ST19-22K",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 405
@@ -4674,7 +4674,7 @@
     "code": "CE3178",
     "itemNumber": "",
     "line": "",
-    "description": "LED ST19 Clear Vintage Filament Lamp - 7W - 3000K",
+    "description": "LED-ST19CL-3K",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 404
@@ -4687,7 +4687,7 @@
     "code": "CE3182",
     "itemNumber": "",
     "line": "",
-    "description": "LED ST19 Clear Vintage Filament Lamp - 7W - 3000K",
+    "description": "LED-ST19CL-3K",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 408
@@ -4700,7 +4700,7 @@
     "code": "CE3032",
     "itemNumber": "21192",
     "line": "",
-    "description": "LED T8 48\" Bypass Tube Lamp 4K-Double Ended",
+    "description": "LED-48T8DE-4K",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 281
@@ -4739,7 +4739,7 @@
     "code": "CE3188",
     "itemNumber": "",
     "line": "",
-    "description": "LED-Double Flood-Matte Black w/Sensor",
+    "description": "LED-FLOOD-2-MB-MS(20W/3K)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 414
@@ -4752,7 +4752,7 @@
     "code": "CE3185",
     "itemNumber": "",
     "line": "",
-    "description": "LED-Double Flood-Matte Black-20W 3000K",
+    "description": "LED-FLOOD-2-MB(AC20W/3K)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 411
@@ -4765,7 +4765,7 @@
     "code": "CE3139",
     "itemNumber": "20043",
     "line": "",
-    "description": "Lighted Doorbell Button - MB",
+    "description": "DB-501-MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 369
@@ -4778,7 +4778,7 @@
     "code": "CE3045",
     "itemNumber": "12813",
     "line": "",
-    "description": "Lighted Doorbell Button - PW",
+    "description": "DB-501-PW",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 292
@@ -4804,7 +4804,7 @@
     "code": "CE3082",
     "itemNumber": "20607",
     "line": "",
-    "description": "Mare Medium Coach Light - Matte Black - Clear Glass",
+    "description": "CL-3880-MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 316
@@ -4817,7 +4817,7 @@
     "code": "CE3062",
     "itemNumber": "21540",
     "line": "",
-    "description": "Metro Damp Patio Fan - MB",
+    "description": "SUN866D MB8MB(SELECT)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 301
@@ -4830,7 +4830,7 @@
     "code": "CE0110",
     "itemNumber": "LT460WH6930R",
     "line": "",
-    "description": "MINI CAN TRIM\\4\" 8W LED RETRO 30K",
+    "description": "MINI CAN TRIM 4\"",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 230
@@ -4856,7 +4856,7 @@
     "code": "CE3002",
     "itemNumber": "13458",
     "line": "",
-    "description": "Mini Pendant Fixture - NK (no glass)",
+    "description": "MP-1-NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 259
@@ -4869,7 +4869,7 @@
     "code": "CE3042",
     "itemNumber": "80925",
     "line": "",
-    "description": "MP-380ES White Cylinder Glass Pendant",
+    "description": "MP-380(WH)-NK(E26)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 290
@@ -4882,7 +4882,7 @@
     "code": "CE3068",
     "itemNumber": "19734",
     "line": "",
-    "description": "Neo Damp Patio Fan - NK Silver ABS Blades",
+    "description": "REUSE",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 304
@@ -4908,7 +4908,7 @@
     "code": "CE0106",
     "itemNumber": "RCD61120S9WH",
     "line": "",
-    "description": "NICOR RCD 6\"  LED Disc Light",
+    "description": "REUSE",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 228
@@ -4934,7 +4934,7 @@
     "code": "CE3022",
     "itemNumber": "13479",
     "line": "",
-    "description": "Patio Light-BK - Cast Alum",
+    "description": "PL-1-BK(CAST)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 273
@@ -4986,7 +4986,7 @@
     "code": "CE3113",
     "itemNumber": "RD6-30-WH",
     "line": "",
-    "description": "READY DISC 3000K 15W DISC LIGHT",
+    "description": "REUSE",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 344
@@ -4999,7 +4999,7 @@
     "code": "CE0068",
     "itemNumber": "RB6WHWH8102C",
     "line": "",
-    "description": "RECESSED LIGHT FIX 3-4K 6\"",
+    "description": "RECESSED CAN TRIM 6IN",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 224
@@ -5051,7 +5051,7 @@
     "code": "CE3177",
     "itemNumber": "",
     "line": "",
-    "description": "Rimo Hanging Coach Light-MB",
+    "description": "CL-20256-MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 403
@@ -5064,7 +5064,7 @@
     "code": "CE3023",
     "itemNumber": "14253",
     "line": "",
-    "description": "Ruby 1-Light Open Bottom Coach Light - BK",
+    "description": "CL-451-BK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 274
@@ -5077,7 +5077,7 @@
     "code": "CE3012",
     "itemNumber": "18920",
     "line": "",
-    "description": "Sabine 52\" LED 5-Blade 4-light Ceiling Fan",
+    "description": "U552 NK5SV/WL+4G431(4XLED3K)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 266
@@ -5103,7 +5103,7 @@
     "code": "CE3078",
     "itemNumber": "13008",
     "line": "",
-    "description": "Shallow Dome Patio Light Kit - MB 2 x LEDA19 3K Included",
+    "description": "FL-121D-MB(2XLED3K)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 312
@@ -5155,7 +5155,7 @@
     "code": "CE3101",
     "itemNumber": "20238",
     "line": "",
-    "description": "Small LED Wall Cube - MB",
+    "description": "REUSE",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 333
@@ -5168,7 +5168,7 @@
     "code": "CE3132",
     "itemNumber": "18758",
     "line": "",
-    "description": "Sonora Wall Sconce/Vanity - NK  Clear & White Glass",
+    "description": "SNA-SC1-NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 362
@@ -5220,7 +5220,7 @@
     "code": "CE3174",
     "itemNumber": "",
     "line": "",
-    "description": "Trivor Extra Large Cube Coach Light",
+    "description": "CL-1804-MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 401
@@ -5233,7 +5233,7 @@
     "code": "CE3162",
     "itemNumber": "WPL-002-WH",
     "line": "",
-    "description": "Ultar Wall Mounted Coach Light - MB",
+    "description": "CL-20253-MB",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 391
@@ -5246,7 +5246,7 @@
     "code": "CE3073",
     "itemNumber": "15753",
     "line": "",
-    "description": "Victoria 3-Light Foyer Entry Fixture - NK White Glass",
+    "description": "VIC-HF3(WH)-NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 308
@@ -5259,7 +5259,7 @@
     "code": "CE3074",
     "itemNumber": "15747",
     "line": "",
-    "description": "Victoria 5-Light Chandelier - NK White Glass",
+    "description": "VIC-CH5(WH)-NK",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 309
@@ -5272,7 +5272,7 @@
     "code": "CE3083",
     "itemNumber": "70073",
     "line": "",
-    "description": "Vivio Alix 1-Light Large Metal Shade Pendant - Brushed Nickel",
+    "description": "MP-70073-1-NK(E26)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 317
@@ -5285,7 +5285,7 @@
     "code": "CE3081",
     "itemNumber": "70043",
     "line": "",
-    "description": "Vivio Alix 1-Light Large Metal Shade Pendant - Matte Black",
+    "description": "MP-70043-1-MB(E26)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 315
@@ -5298,7 +5298,7 @@
     "code": "CE3137",
     "itemNumber": "70445",
     "line": "",
-    "description": "Vivio Rhine 3-Light Vanity - MB - Clear Glass",
+    "description": "VS-70445-3-MB(E26)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 367
@@ -5311,7 +5311,7 @@
     "code": "CE3069",
     "itemNumber": "70088",
     "line": "",
-    "description": "Vivio Uri 1-Light Small Cube Patio Light - Textured Black",
+    "description": "PL-70088-1-TBK(E26)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 305
@@ -5324,7 +5324,7 @@
     "code": "CE3111",
     "itemNumber": "70091",
     "line": "",
-    "description": "Vivio Zain 2-Light Large Cube  - Textured Black",
+    "description": "PL-70091-2-TBK(E26)",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 343
@@ -5350,7 +5350,7 @@
     "code": "CE3160",
     "itemNumber": "WPL-001-WH",
     "line": "",
-    "description": "Wall Controller Ceiling Fan Only - WH",
+    "description": "WC-1-WH",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 389
@@ -5363,7 +5363,7 @@
     "code": "CE3004",
     "itemNumber": "14523",
     "line": "",
-    "description": "White Ceiling Fan Glass",
+    "description": "G-423",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 260
@@ -5376,7 +5376,7 @@
     "code": "CE3021",
     "itemNumber": "15318",
     "line": "",
-    "description": "White Chandelier Glass",
+    "description": "GC-725-WH",
     "category": "Lighting",
     "groupedCategory": "Lighting",
     "excelRow": 272
@@ -5610,7 +5610,7 @@
     "code": "CE0414",
     "itemNumber": "",
     "line": "",
-    "description": "#4 AL/CU BARRELL CRIMP",
+    "description": "REUSE",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 564
@@ -5675,7 +5675,7 @@
     "code": "CE0273",
     "itemNumber": "",
     "line": "",
-    "description": "1-1/2\" NMB CONNECTOR  2 SCREW STRAP TYPE",
+    "description": "1-1/2\" ROMEX CONNECTOR",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 512
@@ -5740,7 +5740,7 @@
     "code": "CE0268",
     "itemNumber": "",
     "line": "",
-    "description": "1-1/4\" STEEL LOCKNUT",
+    "description": "1-1/4\" LOCKNUT",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 507
@@ -5935,7 +5935,7 @@
     "code": "CE0195",
     "itemNumber": "",
     "line": "",
-    "description": "1\" STEEL LOCKNUT",
+    "description": "1\" LOCKNUT",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 490
@@ -6091,7 +6091,7 @@
     "code": "CE0026",
     "itemNumber": "",
     "line": "",
-    "description": "1/2\" STEEL LOCKNUT",
+    "description": "1/2\" LOCKNUT",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 433
@@ -6338,7 +6338,7 @@
     "code": "CE0625",
     "itemNumber": "",
     "line": "",
-    "description": "15A Kitchen Counter Receptacle Aluminum",
+    "description": "15A POP UP PLUG Aluminum",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 658
@@ -6351,7 +6351,7 @@
     "code": "CE0545",
     "itemNumber": "",
     "line": "",
-    "description": "15A Kitchen Counter Receptacle Surface Black",
+    "description": "15A POP UP PLUG Black",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 614
@@ -6364,7 +6364,7 @@
     "code": "CE0548",
     "itemNumber": "",
     "line": "",
-    "description": "15A Kitchen Counter Receptacle Surface Brass",
+    "description": "15A POP UP PLUG Brass",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 617
@@ -6377,7 +6377,7 @@
     "code": "CE0547",
     "itemNumber": "",
     "line": "",
-    "description": "15A Kitchen Counter Receptacle Surface Bronze",
+    "description": "15A POP UP PLUG Bronze",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 616
@@ -6390,7 +6390,7 @@
     "code": "CE0418",
     "itemNumber": "",
     "line": "",
-    "description": "15A Kitchen Counter Receptacle Surface Chrome",
+    "description": "15A POP UP PLUG Chrome",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 566
@@ -6403,7 +6403,7 @@
     "code": "CE0544",
     "itemNumber": "",
     "line": "",
-    "description": "15A Kitchen Counter Receptacle Surface Nickel",
+    "description": "15A POP UP PLUG Nickel",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 613
@@ -6416,7 +6416,7 @@
     "code": "CE0546",
     "itemNumber": "",
     "line": "",
-    "description": "15A Kitchen Counter Receptacle Surface White",
+    "description": "15A POP UP PLUG White",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 615
@@ -6533,7 +6533,7 @@
     "code": "CE0269",
     "itemNumber": "",
     "line": "",
-    "description": "2-1/2\" STEEL LOCKNUT",
+    "description": "2-1/2\" LOCKNUT",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 508
@@ -6650,7 +6650,7 @@
     "code": "CE0032",
     "itemNumber": "",
     "line": "",
-    "description": "2\" NMB CONNECTOR 2 SCREW STRAP TYPE",
+    "description": "2\" ROMEX CONNECTOR",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 438
@@ -6858,7 +6858,7 @@
     "code": "CE0172",
     "itemNumber": "",
     "line": "",
-    "description": "3\" STEEL LOCKNUT",
+    "description": "3\" LOCKNUT",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 473
@@ -6923,7 +6923,7 @@
     "code": "CE0281",
     "itemNumber": "",
     "line": "",
-    "description": "3/4\" CARFLEX CONNECTOR",
+    "description": "3/4\" SEAL TITE CONNECTOR",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 517
@@ -6949,7 +6949,7 @@
     "code": "CE0267",
     "itemNumber": "",
     "line": "",
-    "description": "3/4\" STEEL LOCKNUT",
+    "description": "3/4\" LOCKNUT",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 506
@@ -6975,7 +6975,7 @@
     "code": "CE0431",
     "itemNumber": "",
     "line": "",
-    "description": "3/8\" Flex 90 Degree Diecast Squeeze Connector",
+    "description": "3/8\" Flex 90 Degree Connector",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 575
@@ -6988,7 +6988,7 @@
     "code": "CE0621",
     "itemNumber": "",
     "line": "",
-    "description": "30-inch Trim Ring and Hinged Door, 5-Pack",
+    "description": "ON-Q 30-inch Trim Ring and Hinged Door 5-Pack",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 657
@@ -7209,7 +7209,7 @@
     "code": "CE0102",
     "itemNumber": "",
     "line": "",
-    "description": "AIR KING - FAN TRIM 50 CFM",
+    "description": "AIR KING - 50CFM EXHAUST TRIM",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 453
@@ -7222,7 +7222,7 @@
     "code": "CE0103",
     "itemNumber": "",
     "line": "",
-    "description": "AIR KING - FAN TRIM AND MOTOR 80 CFM (FRISCO)",
+    "description": "REUSE",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 454
@@ -7235,7 +7235,7 @@
     "code": "CE0245",
     "itemNumber": "",
     "line": "",
-    "description": "AIRKING 75CFM TRIM/Unassembled Bath Exhaust Fan",
+    "description": "AIR KING - 75CFM EXHAUST TRIM",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 498
@@ -7300,7 +7300,7 @@
     "code": "CE0029",
     "itemNumber": "",
     "line": "",
-    "description": "BOCA (NAIL) PLATES 5 X 18",
+    "description": "NAIL PLATES 5 X 18",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 436
@@ -7326,7 +7326,7 @@
     "code": "CE0443",
     "itemNumber": "",
     "line": "",
-    "description": "BRONZE GROUND CLAMP",
+    "description": "BRONZE 2\" GROUND CLAMP",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 581
@@ -7690,7 +7690,7 @@
     "code": "CE0046",
     "itemNumber": "",
     "line": "",
-    "description": "GROUND CLAMPS (FRISCO)",
+    "description": "LAY IN GROUND CLAMP",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 439
@@ -7768,7 +7768,7 @@
     "code": "CE0186",
     "itemNumber": "",
     "line": "",
-    "description": "Insinkerator Switch Kit - Chrome",
+    "description": "INSINKERATOR / AIR SWITCH - Chrome",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 482
@@ -8158,7 +8158,7 @@
     "code": "CE0094",
     "itemNumber": "",
     "line": "",
-    "description": "PHONE/TV COMBO PLATE - WHITE",
+    "description": "EATON PHONE/TV COMBO PLATE",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 448
@@ -8197,7 +8197,7 @@
     "code": "CE0634",
     "itemNumber": "",
     "line": "",
-    "description": "Quickflash 1\" Flashing Panel",
+    "description": "Quickflash 1\" Flashing",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 664
@@ -8210,7 +8210,7 @@
     "code": "CE0021",
     "itemNumber": "",
     "line": "",
-    "description": "Quickflash 1/2\" Flashing Panel",
+    "description": "Quickflash 1/2\" Flashing",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 431
@@ -8223,7 +8223,7 @@
     "code": "CE0631",
     "itemNumber": "",
     "line": "",
-    "description": "Quickflash 1/4\" Flashing Panel",
+    "description": "Quickflash 1/4\" Flashing",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 661
@@ -8249,7 +8249,7 @@
     "code": "CE0633",
     "itemNumber": "",
     "line": "",
-    "description": "Quickflash 3/8\" Flashing Panel",
+    "description": "Quickflash 3/8\" Flashing",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 663
@@ -8327,7 +8327,7 @@
     "code": "CE0028",
     "itemNumber": "",
     "line": "",
-    "description": "SAFETY (NAIL) PLATES 1 1/2\" X 3\"",
+    "description": "NAIL PLATES 1 1/2\" X 3\"",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 435
@@ -8548,7 +8548,7 @@
     "code": "CE0093",
     "itemNumber": "",
     "line": "",
-    "description": "WALL MOUNT PHONE JACK - WHITE",
+    "description": "EATON  PHONE PLATE",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 447
@@ -8574,7 +8574,7 @@
     "code": "CE0185",
     "itemNumber": "",
     "line": "",
-    "description": "White Motion Switch/OCCUPANCY SENSOR",
+    "description": "Motion Switch/OCCUPANCY SENSOR",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 481
@@ -8587,7 +8587,7 @@
     "code": "CE0437",
     "itemNumber": "",
     "line": "",
-    "description": "WHITE PLUGMOLD 5 OUTLET",
+    "description": "WHITE PLUGMOLD 5 OUTLET 3'",
     "category": "Others",
     "groupedCategory": "Others",
     "excelRow": 578
@@ -8912,7 +8912,7 @@
     "code": "CE0171",
     "itemNumber": "",
     "line": "",
-    "description": "3\" PVC Male Adapter",
+    "description": "3\" PVC MA",
     "category": "PVC & PVC Parts",
     "groupedCategory": "PVC & PVC Parts",
     "excelRow": 671
@@ -9094,7 +9094,7 @@
     "code": "CE0025",
     "itemNumber": "",
     "line": "",
-    "description": "TA10 1/2\" PVC TERMINAL ADAPTER - MA",
+    "description": "1/2\" PVC MA",
     "category": "PVC & PVC Parts",
     "groupedCategory": "PVC & PVC Parts",
     "excelRow": 667
@@ -9107,7 +9107,7 @@
     "code": "CE0023",
     "itemNumber": "",
     "line": "",
-    "description": "TA35 2\" PVC TERMINAL ADAPTER - MA",
+    "description": "2\" PVC MA",
     "category": "PVC & PVC Parts",
     "groupedCategory": "PVC & PVC Parts",
     "excelRow": 666
@@ -9120,7 +9120,7 @@
     "code": "CE0622",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 1 Pole Lockoff",
+    "description": "SQD 1P BREAKER LOCKOFF",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 793
@@ -9185,7 +9185,7 @@
     "code": "CE0484",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 15A 1P 1-Way Decora Switch-WH",
+    "description": "SQD DECORA SWITCH",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 752
@@ -9198,7 +9198,7 @@
     "code": "CE0485",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 15A 1P 3-Way Decora Switch-WH",
+    "description": "SQD 3-WAY DECORA SWITCH",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 753
@@ -9211,7 +9211,7 @@
     "code": "CE0486",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 15A 1P 4-Way Decora Switch-WH",
+    "description": "SQD 4-WAY DECORA SWITCH",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 754
@@ -9237,7 +9237,7 @@
     "code": "CE0495",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 15A 1P Motion Occupancy Sensor WH",
+    "description": "SQD Motion Occupancy Sensor",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 763
@@ -9263,7 +9263,7 @@
     "code": "CE0488",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 15A 600W 1P 3-Way Dimmer Switch White",
+    "description": "SQD 3-WWAY DIMMER SWITCH",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 756
@@ -9276,7 +9276,7 @@
     "code": "CE0135",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 15A Arc Fault Breaker",
+    "description": "SQD 15A ARC FAULT BREAKER",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 729
@@ -9289,7 +9289,7 @@
     "code": "CE0489",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 15A Tamper Resistant Duplex White",
+    "description": "SQD PLUG",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 757
@@ -9302,7 +9302,7 @@
     "code": "CE0490",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 15A Tamper Resistant Weather Resistant Duplex White",
+    "description": "SQD WP PLUG WEATHER RESISTANT",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 758
@@ -9315,7 +9315,7 @@
     "code": "CE0493",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 15A TR Duplex GFCI WH",
+    "description": "REUSE",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 761
@@ -9328,7 +9328,7 @@
     "code": "CE0494",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 15A TR Duplex w/ Dual USB-A WH",
+    "description": "REUSE",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 762
@@ -9341,7 +9341,7 @@
     "code": "CE0366",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 15A TR RECEPTACLE RES WH",
+    "description": "SQD DECORA PLUG",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 740
@@ -9354,7 +9354,7 @@
     "code": "CE0496",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 1G Blank Wall Plate White",
+    "description": "SQD 1G BLANK PLATE",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 764
@@ -9367,7 +9367,7 @@
     "code": "CE0498",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 1G Decora Wall Plate White",
+    "description": "SQD 1G DECORA PLATE",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 766
@@ -9380,7 +9380,7 @@
     "code": "CE0502",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 1G Duplex Wall Plate White",
+    "description": "SQD 1G PLUG PLATE BLACK",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 770
@@ -9393,7 +9393,7 @@
     "code": "CE0510",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 1G DUPLEX WALL PLATE, BK",
+    "description": "SQD 1G PLUG PLATE BLACK",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 778
@@ -9406,7 +9406,7 @@
     "code": "CE0507",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 1G WALL PLATE - BK",
+    "description": "SQD 1G SWITCH BLACK",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 775
@@ -9419,7 +9419,7 @@
     "code": "CE0503",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 1G Wall Plate Dryer/Range",
+    "description": "SQD DRYER/RANGE PLATE",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 771
@@ -9432,7 +9432,7 @@
     "code": "CE0504",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 1G Weatherproof Cover Vertical",
+    "description": "SQD 1G BUBBLE COVER VERTICAL",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 772
@@ -9445,7 +9445,7 @@
     "code": "CE0532",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 200A MAIN BKR ENCLOSURE",
+    "description": "SQD 200A MAIN BKR DISCONNECT",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 782
@@ -9497,7 +9497,7 @@
     "code": "CE0136",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 20a Arc Fault Breaker",
+    "description": "SQD 20A ARC FAULT BREAKER",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 730
@@ -9510,7 +9510,7 @@
     "code": "CE0134",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 20A ARC/Ground Fault Breaker Combo",
+    "description": "SQD 20A AFCI/GFCI COMBO BREAKER",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 728
@@ -9523,7 +9523,7 @@
     "code": "CE0235",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 225A DISCONNECTS",
+    "description": "SQD 225A DISCONNECT",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 732
@@ -9562,7 +9562,7 @@
     "code": "CE0497",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 2G Blank Wall Plate White",
+    "description": "SQD 2G BLANK PLATE",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 765
@@ -9575,7 +9575,7 @@
     "code": "CE0499",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 2G Decora Wall Plate White",
+    "description": "SQD 2G DECORA PLATE",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 767
@@ -9588,7 +9588,7 @@
     "code": "CE0436",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 2G WALL (QUAD) PLATE WHITE",
+    "description": "SQD QUAD PLUG PLATE",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 744
@@ -9614,7 +9614,7 @@
     "code": "CE0420",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 2P 200A 240 CKT BREAKER 25kA",
+    "description": "REUSE",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 743
@@ -9653,7 +9653,7 @@
     "code": "CE0491",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 30A Nema 14-30R Outlet - Dryer",
+    "description": "SQD DRYER PLUG",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 759
@@ -9705,7 +9705,7 @@
     "code": "CE0500",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 3G Decora Wall Plate White",
+    "description": "SQD 3G DECORA PLATE",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 768
@@ -9718,7 +9718,7 @@
     "code": "CE0458",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 40/80 PANEL W/O BREAKER",
+    "description": "SQD 40/80 PANEL MLO",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 748
@@ -9731,7 +9731,7 @@
     "code": "CE0339",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 4080 LOAD CENTER  COVER",
+    "description": "SQD 4080 PANEL COVER",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 735
@@ -9796,7 +9796,7 @@
     "code": "CE0501",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 4G Decora Wall Plate White",
+    "description": "SQD 4G DECORA PLATE",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 769
@@ -9835,7 +9835,7 @@
     "code": "CE0492",
     "itemNumber": "",
     "line": "",
-    "description": "SQD 50A Nema 14-50R Outlet - Range",
+    "description": "SQD RANGE PLUG",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 760
@@ -9861,7 +9861,7 @@
     "code": "CE0133",
     "itemNumber": "",
     "line": "",
-    "description": "SQD BREAKER LOCKOFF",
+    "description": "SQD 2P BREAKER LOCKOFF",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 727
@@ -9978,7 +9978,7 @@
     "code": "CE0586",
     "itemNumber": "",
     "line": "",
-    "description": "SQD Panel 225A Indoor Main 30/60 Circuit",
+    "description": "SQD 225A 30/60 CIRCUIT PANEL",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 789
@@ -9991,7 +9991,7 @@
     "code": "CE0348",
     "itemNumber": "",
     "line": "",
-    "description": "SQD PANEL MAIN BREAKER 200A",
+    "description": "SQD MAIN BREAKER 200A",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 738
@@ -10017,7 +10017,7 @@
     "code": "CE0487",
     "itemNumber": "",
     "line": "",
-    "description": "SQD Rocker Plate 3/4-Way Decora Rocker Switch White",
+    "description": "SQD SWITCH TOPPER",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 755
@@ -10030,7 +10030,7 @@
     "code": "CE0442",
     "itemNumber": "",
     "line": "",
-    "description": "SQD S106 SCREWS FOR PANEL COVER",
+    "description": "SQD S106 PANEL SCREW",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 745
@@ -10056,7 +10056,7 @@
     "code": "CE0535",
     "itemNumber": "",
     "line": "",
-    "description": "SQD SQR87C01WH TV SOCKET",
+    "description": "SQD TV SOCKET",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 785
@@ -10069,7 +10069,7 @@
     "code": "CE0536",
     "itemNumber": "",
     "line": "",
-    "description": "SQD SQR87CT1WH TV/TELEPHONE SOCKET",
+    "description": "SQD PHONE/ TV/ COMBO SOCKET",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 786
@@ -10082,7 +10082,7 @@
     "code": "CE0534",
     "itemNumber": "",
     "line": "",
-    "description": "SQD SQR87T01WH TELEPHONE SOCKET",
+    "description": "SQD PHONE SOCKET",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 784
@@ -10095,7 +10095,7 @@
     "code": "CE0416",
     "itemNumber": "",
     "line": "",
-    "description": "SQD SURGE PROTECTIVE DEVICE 50kA 120/240V",
+    "description": "REUSE",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 742
@@ -10134,7 +10134,7 @@
     "code": "CE0506",
     "itemNumber": "",
     "line": "",
-    "description": "SQD SWITCH MOD UNIV ROCKER PLATE BK",
+    "description": "SQD SWITCH TOPPER BLACK",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 774
@@ -10147,7 +10147,7 @@
     "code": "CE0505",
     "itemNumber": "",
     "line": "",
-    "description": "SQD SWITCH MODULE RESI SINGLE POLE",
+    "description": "SQD SWITCH BLACK",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 773
@@ -10212,7 +10212,7 @@
     "code": "CE0508",
     "itemNumber": "",
     "line": "",
-    "description": "SQD TR 15A DUPLEX OUTLET RESI BK",
+    "description": "SQD PLUG BLACK",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 776
@@ -10225,7 +10225,7 @@
     "code": "CE0509",
     "itemNumber": "",
     "line": "",
-    "description": "SQD TR 15A LIGHTED RECEPTACLE RESI WH",
+    "description": "SQD LIGHTED DECORA PLUG",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 777
@@ -10238,7 +10238,7 @@
     "code": "CE0512",
     "itemNumber": "",
     "line": "",
-    "description": "SQD TR 15A RECEPTACLE RESI BK",
+    "description": "SQD DECORA PLUG BLACK",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 780
@@ -10251,7 +10251,7 @@
     "code": "CE0239",
     "itemNumber": "",
     "line": "",
-    "description": "SQD Weatherproof Main Panel 200A 20/40 Circuit",
+    "description": "SQD Weatherproof Panel 200A 20/40 Circuit",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 795
@@ -10264,7 +10264,7 @@
     "code": "CE0588",
     "itemNumber": "",
     "line": "",
-    "description": "SQD X Series 15A TR Decora Outlet",
+    "description": "SQD X DECORA PLUG",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 790
@@ -10277,7 +10277,7 @@
     "code": "CE0598",
     "itemNumber": "",
     "line": "",
-    "description": "SQD X Series 15A Type A/C TR, White",
+    "description": "SQD X USB PLUG - USBA USBC",
     "category": "SQD",
     "groupedCategory": "SQD",
     "excelRow": 791
