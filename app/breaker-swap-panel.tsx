@@ -61,7 +61,7 @@ export function BreakerSwapPanel({ onBack, language }: Props) {
   const [loginLoading, setLoginLoading] = useState(false);
   const [loginError, setLoginError] = useState("");
   const [addressRecords, setAddressRecords] = useState<AddressRecord[]>([]);
-  const [addressesLoading, setAddressesLoading] = useState(true);
+  const [addressesLoading, setAddressesLoading] = useState(false);
   const [addressesError, setAddressesError] = useState("");
   const [search, setSearch] = useState("");
   const [address, setAddress] = useState("");
@@ -102,8 +102,17 @@ export function BreakerSwapPanel({ onBack, language }: Props) {
 
   useEffect(() => {
     if (!authenticated) return;
+    const term = search.trim();
+    if (term.length < 2) {
+      setAddressRecords([]);
+      setAddressesError("");
+      setAddressesLoading(false);
+      return;
+    }
     let active = true;
-    fetch("/api/breaker-swap?resource=addresses", { cache: "no-store" })
+    setAddressesLoading(true);
+    const timer = window.setTimeout(() => {
+      fetch(`/api/breaker-swap?resource=addresses&search=${encodeURIComponent(term)}`, { cache: "no-store" })
       .then((response) => {
         if (!response.ok) throw new Error(tx("The central Breaker Swap address list is not available.", "La lista central de direcciones de Breaker Swap no está disponible."));
         return response.json();
@@ -121,8 +130,9 @@ export function BreakerSwapPanel({ onBack, language }: Props) {
       .finally(() => {
         if (active) setAddressesLoading(false);
       });
-    return () => { active = false; };
-  }, [authenticated]);
+    }, 250);
+    return () => { active = false; window.clearTimeout(timer); };
+  }, [authenticated, search, language]);
 
   useEffect(() => {
     if (!authenticated) return;
@@ -144,10 +154,7 @@ export function BreakerSwapPanel({ onBack, language }: Props) {
     }
   }
 
-  const visibleRecords = useMemo(() => {
-    const term = search.trim().toLowerCase();
-    return addressRecords.filter((record) => !term || record.address.toLowerCase().includes(term)).slice(0, 150);
-  }, [addressRecords, search]);
+  const visibleRecords = addressRecords;
 
   const selectedRecord = useMemo(() => addressRecords.find((record) => record.address === address), [addressRecords, address]);
   const pendingReturns = useMemo(() => movements.filter((movement) => movement.kind === "return" && movement.status === "pending"), [movements]);
@@ -417,7 +424,8 @@ export function BreakerSwapPanel({ onBack, language }: Props) {
       </button>)}
       {addressesLoading && <p className="breaker-empty">{tx("Loading addresses and materials from Supabase…", "Cargando direcciones y materiales desde Supabase…")}</p>}
       {addressesError && <p className="breaker-error" role="alert">{addressesError}</p>}
-      {!addressesLoading && !addressesError && !visibleRecords.length && <p className="breaker-empty">{tx("No addresses match that search.", "No hay direcciones que coincidan con esa búsqueda.")}</p>}
+      {!addressesLoading && !addressesError && search.trim().length >= 2 && !visibleRecords.length && <p className="breaker-empty">{tx("No addresses match that search.", "No hay direcciones que coincidan con esa búsqueda.")}</p>}
+      {!addressesLoading && !addressesError && search.trim().length < 2 && <p className="breaker-empty">{tx("Type at least 2 characters to search addresses.", "Escriba al menos 2 caracteres para buscar direcciones.")}</p>}
     </div>
     <div className="breaker-actions">
       <span>{selectedRecord ? (language === "es" ? `Seleccionada: ${selectedRecord.address} · ${selectedRecord.outgoing.length} líneas de recogida · ${selectedRecord.returns.length} líneas de devolución${selectedRecord.status !== "OK" ? ` · Estado de origen ${selectedRecord.status}` : ""}` : `Selected: ${selectedRecord.address} · ${selectedRecord.outgoing.length} pickup lines · ${selectedRecord.returns.length} return lines${selectedRecord.status !== "OK" ? ` · Source status ${selectedRecord.status}` : ""}`) : tx(`Select an address from ${addressRecords.length} central results.`, `Seleccione una dirección entre ${addressRecords.length} resultados centrales.`)}</span>

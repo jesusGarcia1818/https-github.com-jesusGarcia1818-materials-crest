@@ -68,7 +68,11 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: "Recurso inválido" }, { status: 400 });
   }
   try {
-    const payload = await callRpc(resource === "addresses" ? "get_breaker_swap_addresses" : "get_breaker_swap_ledger");
+    const search = request.nextUrl.searchParams.get("search")?.trim() || "";
+    const payload = await callRpc(
+      resource === "addresses" ? "search_breaker_swap_addresses" : "get_breaker_swap_ledger",
+      resource === "addresses" ? { p_search: search, p_limit: 30 } : {},
+    );
     if (resource === "ledger" && Array.isArray(payload)) {
       return NextResponse.json(payload.map((movement: Record<string, unknown>) => ({
         ...movement,
