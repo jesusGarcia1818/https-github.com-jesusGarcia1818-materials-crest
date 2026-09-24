@@ -71,8 +71,6 @@ function showDate(value: string) {
   const [year, month, day] = value.slice(0, 10).split("-");
   return `${month}/${day}/${year}`;
 }
-const items = materialCatalog as Item[];
-const categories = Array.from(new Set(items.map((item) => item.groupedCategory)));
 const spanishCategoryNames: Record<string, string> = {
   "Copper Wire": "Cable de cobre",
   "Copperclad Wire": "Cable copper clad",
@@ -101,6 +99,7 @@ const spanishCategoryNames: Record<string, string> = {
 };
 
 export function MaterialRequestForm() {
+  const [items, setItems] = useState<Item[]>(() => materialCatalog as Item[]);
   const [language, setLanguage] = useState<AppLanguage>("en");
   const [transactionType, setTransactionType] = useState<MaterialTransactionType>("request");
   const [code, setCode] = useState("");
@@ -136,6 +135,17 @@ export function MaterialRequestForm() {
   }, []);
 
   useEffect(() => {
+    let current = true;
+    void fetch("/api/material-catalog", { cache: "no-store" })
+      .then((response) => response.json())
+      .then((payload: { materials?: Item[] }) => {
+        if (current && Array.isArray(payload.materials)) setItems(payload.materials);
+      })
+      .catch(() => undefined);
+    return () => { current = false; };
+  }, []);
+
+  useEffect(() => {
     window.localStorage.setItem(languageStorageKey, language);
     document.documentElement.lang = language;
     setNotice(transactionCopy("Complete the information to begin.", "Complete the return information to begin.", "Complete la información para comenzar.", "Complete la información de la devolución para comenzar."));
@@ -158,13 +168,14 @@ export function MaterialRequestForm() {
     else window.sessionStorage.removeItem(cartStorageKey);
   }, [cart]);
 
-  const selected = useMemo(() => items.filter((item) => Number(quantities[item.key]) > 0), [quantities]);
+  const categories = useMemo(() => Array.from(new Set(items.map((item) => item.groupedCategory))), [items]);
+  const selected = useMemo(() => items.filter((item) => Number(quantities[item.key]) > 0), [items, quantities]);
   const totalUnits = useMemo(() => selected.reduce((sum, item) => sum + Number(quantities[item.key]), 0), [selected, quantities]);
   const visible = useMemo(() => {
     const term = search.trim().toLowerCase();
     return items.filter((item) => (category === "ALL" || item.groupedCategory === category) &&
       (!term || `${item.code} ${item.itemNumber} ${item.line} ${item.description} ${item.legacyCode} ${item.category} ${item.groupedCategory}`.toLowerCase().includes(term)));
-  }, [search, category]);
+  }, [items, search, category]);
   const group = (list: Item[]) => categories.map((groupName) => ({ name: groupName, rows: list.filter((item) => item.groupedCategory === groupName) })).filter((entry) => entry.rows.length);
 
   function valid() {
