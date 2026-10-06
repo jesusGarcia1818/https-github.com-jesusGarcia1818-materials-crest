@@ -56,6 +56,19 @@ export function StolenBreakerPanel({ language, previewOnly = false, onBack }: Pr
     return () => { active = false; window.clearTimeout(timer); };
   }, [search, previewOnly, language]);
 
+  useEffect(() => {
+    if (previewOnly) return;
+    let active = true;
+    fetch(`/api/breaker-swap?resource=stolen-pickups&date=${encodeURIComponent(date)}`, { cache: "no-store" })
+      .then(async (response) => ({ response, payload: await response.json().catch(() => null) }))
+      .then(({ response, payload }) => {
+        if (!response.ok || !Array.isArray(payload)) throw new Error(tx("Saved pickups could not be loaded.", "No se pudieron cargar las recogidas guardadas."));
+        if (active) setPickupList(payload as PickupEntry[]);
+      })
+      .catch((reason: unknown) => { if (active) setError(reason instanceof Error ? reason.message : tx("Saved pickups could not be loaded.", "No se pudieron cargar las recogidas guardadas.")); });
+    return () => { active = false; };
+  }, [date, previewOnly, language]);
+
   const pickupItems = useMemo(() => selected?.outgoing ?? [], [selected]);
   const canPrint = Boolean(selected && pickupItems.length && /^\d+$/.test(workOrder) && supervisor.trim().length >= 2 && serviceTechnician.trim().length >= 2 && date && !printing);
 

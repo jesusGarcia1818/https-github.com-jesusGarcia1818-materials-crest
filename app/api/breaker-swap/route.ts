@@ -64,15 +64,15 @@ function materialLines(value: unknown): MaterialInput[] | null {
 export async function GET(request: NextRequest) {
   if (!await getBreakerSwapUser(request)) return NextResponse.json({ error: "Authentication required" }, { status: 401 });
   const resource = request.nextUrl.searchParams.get("resource");
-  if (resource !== "addresses" && resource !== "ledger") {
+  if (resource !== "addresses" && resource !== "ledger" && resource !== "stolen-pickups") {
     return NextResponse.json({ error: "Recurso inválido" }, { status: 400 });
   }
   try {
     const search = request.nextUrl.searchParams.get("search")?.trim() || "";
-    const payload = await callRpc(
-      resource === "addresses" ? "search_breaker_swap_addresses" : "get_breaker_swap_ledger",
-      resource === "addresses" ? { p_search: search, p_limit: 30 } : {},
-    );
+    const pickupDate = request.nextUrl.searchParams.get("date")?.trim() || "";
+    const functionName = resource === "addresses" ? "search_breaker_swap_addresses" : resource === "stolen-pickups" ? "list_stolen_breaker_pickups" : "get_breaker_swap_ledger";
+    const args = resource === "addresses" ? { p_search: search, p_limit: 30 } : resource === "stolen-pickups" ? { p_pickup_date: pickupDate } : {};
+    const payload = await callRpc(functionName, args);
     if (resource === "ledger" && Array.isArray(payload)) {
       return NextResponse.json(payload.map((movement: Record<string, unknown>) => ({
         ...movement,
@@ -81,7 +81,8 @@ export async function GET(request: NextRequest) {
     }
     return NextResponse.json(payload, { headers: { "Cache-Control": "no-store" } });
   } catch {
-    return NextResponse.json({ error: resource === "addresses" ? "No se pudieron cargar las direcciones desde Supabase" : "No se pudo cargar el registro central" }, { status: 500 });
+    const error = resource === "addresses" ? "No se pudieron cargar las direcciones desde Supabase" : resource === "stolen-pickups" ? "No se pudieron cargar las recogidas guardadas" : "No se pudo cargar el registro central";
+    return NextResponse.json({ error }, { status: 500 });
   }
 }
 
