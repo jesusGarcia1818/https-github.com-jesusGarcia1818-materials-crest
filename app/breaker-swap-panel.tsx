@@ -2,8 +2,10 @@
 
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import type { AppLanguage } from "./language-switcher";
+import { StolenBreakerPanel } from "./stolen-breaker-panel";
 
 type Props = { onBack: () => void; language: AppLanguage };
+type BreakerModule = "menu" | "swap" | "stolen";
 type MaterialLine = { description: string; code: string; quantity: number; sourceMaterial?: string };
 type AddressRecord = { address: string; status: string; outgoing: MaterialLine[]; returns: MaterialLine[] };
 type SwapEntry = AddressRecord & { id: string; date: string; supervisor: string; workOrder: string; recorded: boolean };
@@ -57,6 +59,7 @@ export function BreakerSwapPanel({ onBack, language }: Props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [authenticated, setAuthenticated] = useState(false);
+  const [activeModule, setActiveModule] = useState<BreakerModule>("menu");
   const [authChecking, setAuthChecking] = useState(true);
   const [loginLoading, setLoginLoading] = useState(false);
   const [loginError, setLoginError] = useState("");
@@ -192,6 +195,7 @@ export function BreakerSwapPanel({ onBack, language }: Props) {
   async function signOut() {
     await fetch("/api/breaker-swap-auth", { method: "DELETE" }).catch(() => null);
     setAuthenticated(false);
+    setActiveModule("menu");
     setPassword("");
     setAddressRecords([]);
     setMovements([]);
@@ -397,11 +401,50 @@ export function BreakerSwapPanel({ onBack, language }: Props) {
     </div>;
   }
 
+  if (activeModule === "menu") {
+    return <div className="breaker-module-menu">
+      <header className="breaker-module-menu-header">
+        <img src="/crest-electrical-solutions-logo.png" alt="Crest Electrical Solutions" />
+        <div className="breaker-header-actions"><button className="button ghost" type="button" onClick={onBack}>{tx("Back", "Regresar")}</button><button className="button ghost" type="button" onClick={() => void signOut()}>{tx("Sign out", "Cerrar sesión")}</button></div>
+      </header>
+      <main className="breaker-module-menu-content">
+        <section className="breaker-module-banner">
+          <div>
+            <p className="eyebrow">{tx("SECURE MATERIALS CONTROL", "CONTROL SEGURO DE MATERIALES")}</p>
+            <h2>{tx("What would you like to do?", "¿Qué deseas hacer?")}</h2>
+            <p>{tx("Select a module to continue.", "Seleccione un módulo para continuar.")}</p>
+          </div>
+          <div className="breaker-module-banner-mark" aria-hidden="true"><span>⚡</span></div>
+        </section>
+        <div className="breaker-module-options">
+          <button className="breaker-module-option" type="button" onClick={() => setActiveModule("swap")}>
+            <span className="breaker-module-icon breaker-module-icon-swap" aria-hidden="true">⇄</span>
+            <span className="breaker-module-label">{tx("ACTIVE MODULE", "MÓDULO ACTIVO")}</span>
+            <strong>Breaker Swap</strong>
+            <span>{tx("Create pickup and return documents for breaker swaps.", "Cree documentos de recogida y devolución para intercambios de breakers.")}</span>
+            <small>{tx("Open module", "Abrir módulo")} <b>→</b></small>
+          </button>
+          <button className="breaker-module-option" type="button" onClick={() => setActiveModule("stolen")}>
+            <span className="breaker-module-icon breaker-module-icon-stolen" aria-hidden="true">⌁</span>
+            <span className="breaker-module-label">{tx("NEW MODULE", "NUEVO MÓDULO")}</span>
+            <strong>{tx("Stolen Breaker", "Breaker Robado")}</strong>
+            <span>{tx("Record and manage stolen breaker cases.", "Registre y administre casos de breakers robados.")}</span>
+            <small>{tx("Open module", "Abrir módulo")} <b>→</b></small>
+          </button>
+        </div>
+      </main>
+    </div>;
+  }
+
+  if (activeModule === "stolen") {
+    return <StolenBreakerPanel language={language} onBack={() => setActiveModule("menu")} />;
+  }
+
   return <div className="breaker-console">
     <header className="breaker-console-header">
       <img src="/crest-electrical-solutions-logo.png" alt="Crest Electrical Solutions" />
       <div><p className="eyebrow">{tx("MATERIALS CONTROL", "CONTROL DE MATERIALES")}</p><h2 id="start-title">Breaker Swap</h2><p>{tx("Pickup materials post immediately when printed; returns stay pending until confirmed.", "Los materiales de recogida se contabilizan al imprimir; las devoluciones quedan pendientes hasta ser confirmadas.")}</p></div>
-      <div className="breaker-header-actions"><button className="button ghost" type="button" onClick={onBack}>{tx("Back", "Regresar")}</button><button className="button ghost" type="button" onClick={() => void signOut()}>{tx("Sign out", "Cerrar sesión")}</button></div>
+      <div className="breaker-header-actions"><button className="button ghost" type="button" onClick={() => setActiveModule("menu")}>{tx("Modules", "Módulos")}</button><button className="button ghost" type="button" onClick={() => void signOut()}>{tx("Sign out", "Cerrar sesión")}</button></div>
     </header>
 
     <div className="breaker-ledger-summary" aria-label={tx("Central inventory movement summary", "Resumen central de movimientos de inventario")} aria-busy={ledgerLoading}>

@@ -88,7 +88,26 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   if (!await getBreakerSwapUser(request)) return NextResponse.json({ error: "Authentication required" }, { status: 401 });
   try {
-    const input = await request.json() as { jobs?: unknown };
+    const input = await request.json() as { operation?: unknown; pickup?: unknown; jobs?: unknown };
+    if (input.operation === "stolen-pickup") {
+      const pickup = input.pickup as Record<string, unknown> | null;
+      const items = materialLines(pickup?.items);
+      const payload = {
+        address: String(pickup?.address || "").trim().slice(0, 300),
+        supervisor: String(pickup?.supervisor || "").trim().slice(0, 160),
+        serviceTechnician: String(pickup?.serviceTechnician || "").trim().slice(0, 160),
+        workOrder: String(pickup?.workOrder || "").trim(),
+        date: String(pickup?.date || "").trim(),
+        items,
+      };
+      const invalid = !payload.address || payload.supervisor.length < 2 || payload.serviceTechnician.length < 2
+        || !/^\d+$/.test(payload.workOrder) || !/^\d{4}-\d{2}-\d{2}$/.test(payload.date)
+        || payload.items === null || payload.items.length === 0;
+      if (invalid) return NextResponse.json({ error: "Completa correctamente los datos de recogida" }, { status: 400 });
+
+      const saved = await callRpc("save_stolen_breaker_pickup", { p_pickup: payload });
+      return NextResponse.json(saved, { headers: { "Cache-Control": "no-store" } });
+    }
     if (!Array.isArray(input.jobs) || input.jobs.length === 0 || input.jobs.length > 250) {
       return NextResponse.json({ error: "La lista de trabajos no es válida" }, { status: 400 });
     }
